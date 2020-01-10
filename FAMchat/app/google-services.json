@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "323156185033",
+    "firebase_url": "https://fam-chat-f0962.firebaseio.com",
+    "project_id": "fam-chat-f0962",
+    "storage_bucket": "fam-chat-f0962.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323156185033:android:1c138402b1db9455212218",
+        "android_client_info": {
+          "package_name": "com.example.famchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323156185033-6jfj5n0n6idht99qeo1mu7bjdri7kmoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.famchat",
+            "certificate_hash": "6571f494f5fc70b63c0394d69271d5f2ce1307cf"
+          }
+        },
+        {
+          "client_id": "323156185033-q5q30umbmau3vn20andr48qfi68viveq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg30l0wG4a5bQq3MLWxaTxWTecS_O841s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323156185033-q5q30umbmau3vn20andr48qfi68viveq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
