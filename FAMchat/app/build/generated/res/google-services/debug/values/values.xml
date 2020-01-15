@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">688861194575-hav5rmvi3f84tpnjrjnae4e5ijc1l95q.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://fam-chat-2be28.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">688861194575</string>
-    <string name="google_api_key" translatable="false">AIzaSyBt1RA1CmxIVL_UMacUmdZ6o8rIFAI7AWU</string>
-    <string name="google_app_id" translatable="false">1:688861194575:android:f86031a58e3e89ba4cbd3a</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBt1RA1CmxIVL_UMacUmdZ6o8rIFAI7AWU</string>
-    <string name="google_storage_bucket" translatable="false">fam-chat-2be28.appspot.com</string>
-    <string name="project_id" translatable="false">fam-chat-2be28</string>
+    <string name="default_web_client_id" translatable="false">560677981486-jva6tb5d6ef8p94m7f4n7fk495ot336o.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://finalproject-b1774.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">560677981486</string>
+    <string name="google_api_key" translatable="false">AIzaSyD97T_MGvG4gqpvNTM9QG8NC2OTAm0DmnE</string>
+    <string name="google_app_id" translatable="false">1:560677981486:android:2a5a79fbad33425016bebf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD97T_MGvG4gqpvNTM9QG8NC2OTAm0DmnE</string>
+    <string name="google_storage_bucket" translatable="false">finalproject-b1774.appspot.com</string>
+    <string name="project_id" translatable="false">finalproject-b1774</string>
 </resources>

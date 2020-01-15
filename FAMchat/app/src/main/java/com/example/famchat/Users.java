@@ -1,26 +1,35 @@
 package com.example.famchat;
 
 public class Users {
-    String Email;
-    String Password;
-    String Name;
+    private String Email;
+    private String Password;
+    private String Name;
 
-    public Users(String Email, String Password, String Name){
-        this.Email = Email;
-        this.Password = Password;
-        this.Name = Name;
+    public Users(){
     }
 
-    public String getEmail(){
+    public String getEmail() {
         return Email;
     }
 
-    public String getPassword(){
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getPassword() {
         return Password;
     }
 
-    public String getName(){
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getName() {
         return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
     }
 }
 

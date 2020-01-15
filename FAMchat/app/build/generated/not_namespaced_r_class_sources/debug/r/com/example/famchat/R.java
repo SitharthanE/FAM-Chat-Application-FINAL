@@ -21,6 +21,18 @@ public final class R {
     public static final int abc_slide_out_top=0x7f010009;
     public static final int abc_tooltip_enter=0x7f01000a;
     public static final int abc_tooltip_exit=0x7f01000b;
+    public static final int btn_checkbox_to_checked_box_inner_merged_animation=0x7f01000c;
+    public static final int btn_checkbox_to_checked_box_outer_merged_animation=0x7f01000d;
+    public static final int btn_checkbox_to_checked_icon_null_animation=0x7f01000e;
+    public static final int btn_checkbox_to_unchecked_box_inner_merged_animation=0x7f01000f;
+    public static final int btn_checkbox_to_unchecked_check_path_merged_animation=0x7f010010;
+    public static final int btn_checkbox_to_unchecked_icon_null_animation=0x7f010011;
+    public static final int btn_radio_to_off_mtrl_dot_group_animation=0x7f010012;
+    public static final int btn_radio_to_off_mtrl_ring_outer_animation=0x7f010013;
+    public static final int btn_radio_to_off_mtrl_ring_outer_path_animation=0x7f010014;
+    public static final int btn_radio_to_on_mtrl_dot_group_animation=0x7f010015;
+    public static final int btn_radio_to_on_mtrl_ring_outer_animation=0x7f010016;
+    public static final int btn_radio_to_on_mtrl_ring_outer_path_animation=0x7f010017;
   }
   public static final class attr {
     /**
@@ -593,6 +605,14 @@ public final class R {
      */
     public static final int buttonBarStyle=0x7f02003e;
     /**
+     * Compat attr to load backported drawable types
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int buttonCompat=0x7f02003f;
+    /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -600,10 +620,11 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
      * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int buttonGravity=0x7f02003f;
+    public static final int buttonGravity=0x7f020040;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -611,14 +632,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int buttonIconDimen=0x7f020040;
+    public static final int buttonIconDimen=0x7f020041;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonPanelSideLayout=0x7f020041;
+    public static final int buttonPanelSideLayout=0x7f020042;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -635,7 +656,7 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f020042;
+    public static final int buttonSize=0x7f020043;
     /**
      * Normal Button style.
      * <p>May be a reference to another resource, in the form
@@ -643,7 +664,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyle=0x7f020043;
+    public static final int buttonStyle=0x7f020044;
     /**
      * Small Button style.
      * <p>May be a reference to another resource, in the form
@@ -651,14 +672,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyleSmall=0x7f020044;
+    public static final int buttonStyleSmall=0x7f020045;
     /**
      * Tint to apply to the button drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int buttonTint=0x7f020045;
+    public static final int buttonTint=0x7f020046;
     /**
      * Blending mode used to apply the button tint.
      * <p>Must be one of the following constant values.</p>
@@ -680,12 +701,12 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int buttonTintMode=0x7f020046;
+    public static final int buttonTintMode=0x7f020047;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int chainUseRtl=0x7f020047;
+    public static final int chainUseRtl=0x7f020048;
     /**
      * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
@@ -693,7 +714,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f020048;
+    public static final int checkboxStyle=0x7f020049;
     /**
      * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
@@ -701,12 +722,12 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f020049;
+    public static final int checkedTextViewStyle=0x7f02004a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f02004a;
+    public static final int circleCrop=0x7f02004b;
     /**
      * Close button icon
      * <p>May be a reference to another resource, in the form
@@ -714,7 +735,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeIcon=0x7f02004b;
+    public static final int closeIcon=0x7f02004c;
     /**
      * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
@@ -722,13 +743,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f02004c;
+    public static final int closeItemLayout=0x7f02004d;
     /**
      * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f02004d;
+    public static final int collapseContentDescription=0x7f02004e;
     /**
      * Icon drawable to use for the collapse button.
      * <p>May be a reference to another resource, in the form
@@ -736,14 +757,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f02004e;
+    public static final int collapseIcon=0x7f02004f;
     /**
      * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f02004f;
+    public static final int color=0x7f020050;
     /**
      * Bright complement to the primary branding color. By default, this is the color applied
      * to framework controls (via colorControlActivated).
@@ -751,42 +772,42 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f020050;
+    public static final int colorAccent=0x7f020051;
     /**
      * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f020051;
+    public static final int colorBackgroundFloating=0x7f020052;
     /**
      * The color applied to framework buttons in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f020052;
+    public static final int colorButtonNormal=0x7f020053;
     /**
      * The color applied to framework controls in their activated (ex. checked) state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f020053;
+    public static final int colorControlActivated=0x7f020054;
     /**
      * The color applied to framework control highlights (ex. ripples, list selectors).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f020054;
+    public static final int colorControlHighlight=0x7f020055;
     /**
      * The color applied to framework controls in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f020055;
+    public static final int colorControlNormal=0x7f020056;
     /**
      * Color used for error states and things that need to be drawn to
      * the user's attention.
@@ -798,7 +819,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f020056;
+    public static final int colorError=0x7f020057;
     /**
      * The primary branding color for the app. By default, this is the color applied to the
      * action bar background.
@@ -806,7 +827,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f020057;
+    public static final int colorPrimary=0x7f020058;
     /**
      * Dark variant of the primary branding color. By default, this is the color applied to
      * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
@@ -814,7 +835,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f020058;
+    public static final int colorPrimaryDark=0x7f020059;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -831,14 +852,14 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f020059;
+    public static final int colorScheme=0x7f02005a;
     /**
      * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f02005a;
+    public static final int colorSwitchThumbNormal=0x7f02005b;
     /**
      * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
@@ -846,32 +867,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f02005b;
+    public static final int commitIcon=0x7f02005c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int constraintSet=0x7f02005c;
+    public static final int constraintSet=0x7f02005d;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int constraint_referenced_ids=0x7f02005d;
+    public static final int constraint_referenced_ids=0x7f02005e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int content=0x7f02005e;
+    public static final int content=0x7f02005f;
     /**
      * The content description associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f02005f;
+    public static final int contentDescription=0x7f020060;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -881,7 +902,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f020060;
+    public static final int contentInsetEnd=0x7f020061;
     /**
      * Minimum inset for content views within a bar when actions from a menu
      * are present. Only valid for some themes and configurations.
@@ -891,7 +912,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f020061;
+    public static final int contentInsetEndWithActions=0x7f020062;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -901,7 +922,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f020062;
+    public static final int contentInsetLeft=0x7f020063;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -911,7 +932,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f020063;
+    public static final int contentInsetRight=0x7f020064;
     /**
      * Minimum inset for content views within a bar. Navigation buttons and
      * menu views are excepted. Only valid for some themes and configurations.
@@ -921,7 +942,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f020064;
+    public static final int contentInsetStart=0x7f020065;
     /**
      * Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button. Only valid for some themes and configurations.
@@ -931,7 +952,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f020065;
+    public static final int contentInsetStartWithNavigation=0x7f020066;
     /**
      * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
@@ -939,14 +960,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f020066;
+    public static final int controlBackground=0x7f020067;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f020067;
+    public static final int coordinatorLayoutStyle=0x7f020068;
     /**
      * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
@@ -954,14 +975,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f020068;
+    public static final int customNavigationLayout=0x7f020069;
     /**
      * Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int defaultQueryHint=0x7f020069;
+    public static final int defaultQueryHint=0x7f02006a;
     /**
      * Preferred corner radius of dialogs.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -970,7 +991,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogCornerRadius=0x7f02006a;
+    public static final int dialogCornerRadius=0x7f02006b;
     /**
      * Preferred padding for dialog content.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -979,7 +1000,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogPreferredPadding=0x7f02006b;
+    public static final int dialogPreferredPadding=0x7f02006c;
     /**
      * Theme to use for dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
@@ -987,7 +1008,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f02006c;
+    public static final int dialogTheme=0x7f02006d;
     /**
      * Options affecting how the action bar is displayed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -1005,7 +1026,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f02006d;
+    public static final int displayOptions=0x7f02006e;
     /**
      * Specifies the drawable used for item dividers.
      * <p>May be a reference to another resource, in the form
@@ -1013,7 +1034,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f02006e;
+    public static final int divider=0x7f02006f;
     /**
      * A drawable that may be used as a horizontal divider between visual elements.
      * <p>May be a reference to another resource, in the form
@@ -1021,7 +1042,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f02006f;
+    public static final int dividerHorizontal=0x7f020070;
     /**
      * Size of padding on either end of a divider.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1030,7 +1051,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f020070;
+    public static final int dividerPadding=0x7f020071;
     /**
      * A drawable that may be used as a vertical divider between visual elements.
      * <p>May be a reference to another resource, in the form
@@ -1038,7 +1059,37 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f020071;
+    public static final int dividerVertical=0x7f020072;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawableBottomCompat=0x7f020073;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawableEndCompat=0x7f020074;
+    /**
+     * Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawableLeftCompat=0x7f020075;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawableRightCompat=0x7f020076;
     /**
      * The total size of the drawable
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1047,14 +1098,57 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f020072;
+    public static final int drawableSize=0x7f020077;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f020073;
+    public static final int drawableStartCompat=0x7f020078;
+    /**
+     * Tint to apply to the compound (left, top, etc.) drawables.
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int drawableTint=0x7f020079;
+    /**
+     * Blending mode used to apply the compound (left, top, etc.) drawables tint.
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * </table>
+     */
+    public static final int drawableTintMode=0x7f02007a;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawableTopCompat=0x7f02007b;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int drawerArrowStyle=0x7f02007c;
     /**
      * ListPopupWindow compatibility
      * <p>May be a reference to another resource, in the form
@@ -1062,7 +1156,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f020074;
+    public static final int dropDownListViewStyle=0x7f02007d;
     /**
      * The preferred item height for dropdown lists.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1071,7 +1165,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f020075;
+    public static final int dropdownListPreferredItemHeight=0x7f02007e;
     /**
      * EditText background drawable.
      * <p>May be a reference to another resource, in the form
@@ -1079,7 +1173,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextBackground=0x7f020076;
+    public static final int editTextBackground=0x7f02007f;
     /**
      * EditText text foreground color.
      * <p>May be a reference to another resource, in the form
@@ -1090,7 +1184,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int editTextColor=0x7f020077;
+    public static final int editTextColor=0x7f020080;
     /**
      * Default EditText style.
      * <p>May be a reference to another resource, in the form
@@ -1098,7 +1192,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextStyle=0x7f020078;
+    public static final int editTextStyle=0x7f020081;
     /**
      * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1107,7 +1201,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int elevation=0x7f020079;
+    public static final int elevation=0x7f020082;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1119,7 +1213,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int emptyVisibility=0x7f02007a;
+    public static final int emptyVisibility=0x7f020083;
     /**
      * The drawable to show in the button for expanding the activities overflow popup.
      * <strong>Note:</strong> Clients would like to set this drawable
@@ -1131,7 +1225,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandActivityOverflowButtonDrawable=0x7f02007b;
+    public static final int expandActivityOverflowButtonDrawable=0x7f020084;
     /**
      * Distance from the top of the TextView to the first text baseline. If set, this
      * overrides the value set for paddingTop.
@@ -1141,7 +1235,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int firstBaselineToTopHeight=0x7f02007c;
+    public static final int firstBaselineToTopHeight=0x7f020085;
     /**
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
@@ -1150,19 +1244,19 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f02007d;
+    public static final int font=0x7f020086;
     /**
      * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f02007e;
+    public static final int fontFamily=0x7f020087;
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f02007f;
+    public static final int fontProviderAuthority=0x7f020088;
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -1174,7 +1268,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f020080;
+    public static final int fontProviderCerts=0x7f020089;
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -1201,7 +1295,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f020081;
+    public static final int fontProviderFetchStrategy=0x7f02008a;
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -1215,21 +1309,21 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f020082;
+    public static final int fontProviderFetchTimeout=0x7f02008b;
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f020083;
+    public static final int fontProviderPackage=0x7f02008c;
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f020084;
+    public static final int fontProviderQuery=0x7f02008d;
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -1244,7 +1338,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f020085;
+    public static final int fontStyle=0x7f02008e;
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -1253,7 +1347,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f020086;
+    public static final int fontVariationSettings=0x7f02008f;
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -1262,7 +1356,7 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f020087;
+    public static final int fontWeight=0x7f020090;
     /**
      * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -1271,7 +1365,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f020088;
+    public static final int gapBetweenBars=0x7f020091;
     /**
      * Go button icon
      * <p>May be a reference to another resource, in the form
@@ -1279,7 +1373,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f020089;
+    public static final int goIcon=0x7f020092;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1287,13 +1381,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f02008a;
+    public static final int height=0x7f020093;
     /**
      * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f02008b;
+    public static final int hideOnContentScroll=0x7f020094;
     /**
      * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
@@ -1301,7 +1395,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f02008c;
+    public static final int homeAsUpIndicator=0x7f020095;
     /**
      * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
@@ -1309,7 +1403,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f02008d;
+    public static final int homeLayout=0x7f020096;
     /**
      * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
@@ -1317,14 +1411,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f02008e;
+    public static final int icon=0x7f020097;
     /**
      * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f02008f;
+    public static final int iconTint=0x7f020098;
     /**
      * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
@@ -1346,18 +1440,18 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f020090;
+    public static final int iconTintMode=0x7f020099;
     /**
      * The default state of the SearchView. If true, it will be iconified when not in
      * use and expanded when clicked.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f020091;
+    public static final int iconifiedByDefault=0x7f02009a;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f020092;
+    public static final int imageAspectRatio=0x7f02009b;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1370,7 +1464,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f020093;
+    public static final int imageAspectRatioAdjust=0x7f02009c;
     /**
      * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
@@ -1378,7 +1472,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f020094;
+    public static final int imageButtonStyle=0x7f02009d;
     /**
      * Specifies a style resource to use for an indeterminate progress spinner.
      * <p>May be a reference to another resource, in the form
@@ -1386,18 +1480,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f020095;
+    public static final int indeterminateProgressStyle=0x7f02009e;
     /**
      * The maximal number of items initially shown in the activity list.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f020096;
+    public static final int initialActivityCount=0x7f02009f;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f020097;
+    public static final int isLightTheme=0x7f0200a0;
     /**
      * Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.
@@ -1407,7 +1501,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f020098;
+    public static final int itemPadding=0x7f0200a1;
     /**
      * A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.
@@ -1419,7 +1513,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f020099;
+    public static final int keylines=0x7f0200a2;
     /**
      * Distance from the bottom of the TextView to the last text baseline. If set, this
      * overrides the value set for paddingBottom.
@@ -1429,7 +1523,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lastBaselineToBottomHeight=0x7f02009a;
+    public static final int lastBaselineToBottomHeight=0x7f0200a3;
     /**
      * The layout to use for the search view.
      * <p>May be a reference to another resource, in the form
@@ -1437,7 +1531,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f02009b;
+    public static final int layout=0x7f0200a4;
     /**
      * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
@@ -1445,7 +1539,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f02009c;
+    public static final int layout_anchor=0x7f0200a5;
     /**
      * Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.
@@ -1477,28 +1571,28 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f02009d;
+    public static final int layout_anchorGravity=0x7f0200a6;
     /**
      * The class name of a Behavior class defining special runtime behavior
      * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f02009e;
+    public static final int layout_behavior=0x7f0200a7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedHeight=0x7f02009f;
+    public static final int layout_constrainedHeight=0x7f0200a8;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedWidth=0x7f0200a0;
+    public static final int layout_constrainedWidth=0x7f0200a9;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBaseline_creator=0x7f0200a1;
+    public static final int layout_constraintBaseline_creator=0x7f0200aa;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1513,11 +1607,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBaseline_toBaselineOf=0x7f0200a2;
+    public static final int layout_constraintBaseline_toBaselineOf=0x7f0200ab;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBottom_creator=0x7f0200a3;
+    public static final int layout_constraintBottom_creator=0x7f0200ac;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1532,7 +1626,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toBottomOf=0x7f0200a4;
+    public static final int layout_constraintBottom_toBottomOf=0x7f0200ad;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1547,18 +1641,18 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toTopOf=0x7f0200a5;
+    public static final int layout_constraintBottom_toTopOf=0x7f0200ae;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_constraintCircle=0x7f0200a6;
+    public static final int layout_constraintCircle=0x7f0200af;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintCircleAngle=0x7f0200a7;
+    public static final int layout_constraintCircleAngle=0x7f0200b0;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1566,12 +1660,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintCircleRadius=0x7f0200a8;
+    public static final int layout_constraintCircleRadius=0x7f0200b1;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_constraintDimensionRatio=0x7f0200a9;
+    public static final int layout_constraintDimensionRatio=0x7f0200b2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1586,7 +1680,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toEndOf=0x7f0200aa;
+    public static final int layout_constraintEnd_toEndOf=0x7f0200b3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1601,7 +1695,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toStartOf=0x7f0200ab;
+    public static final int layout_constraintEnd_toStartOf=0x7f0200b4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1609,7 +1703,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_begin=0x7f0200ac;
+    public static final int layout_constraintGuide_begin=0x7f0200b5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1617,11 +1711,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_end=0x7f0200ad;
+    public static final int layout_constraintGuide_end=0x7f0200b6;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintGuide_percent=0x7f0200ae;
+    public static final int layout_constraintGuide_percent=0x7f0200b7;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1634,7 +1728,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_default=0x7f0200af;
+    public static final int layout_constraintHeight_default=0x7f0200b8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1650,7 +1744,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_max=0x7f0200b0;
+    public static final int layout_constraintHeight_max=0x7f0200b9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1666,15 +1760,15 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_min=0x7f0200b1;
+    public static final int layout_constraintHeight_min=0x7f0200ba;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHeight_percent=0x7f0200b2;
+    public static final int layout_constraintHeight_percent=0x7f0200bb;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_bias=0x7f0200b3;
+    public static final int layout_constraintHorizontal_bias=0x7f0200bc;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1687,15 +1781,15 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHorizontal_chainStyle=0x7f0200b4;
+    public static final int layout_constraintHorizontal_chainStyle=0x7f0200bd;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_weight=0x7f0200b5;
+    public static final int layout_constraintHorizontal_weight=0x7f0200be;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintLeft_creator=0x7f0200b6;
+    public static final int layout_constraintLeft_creator=0x7f0200bf;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1710,7 +1804,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toLeftOf=0x7f0200b7;
+    public static final int layout_constraintLeft_toLeftOf=0x7f0200c0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1725,11 +1819,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toRightOf=0x7f0200b8;
+    public static final int layout_constraintLeft_toRightOf=0x7f0200c1;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintRight_creator=0x7f0200b9;
+    public static final int layout_constraintRight_creator=0x7f0200c2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1744,7 +1838,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toLeftOf=0x7f0200ba;
+    public static final int layout_constraintRight_toLeftOf=0x7f0200c3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1759,7 +1853,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toRightOf=0x7f0200bb;
+    public static final int layout_constraintRight_toRightOf=0x7f0200c4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1774,7 +1868,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toEndOf=0x7f0200bc;
+    public static final int layout_constraintStart_toEndOf=0x7f0200c5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1789,11 +1883,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toStartOf=0x7f0200bd;
+    public static final int layout_constraintStart_toStartOf=0x7f0200c6;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintTop_creator=0x7f0200be;
+    public static final int layout_constraintTop_creator=0x7f0200c7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1808,7 +1902,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toBottomOf=0x7f0200bf;
+    public static final int layout_constraintTop_toBottomOf=0x7f0200c8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1823,11 +1917,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toTopOf=0x7f0200c0;
+    public static final int layout_constraintTop_toTopOf=0x7f0200c9;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_bias=0x7f0200c1;
+    public static final int layout_constraintVertical_bias=0x7f0200ca;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1840,11 +1934,11 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintVertical_chainStyle=0x7f0200c2;
+    public static final int layout_constraintVertical_chainStyle=0x7f0200cb;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_weight=0x7f0200c3;
+    public static final int layout_constraintVertical_weight=0x7f0200cc;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1857,7 +1951,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_default=0x7f0200c4;
+    public static final int layout_constraintWidth_default=0x7f0200cd;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1873,7 +1967,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_max=0x7f0200c5;
+    public static final int layout_constraintWidth_max=0x7f0200ce;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1889,11 +1983,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_min=0x7f0200c6;
+    public static final int layout_constraintWidth_min=0x7f0200cf;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintWidth_percent=0x7f0200c7;
+    public static final int layout_constraintWidth_percent=0x7f0200d0;
     /**
      * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -1912,7 +2006,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f0200c8;
+    public static final int layout_dodgeInsetEdges=0x7f0200d1;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1920,7 +2014,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteX=0x7f0200c9;
+    public static final int layout_editor_absoluteX=0x7f0200d2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1928,7 +2022,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteY=0x7f0200ca;
+    public static final int layout_editor_absoluteY=0x7f0200d3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1936,7 +2030,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginBottom=0x7f0200cb;
+    public static final int layout_goneMarginBottom=0x7f0200d4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1944,7 +2038,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginEnd=0x7f0200cc;
+    public static final int layout_goneMarginEnd=0x7f0200d5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1952,7 +2046,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginLeft=0x7f0200cd;
+    public static final int layout_goneMarginLeft=0x7f0200d6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1960,7 +2054,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginRight=0x7f0200ce;
+    public static final int layout_goneMarginRight=0x7f0200d7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1968,7 +2062,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginStart=0x7f0200cf;
+    public static final int layout_goneMarginStart=0x7f0200d8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1976,7 +2070,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginTop=0x7f0200d0;
+    public static final int layout_goneMarginTop=0x7f0200d9;
     /**
      * Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.
@@ -1995,14 +2089,14 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f0200d1;
+    public static final int layout_insetEdge=0x7f0200da;
     /**
      * The index of a keyline this view should position relative to.
      * android:layout_gravity will affect how the view aligns to the
      * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f0200d2;
+    public static final int layout_keyline=0x7f0200db;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2019,7 +2113,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      */
-    public static final int layout_optimizationLevel=0x7f0200d3;
+    public static final int layout_optimizationLevel=0x7f0200dc;
     /**
      * Explicit height between lines of text. If set, this will override the values set
      * for lineSpacingExtra and lineSpacingMultiplier.
@@ -2029,7 +2123,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineHeight=0x7f0200d4;
+    public static final int lineHeight=0x7f0200dd;
     /**
      * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
@@ -2037,7 +2131,23 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f0200d5;
+    public static final int listChoiceBackgroundIndicator=0x7f0200de;
+    /**
+     * Animated Drawable to use for single choice indicators.
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int listChoiceIndicatorMultipleAnimated=0x7f0200df;
+    /**
+     * Animated Drawable to use for multiple choice indicators.
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int listChoiceIndicatorSingleAnimated=0x7f0200e0;
     /**
      * The list divider used in alert dialogs.
      * <p>May be a reference to another resource, in the form
@@ -2045,21 +2155,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f0200d6;
+    public static final int listDividerAlertDialog=0x7f0200e1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f0200d7;
+    public static final int listItemLayout=0x7f0200e2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f0200d8;
+    public static final int listLayout=0x7f0200e3;
     /**
      * Default menu-style ListView style.
      * <p>May be a reference to another resource, in the form
@@ -2067,14 +2177,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f0200d9;
+    public static final int listMenuViewStyle=0x7f0200e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f0200da;
+    public static final int listPopupWindowStyle=0x7f0200e5;
     /**
      * The preferred list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2083,7 +2193,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f0200db;
+    public static final int listPreferredItemHeight=0x7f0200e6;
     /**
      * A larger, more robust list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2092,7 +2202,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f0200dc;
+    public static final int listPreferredItemHeightLarge=0x7f0200e7;
     /**
      * A smaller, sleeker list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2101,7 +2211,16 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f0200dd;
+    public static final int listPreferredItemHeightSmall=0x7f0200e8;
+    /**
+     * The preferred padding along the end edge of list items.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int listPreferredItemPaddingEnd=0x7f0200e9;
     /**
      * The preferred padding along the left edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2110,7 +2229,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f0200de;
+    public static final int listPreferredItemPaddingLeft=0x7f0200ea;
     /**
      * The preferred padding along the right edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2119,7 +2238,16 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f0200df;
+    public static final int listPreferredItemPaddingRight=0x7f0200eb;
+    /**
+     * The preferred padding along the start edge of list items.
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int listPreferredItemPaddingStart=0x7f0200ec;
     /**
      * Specifies the drawable used for the application logo.
      * <p>May be a reference to another resource, in the form
@@ -2127,14 +2255,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int logo=0x7f0200e0;
+    public static final int logo=0x7f0200ed;
     /**
      * A content description string to describe the appearance of the
      * associated logo image.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int logoDescription=0x7f0200e1;
+    public static final int logoDescription=0x7f0200ee;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2142,7 +2270,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int maxButtonHeight=0x7f0200e2;
+    public static final int maxButtonHeight=0x7f0200ef;
     /**
      * When set to true, all children with a weight will be considered having
      * the minimum size of the largest child. If false, all children are
@@ -2150,21 +2278,29 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f0200e3;
+    public static final int measureWithLargestChild=0x7f0200f0;
+    /**
+     * Menu resource to inflate to be shown in the toolbar
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int menu=0x7f0200f1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int multiChoiceItemLayout=0x7f0200e4;
+    public static final int multiChoiceItemLayout=0x7f0200f2;
     /**
      * Text to set as the content description for the navigation button
      * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f0200e5;
+    public static final int navigationContentDescription=0x7f0200f3;
     /**
      * Icon drawable to use for the navigation button located at
      * the start of the toolbar.
@@ -2173,7 +2309,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f0200e6;
+    public static final int navigationIcon=0x7f0200f4;
     /**
      * The type of navigation to use.
      * <p>Must be one of the following constant values.</p>
@@ -2187,7 +2323,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f0200e7;
+    public static final int navigationMode=0x7f0200f5;
     /**
      * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
      * keyboard. The values should be kept in sync with KeyEvent
@@ -2205,13 +2341,13 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f0200e8;
+    public static final int numericModifiers=0x7f0200f6;
     /**
      * Whether the popup window should overlap its anchor view.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int overlapAnchor=0x7f0200e9;
+    public static final int overlapAnchor=0x7f0200f7;
     /**
      * Bottom padding to use when no buttons are present.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2220,7 +2356,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingBottomNoButtons=0x7f0200ea;
+    public static final int paddingBottomNoButtons=0x7f0200f8;
     /**
      * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2229,7 +2365,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingEnd=0x7f0200eb;
+    public static final int paddingEnd=0x7f0200f9;
     /**
      * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2238,7 +2374,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingStart=0x7f0200ec;
+    public static final int paddingStart=0x7f0200fa;
     /**
      * Top padding to use when no title is present.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2247,7 +2383,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingTopNoTitle=0x7f0200ed;
+    public static final int paddingTopNoTitle=0x7f0200fb;
     /**
      * The background of a panel when it is inset from the left and right edges of the screen.
      * <p>May be a reference to another resource, in the form
@@ -2255,7 +2391,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelBackground=0x7f0200ee;
+    public static final int panelBackground=0x7f0200fc;
     /**
      * Default Panel Menu style.
      * <p>May be a reference to another resource, in the form
@@ -2263,7 +2399,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelMenuListTheme=0x7f0200ef;
+    public static final int panelMenuListTheme=0x7f0200fd;
     /**
      * Default Panel Menu width.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2272,7 +2408,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int panelMenuListWidth=0x7f0200f0;
+    public static final int panelMenuListWidth=0x7f0200fe;
     /**
      * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
@@ -2280,7 +2416,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupMenuStyle=0x7f0200f1;
+    public static final int popupMenuStyle=0x7f0200ff;
     /**
      * Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.
@@ -2289,7 +2425,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupTheme=0x7f0200f2;
+    public static final int popupTheme=0x7f020100;
     /**
      * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
@@ -2297,13 +2433,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupWindowStyle=0x7f0200f3;
+    public static final int popupWindowStyle=0x7f020101;
     /**
      * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int preserveIconSpacing=0x7f0200f4;
+    public static final int preserveIconSpacing=0x7f020102;
     /**
      * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2312,7 +2448,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int progressBarPadding=0x7f0200f5;
+    public static final int progressBarPadding=0x7f020103;
     /**
      * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
@@ -2320,7 +2456,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarStyle=0x7f0200f6;
+    public static final int progressBarStyle=0x7f020104;
     /**
      * Background for the section containing the search query
      * <p>May be a reference to another resource, in the form
@@ -2328,13 +2464,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f0200f7;
+    public static final int queryBackground=0x7f020105;
     /**
      * An optional user-defined query hint string to be displayed in the empty query field.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f0200f8;
+    public static final int queryHint=0x7f020106;
     /**
      * Default RadioButton style.
      * <p>May be a reference to another resource, in the form
@@ -2342,7 +2478,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f0200f9;
+    public static final int radioButtonStyle=0x7f020107;
     /**
      * Default RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -2350,7 +2486,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f0200fa;
+    public static final int ratingBarStyle=0x7f020108;
     /**
      * Indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -2358,7 +2494,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f0200fb;
+    public static final int ratingBarStyleIndicator=0x7f020109;
     /**
      * Small indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
@@ -2366,7 +2502,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f0200fc;
+    public static final int ratingBarStyleSmall=0x7f02010a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2375,7 +2511,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f0200fd;
+    public static final int scopeUris=0x7f02010b;
     /**
      * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
@@ -2383,7 +2519,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f0200fe;
+    public static final int searchHintIcon=0x7f02010c;
     /**
      * Search icon
      * <p>May be a reference to another resource, in the form
@@ -2391,7 +2527,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f0200ff;
+    public static final int searchIcon=0x7f02010d;
     /**
      * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
@@ -2399,7 +2535,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f020100;
+    public static final int searchViewStyle=0x7f02010e;
     /**
      * Default SeekBar style.
      * <p>May be a reference to another resource, in the form
@@ -2407,7 +2543,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f020101;
+    public static final int seekBarStyle=0x7f02010f;
     /**
      * A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
@@ -2417,7 +2553,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f020102;
+    public static final int selectableItemBackground=0x7f020110;
     /**
      * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
@@ -2425,7 +2561,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f020103;
+    public static final int selectableItemBackgroundBorderless=0x7f020111;
     /**
      * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -2450,7 +2586,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f020104;
+    public static final int showAsAction=0x7f020112;
     /**
      * Setting for which dividers to show.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -2465,31 +2601,31 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f020105;
+    public static final int showDividers=0x7f020113;
     /**
      * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f020106;
+    public static final int showText=0x7f020114;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f020107;
+    public static final int showTitle=0x7f020115;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f020108;
+    public static final int singleChoiceItemLayout=0x7f020116;
     /**
      * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f020109;
+    public static final int spinBars=0x7f020117;
     /**
      * Default Spinner style.
      * <p>May be a reference to another resource, in the form
@@ -2497,7 +2633,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f02010a;
+    public static final int spinnerDropDownItemStyle=0x7f020118;
     /**
      * Default Spinner style.
      * <p>May be a reference to another resource, in the form
@@ -2505,13 +2641,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f02010b;
+    public static final int spinnerStyle=0x7f020119;
     /**
      * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f02010c;
+    public static final int splitTrack=0x7f02011a;
     /**
      * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
      * when running on older versions of the platform.
@@ -2520,13 +2656,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f02010d;
+    public static final int srcCompat=0x7f02011b;
     /**
      * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f02010e;
+    public static final int state_above_anchor=0x7f02011c;
     /**
      * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
@@ -2537,7 +2673,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f02010f;
+    public static final int statusBarBackground=0x7f02011d;
     /**
      * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
@@ -2545,7 +2681,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f020110;
+    public static final int subMenuArrow=0x7f02011e;
     /**
      * Background for the section containing the action (e.g. voice search)
      * <p>May be a reference to another resource, in the form
@@ -2553,27 +2689,27 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f020111;
+    public static final int submitBackground=0x7f02011f;
     /**
      * Specifies subtitle text used for navigationMode="normal"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f020112;
+    public static final int subtitle=0x7f020120;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f020113;
+    public static final int subtitleTextAppearance=0x7f020121;
     /**
      * A color to apply to the subtitle string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f020114;
+    public static final int subtitleTextColor=0x7f020122;
     /**
      * Specifies a style to use for subtitle text.
      * <p>May be a reference to another resource, in the form
@@ -2581,7 +2717,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f020115;
+    public static final int subtitleTextStyle=0x7f020123;
     /**
      * Layout for query suggestion rows
      * <p>May be a reference to another resource, in the form
@@ -2589,7 +2725,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f020116;
+    public static final int suggestionRowLayout=0x7f020124;
     /**
      * Minimum width for the switch component
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2598,7 +2734,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f020117;
+    public static final int switchMinWidth=0x7f020125;
     /**
      * Minimum space between the switch and caption text
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2607,7 +2743,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f020118;
+    public static final int switchPadding=0x7f020126;
     /**
      * Default style for the Switch widget.
      * <p>May be a reference to another resource, in the form
@@ -2615,7 +2751,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f020119;
+    public static final int switchStyle=0x7f020127;
     /**
      * TextAppearance style for text displayed on the switch thumb.
      * <p>May be a reference to another resource, in the form
@@ -2623,7 +2759,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f02011a;
+    public static final int switchTextAppearance=0x7f020128;
     /**
      * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
@@ -2633,7 +2769,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f02011b;
+    public static final int textAllCaps=0x7f020129;
     /**
      * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2641,7 +2777,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f02011c;
+    public static final int textAppearanceLargePopupMenu=0x7f02012a;
     /**
      * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
@@ -2649,7 +2785,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f02011d;
+    public static final int textAppearanceListItem=0x7f02012b;
     /**
      * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
@@ -2657,7 +2793,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f02011e;
+    public static final int textAppearanceListItemSecondary=0x7f02012c;
     /**
      * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
@@ -2665,7 +2801,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f02011f;
+    public static final int textAppearanceListItemSmall=0x7f02012d;
     /**
      * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2673,7 +2809,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f020120;
+    public static final int textAppearancePopupMenuHeader=0x7f02012e;
     /**
      * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
@@ -2681,7 +2817,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f020121;
+    public static final int textAppearanceSearchResultSubtitle=0x7f02012f;
     /**
      * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
@@ -2689,7 +2825,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f020122;
+    public static final int textAppearanceSearchResultTitle=0x7f020130;
     /**
      * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
@@ -2697,7 +2833,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f020123;
+    public static final int textAppearanceSmallPopupMenu=0x7f020131;
     /**
      * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
@@ -2708,7 +2844,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorAlertDialogListItem=0x7f020124;
+    public static final int textColorAlertDialogListItem=0x7f020132;
     /**
      * Text color for urls in search suggestions, used by things like global search
      * <p>May be a reference to another resource, in the form
@@ -2719,7 +2855,17 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f020125;
+    public static final int textColorSearchUrl=0x7f020133;
+    /**
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int textLocale=0x7f020134;
     /**
      * Deprecated.
      * <p>May be a reference to another resource, in the form
@@ -2727,7 +2873,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f020126;
+    public static final int theme=0x7f020135;
     /**
      * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2736,7 +2882,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f020127;
+    public static final int thickness=0x7f020136;
     /**
      * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2745,14 +2891,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f020128;
+    public static final int thumbTextPadding=0x7f020137;
     /**
      * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f020129;
+    public static final int thumbTint=0x7f020138;
     /**
      * Blending mode used to apply the thumb tint.
      * <p>Must be one of the following constant values.</p>
@@ -2774,7 +2920,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f02012a;
+    public static final int thumbTintMode=0x7f020139;
     /**
      * Drawable displayed at each progress position on a seekbar.
      * <p>May be a reference to another resource, in the form
@@ -2782,14 +2928,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f02012b;
+    public static final int tickMark=0x7f02013a;
     /**
      * Tint to apply to the tick mark drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f02012c;
+    public static final int tickMarkTint=0x7f02013b;
     /**
      * Blending mode used to apply the tick mark tint.
      * <p>Must be one of the following constant values.</p>
@@ -2811,14 +2957,14 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f02012d;
+    public static final int tickMarkTintMode=0x7f02013c;
     /**
      * Tint to apply to the image source.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f02012e;
+    public static final int tint=0x7f02013d;
     /**
      * Blending mode used to apply the image source tint.
      * <p>Must be one of the following constant values.</p>
@@ -2840,12 +2986,12 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f02012f;
+    public static final int tintMode=0x7f02013e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f020130;
+    public static final int title=0x7f02013f;
     /**
      * Specifies extra space on the left, start, right and end sides
      * of the toolbar's title. Margin values should be positive.
@@ -2855,7 +3001,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f020131;
+    public static final int titleMargin=0x7f020140;
     /**
      * Specifies extra space on the bottom side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2866,7 +3012,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f020132;
+    public static final int titleMarginBottom=0x7f020141;
     /**
      * Specifies extra space on the end side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2877,7 +3023,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f020133;
+    public static final int titleMarginEnd=0x7f020142;
     /**
      * Specifies extra space on the start side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2888,7 +3034,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f020134;
+    public static final int titleMarginStart=0x7f020143;
     /**
      * Specifies extra space on the top side of the toolbar's title.
      * If both this attribute and titleMargin are specified, then this
@@ -2899,7 +3045,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f020135;
+    public static final int titleMarginTop=0x7f020144;
     /**
      * {@deprecated Use titleMargin}
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2909,21 +3055,21 @@ public final class R {
      * mm (millimeters).
      */
     @Deprecated
-    public static final int titleMargins=0x7f020136;
+    public static final int titleMargins=0x7f020145;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f020137;
+    public static final int titleTextAppearance=0x7f020146;
     /**
      * A color to apply to the title string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f020138;
+    public static final int titleTextColor=0x7f020147;
     /**
      * Specifies a style to use for title text.
      * <p>May be a reference to another resource, in the form
@@ -2931,7 +3077,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f020139;
+    public static final int titleTextStyle=0x7f020148;
     /**
      * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
@@ -2939,7 +3085,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f02013a;
+    public static final int toolbarNavigationButtonStyle=0x7f020149;
     /**
      * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
@@ -2947,7 +3093,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f02013b;
+    public static final int toolbarStyle=0x7f02014a;
     /**
      * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
@@ -2958,7 +3104,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f02013c;
+    public static final int tooltipForegroundColor=0x7f02014b;
     /**
      * Background to use for tooltips
      * <p>May be a reference to another resource, in the form
@@ -2966,13 +3112,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f02013d;
+    public static final int tooltipFrameBackground=0x7f02014c;
     /**
      * The tooltip text associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f02013e;
+    public static final int tooltipText=0x7f02014d;
     /**
      * Drawable to use as the "track" that the switch thumb slides within.
      * <p>May be a reference to another resource, in the form
@@ -2980,14 +3126,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f02013f;
+    public static final int track=0x7f02014e;
     /**
      * Tint to apply to the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f020140;
+    public static final int trackTint=0x7f02014f;
     /**
      * Blending mode used to apply the track tint.
      * <p>Must be one of the following constant values.</p>
@@ -3009,18 +3155,18 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f020141;
+    public static final int trackTintMode=0x7f020150;
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f020142;
+    public static final int ttcIndex=0x7f020151;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f020143;
+    public static final int viewInflaterClass=0x7f020152;
     /**
      * Voice button icon
      * <p>May be a reference to another resource, in the form
@@ -3028,14 +3174,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f020144;
+    public static final int voiceIcon=0x7f020153;
     /**
      * Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f020145;
+    public static final int windowActionBar=0x7f020154;
     /**
      * Flag indicating whether this window's Action Bar should overlay
      * application content. Does nothing if the window would not
@@ -3043,14 +3189,14 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f020146;
+    public static final int windowActionBarOverlay=0x7f020155;
     /**
      * Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f020147;
+    public static final int windowActionModeOverlay=0x7f020156;
     /**
      * A fixed height for the window along the major axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -3065,7 +3211,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f020148;
+    public static final int windowFixedHeightMajor=0x7f020157;
     /**
      * A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -3080,7 +3226,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f020149;
+    public static final int windowFixedHeightMinor=0x7f020158;
     /**
      * A fixed width for the window along the major axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -3095,7 +3241,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f02014a;
+    public static final int windowFixedWidthMajor=0x7f020159;
     /**
      * A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -3110,7 +3256,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f02014b;
+    public static final int windowFixedWidthMinor=0x7f02015a;
     /**
      * The minimum width the window is allowed to be, along the major
      * axis of the screen.  That is, when in landscape.  Can be either
@@ -3126,7 +3272,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f02014c;
+    public static final int windowMinWidthMajor=0x7f02015b;
     /**
      * The minimum width the window is allowed to be, along the minor
      * axis of the screen.  That is, when in portrait.  Can be either
@@ -3142,13 +3288,13 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f02014d;
+    public static final int windowMinWidthMinor=0x7f02015c;
     /**
      * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f02014e;
+    public static final int windowNoTitle=0x7f02015d;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f030000;
@@ -3235,28 +3381,29 @@ public final class R {
     public static final int material_grey_900=0x7f04004c;
     public static final int notification_action_color_filter=0x7f04004d;
     public static final int notification_icon_bg_color=0x7f04004e;
-    public static final int primary_dark_material_dark=0x7f04004f;
-    public static final int primary_dark_material_light=0x7f040050;
-    public static final int primary_material_dark=0x7f040051;
-    public static final int primary_material_light=0x7f040052;
-    public static final int primary_text_default_material_dark=0x7f040053;
-    public static final int primary_text_default_material_light=0x7f040054;
-    public static final int primary_text_disabled_material_dark=0x7f040055;
-    public static final int primary_text_disabled_material_light=0x7f040056;
-    public static final int ripple_material_dark=0x7f040057;
-    public static final int ripple_material_light=0x7f040058;
-    public static final int secondary_text_default_material_dark=0x7f040059;
-    public static final int secondary_text_default_material_light=0x7f04005a;
-    public static final int secondary_text_disabled_material_dark=0x7f04005b;
-    public static final int secondary_text_disabled_material_light=0x7f04005c;
-    public static final int switch_thumb_disabled_material_dark=0x7f04005d;
-    public static final int switch_thumb_disabled_material_light=0x7f04005e;
-    public static final int switch_thumb_material_dark=0x7f04005f;
-    public static final int switch_thumb_material_light=0x7f040060;
-    public static final int switch_thumb_normal_material_dark=0x7f040061;
-    public static final int switch_thumb_normal_material_light=0x7f040062;
-    public static final int tooltip_background_dark=0x7f040063;
-    public static final int tooltip_background_light=0x7f040064;
+    public static final int notification_material_background_media_default_color=0x7f04004f;
+    public static final int primary_dark_material_dark=0x7f040050;
+    public static final int primary_dark_material_light=0x7f040051;
+    public static final int primary_material_dark=0x7f040052;
+    public static final int primary_material_light=0x7f040053;
+    public static final int primary_text_default_material_dark=0x7f040054;
+    public static final int primary_text_default_material_light=0x7f040055;
+    public static final int primary_text_disabled_material_dark=0x7f040056;
+    public static final int primary_text_disabled_material_light=0x7f040057;
+    public static final int ripple_material_dark=0x7f040058;
+    public static final int ripple_material_light=0x7f040059;
+    public static final int secondary_text_default_material_dark=0x7f04005a;
+    public static final int secondary_text_default_material_light=0x7f04005b;
+    public static final int secondary_text_disabled_material_dark=0x7f04005c;
+    public static final int secondary_text_disabled_material_light=0x7f04005d;
+    public static final int switch_thumb_disabled_material_dark=0x7f04005e;
+    public static final int switch_thumb_disabled_material_light=0x7f04005f;
+    public static final int switch_thumb_material_dark=0x7f040060;
+    public static final int switch_thumb_material_light=0x7f040061;
+    public static final int switch_thumb_normal_material_dark=0x7f040062;
+    public static final int switch_thumb_normal_material_light=0x7f040063;
+    public static final int tooltip_background_dark=0x7f040064;
+    public static final int tooltip_background_light=0x7f040065;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f050000;
@@ -3307,195 +3454,212 @@ public final class R {
     public static final int abc_edit_text_inset_horizontal_material=0x7f05002d;
     public static final int abc_edit_text_inset_top_material=0x7f05002e;
     public static final int abc_floating_window_z=0x7f05002f;
-    public static final int abc_list_item_padding_horizontal_material=0x7f050030;
-    public static final int abc_panel_menu_list_width=0x7f050031;
-    public static final int abc_progress_bar_height_material=0x7f050032;
-    public static final int abc_search_view_preferred_height=0x7f050033;
-    public static final int abc_search_view_preferred_width=0x7f050034;
-    public static final int abc_seekbar_track_background_height_material=0x7f050035;
-    public static final int abc_seekbar_track_progress_height_material=0x7f050036;
-    public static final int abc_select_dialog_padding_start_material=0x7f050037;
-    public static final int abc_switch_padding=0x7f050038;
-    public static final int abc_text_size_body_1_material=0x7f050039;
-    public static final int abc_text_size_body_2_material=0x7f05003a;
-    public static final int abc_text_size_button_material=0x7f05003b;
-    public static final int abc_text_size_caption_material=0x7f05003c;
-    public static final int abc_text_size_display_1_material=0x7f05003d;
-    public static final int abc_text_size_display_2_material=0x7f05003e;
-    public static final int abc_text_size_display_3_material=0x7f05003f;
-    public static final int abc_text_size_display_4_material=0x7f050040;
-    public static final int abc_text_size_headline_material=0x7f050041;
-    public static final int abc_text_size_large_material=0x7f050042;
-    public static final int abc_text_size_medium_material=0x7f050043;
-    public static final int abc_text_size_menu_header_material=0x7f050044;
-    public static final int abc_text_size_menu_material=0x7f050045;
-    public static final int abc_text_size_small_material=0x7f050046;
-    public static final int abc_text_size_subhead_material=0x7f050047;
-    public static final int abc_text_size_subtitle_material_toolbar=0x7f050048;
-    public static final int abc_text_size_title_material=0x7f050049;
-    public static final int abc_text_size_title_material_toolbar=0x7f05004a;
-    public static final int compat_button_inset_horizontal_material=0x7f05004b;
-    public static final int compat_button_inset_vertical_material=0x7f05004c;
-    public static final int compat_button_padding_horizontal_material=0x7f05004d;
-    public static final int compat_button_padding_vertical_material=0x7f05004e;
-    public static final int compat_control_corner_material=0x7f05004f;
-    public static final int compat_notification_large_icon_max_height=0x7f050050;
-    public static final int compat_notification_large_icon_max_width=0x7f050051;
-    public static final int disabled_alpha_material_dark=0x7f050052;
-    public static final int disabled_alpha_material_light=0x7f050053;
-    public static final int highlight_alpha_material_colored=0x7f050054;
-    public static final int highlight_alpha_material_dark=0x7f050055;
-    public static final int highlight_alpha_material_light=0x7f050056;
-    public static final int hint_alpha_material_dark=0x7f050057;
-    public static final int hint_alpha_material_light=0x7f050058;
-    public static final int hint_pressed_alpha_material_dark=0x7f050059;
-    public static final int hint_pressed_alpha_material_light=0x7f05005a;
-    public static final int notification_action_icon_size=0x7f05005b;
-    public static final int notification_action_text_size=0x7f05005c;
-    public static final int notification_big_circle_margin=0x7f05005d;
-    public static final int notification_content_margin_start=0x7f05005e;
-    public static final int notification_large_icon_height=0x7f05005f;
-    public static final int notification_large_icon_width=0x7f050060;
-    public static final int notification_main_column_padding_top=0x7f050061;
-    public static final int notification_media_narrow_margin=0x7f050062;
-    public static final int notification_right_icon_size=0x7f050063;
-    public static final int notification_right_side_padding_top=0x7f050064;
-    public static final int notification_small_icon_background_padding=0x7f050065;
-    public static final int notification_small_icon_size_as_large=0x7f050066;
-    public static final int notification_subtext_size=0x7f050067;
-    public static final int notification_top_pad=0x7f050068;
-    public static final int notification_top_pad_large_text=0x7f050069;
-    public static final int tooltip_corner_radius=0x7f05006a;
-    public static final int tooltip_horizontal_padding=0x7f05006b;
-    public static final int tooltip_margin=0x7f05006c;
-    public static final int tooltip_precise_anchor_extra_offset=0x7f05006d;
-    public static final int tooltip_precise_anchor_threshold=0x7f05006e;
-    public static final int tooltip_vertical_padding=0x7f05006f;
-    public static final int tooltip_y_offset_non_touch=0x7f050070;
-    public static final int tooltip_y_offset_touch=0x7f050071;
+    public static final int abc_list_item_height_large_material=0x7f050030;
+    public static final int abc_list_item_height_material=0x7f050031;
+    public static final int abc_list_item_height_small_material=0x7f050032;
+    public static final int abc_list_item_padding_horizontal_material=0x7f050033;
+    public static final int abc_panel_menu_list_width=0x7f050034;
+    public static final int abc_progress_bar_height_material=0x7f050035;
+    public static final int abc_search_view_preferred_height=0x7f050036;
+    public static final int abc_search_view_preferred_width=0x7f050037;
+    public static final int abc_seekbar_track_background_height_material=0x7f050038;
+    public static final int abc_seekbar_track_progress_height_material=0x7f050039;
+    public static final int abc_select_dialog_padding_start_material=0x7f05003a;
+    public static final int abc_switch_padding=0x7f05003b;
+    public static final int abc_text_size_body_1_material=0x7f05003c;
+    public static final int abc_text_size_body_2_material=0x7f05003d;
+    public static final int abc_text_size_button_material=0x7f05003e;
+    public static final int abc_text_size_caption_material=0x7f05003f;
+    public static final int abc_text_size_display_1_material=0x7f050040;
+    public static final int abc_text_size_display_2_material=0x7f050041;
+    public static final int abc_text_size_display_3_material=0x7f050042;
+    public static final int abc_text_size_display_4_material=0x7f050043;
+    public static final int abc_text_size_headline_material=0x7f050044;
+    public static final int abc_text_size_large_material=0x7f050045;
+    public static final int abc_text_size_medium_material=0x7f050046;
+    public static final int abc_text_size_menu_header_material=0x7f050047;
+    public static final int abc_text_size_menu_material=0x7f050048;
+    public static final int abc_text_size_small_material=0x7f050049;
+    public static final int abc_text_size_subhead_material=0x7f05004a;
+    public static final int abc_text_size_subtitle_material_toolbar=0x7f05004b;
+    public static final int abc_text_size_title_material=0x7f05004c;
+    public static final int abc_text_size_title_material_toolbar=0x7f05004d;
+    public static final int compat_button_inset_horizontal_material=0x7f05004e;
+    public static final int compat_button_inset_vertical_material=0x7f05004f;
+    public static final int compat_button_padding_horizontal_material=0x7f050050;
+    public static final int compat_button_padding_vertical_material=0x7f050051;
+    public static final int compat_control_corner_material=0x7f050052;
+    public static final int compat_notification_large_icon_max_height=0x7f050053;
+    public static final int compat_notification_large_icon_max_width=0x7f050054;
+    public static final int disabled_alpha_material_dark=0x7f050055;
+    public static final int disabled_alpha_material_light=0x7f050056;
+    public static final int highlight_alpha_material_colored=0x7f050057;
+    public static final int highlight_alpha_material_dark=0x7f050058;
+    public static final int highlight_alpha_material_light=0x7f050059;
+    public static final int hint_alpha_material_dark=0x7f05005a;
+    public static final int hint_alpha_material_light=0x7f05005b;
+    public static final int hint_pressed_alpha_material_dark=0x7f05005c;
+    public static final int hint_pressed_alpha_material_light=0x7f05005d;
+    public static final int notification_action_icon_size=0x7f05005e;
+    public static final int notification_action_text_size=0x7f05005f;
+    public static final int notification_big_circle_margin=0x7f050060;
+    public static final int notification_content_margin_start=0x7f050061;
+    public static final int notification_large_icon_height=0x7f050062;
+    public static final int notification_large_icon_width=0x7f050063;
+    public static final int notification_main_column_padding_top=0x7f050064;
+    public static final int notification_media_narrow_margin=0x7f050065;
+    public static final int notification_right_icon_size=0x7f050066;
+    public static final int notification_right_side_padding_top=0x7f050067;
+    public static final int notification_small_icon_background_padding=0x7f050068;
+    public static final int notification_small_icon_size_as_large=0x7f050069;
+    public static final int notification_subtext_size=0x7f05006a;
+    public static final int notification_top_pad=0x7f05006b;
+    public static final int notification_top_pad_large_text=0x7f05006c;
+    public static final int subtitle_corner_radius=0x7f05006d;
+    public static final int subtitle_outline_width=0x7f05006e;
+    public static final int subtitle_shadow_offset=0x7f05006f;
+    public static final int subtitle_shadow_radius=0x7f050070;
+    public static final int tooltip_corner_radius=0x7f050071;
+    public static final int tooltip_horizontal_padding=0x7f050072;
+    public static final int tooltip_margin=0x7f050073;
+    public static final int tooltip_precise_anchor_extra_offset=0x7f050074;
+    public static final int tooltip_precise_anchor_threshold=0x7f050075;
+    public static final int tooltip_vertical_padding=0x7f050076;
+    public static final int tooltip_y_offset_non_touch=0x7f050077;
+    public static final int tooltip_y_offset_touch=0x7f050078;
   }
   public static final class drawable {
     public static final int abc_ab_share_pack_mtrl_alpha=0x7f060001;
     public static final int abc_action_bar_item_background_material=0x7f060002;
     public static final int abc_btn_borderless_material=0x7f060003;
     public static final int abc_btn_check_material=0x7f060004;
-    public static final int abc_btn_check_to_on_mtrl_000=0x7f060005;
-    public static final int abc_btn_check_to_on_mtrl_015=0x7f060006;
-    public static final int abc_btn_colored_material=0x7f060007;
-    public static final int abc_btn_default_mtrl_shape=0x7f060008;
-    public static final int abc_btn_radio_material=0x7f060009;
-    public static final int abc_btn_radio_to_on_mtrl_000=0x7f06000a;
-    public static final int abc_btn_radio_to_on_mtrl_015=0x7f06000b;
-    public static final int abc_btn_switch_to_on_mtrl_00001=0x7f06000c;
-    public static final int abc_btn_switch_to_on_mtrl_00012=0x7f06000d;
-    public static final int abc_cab_background_internal_bg=0x7f06000e;
-    public static final int abc_cab_background_top_material=0x7f06000f;
-    public static final int abc_cab_background_top_mtrl_alpha=0x7f060010;
-    public static final int abc_control_background_material=0x7f060011;
-    public static final int abc_dialog_material_background=0x7f060012;
-    public static final int abc_edit_text_material=0x7f060013;
-    public static final int abc_ic_ab_back_material=0x7f060014;
-    public static final int abc_ic_arrow_drop_right_black_24dp=0x7f060015;
-    public static final int abc_ic_clear_material=0x7f060016;
-    public static final int abc_ic_commit_search_api_mtrl_alpha=0x7f060017;
-    public static final int abc_ic_go_search_api_material=0x7f060018;
-    public static final int abc_ic_menu_copy_mtrl_am_alpha=0x7f060019;
-    public static final int abc_ic_menu_cut_mtrl_alpha=0x7f06001a;
-    public static final int abc_ic_menu_overflow_material=0x7f06001b;
-    public static final int abc_ic_menu_paste_mtrl_am_alpha=0x7f06001c;
-    public static final int abc_ic_menu_selectall_mtrl_alpha=0x7f06001d;
-    public static final int abc_ic_menu_share_mtrl_alpha=0x7f06001e;
-    public static final int abc_ic_search_api_material=0x7f06001f;
-    public static final int abc_ic_star_black_16dp=0x7f060020;
-    public static final int abc_ic_star_black_36dp=0x7f060021;
-    public static final int abc_ic_star_black_48dp=0x7f060022;
-    public static final int abc_ic_star_half_black_16dp=0x7f060023;
-    public static final int abc_ic_star_half_black_36dp=0x7f060024;
-    public static final int abc_ic_star_half_black_48dp=0x7f060025;
-    public static final int abc_ic_voice_search_api_material=0x7f060026;
-    public static final int abc_item_background_holo_dark=0x7f060027;
-    public static final int abc_item_background_holo_light=0x7f060028;
-    public static final int abc_list_divider_material=0x7f060029;
-    public static final int abc_list_divider_mtrl_alpha=0x7f06002a;
-    public static final int abc_list_focused_holo=0x7f06002b;
-    public static final int abc_list_longpressed_holo=0x7f06002c;
-    public static final int abc_list_pressed_holo_dark=0x7f06002d;
-    public static final int abc_list_pressed_holo_light=0x7f06002e;
-    public static final int abc_list_selector_background_transition_holo_dark=0x7f06002f;
-    public static final int abc_list_selector_background_transition_holo_light=0x7f060030;
-    public static final int abc_list_selector_disabled_holo_dark=0x7f060031;
-    public static final int abc_list_selector_disabled_holo_light=0x7f060032;
-    public static final int abc_list_selector_holo_dark=0x7f060033;
-    public static final int abc_list_selector_holo_light=0x7f060034;
-    public static final int abc_menu_hardkey_panel_mtrl_mult=0x7f060035;
-    public static final int abc_popup_background_mtrl_mult=0x7f060036;
-    public static final int abc_ratingbar_indicator_material=0x7f060037;
-    public static final int abc_ratingbar_material=0x7f060038;
-    public static final int abc_ratingbar_small_material=0x7f060039;
-    public static final int abc_scrubber_control_off_mtrl_alpha=0x7f06003a;
-    public static final int abc_scrubber_control_to_pressed_mtrl_000=0x7f06003b;
-    public static final int abc_scrubber_control_to_pressed_mtrl_005=0x7f06003c;
-    public static final int abc_scrubber_primary_mtrl_alpha=0x7f06003d;
-    public static final int abc_scrubber_track_mtrl_alpha=0x7f06003e;
-    public static final int abc_seekbar_thumb_material=0x7f06003f;
-    public static final int abc_seekbar_tick_mark_material=0x7f060040;
-    public static final int abc_seekbar_track_material=0x7f060041;
-    public static final int abc_spinner_mtrl_am_alpha=0x7f060042;
-    public static final int abc_spinner_textfield_background_material=0x7f060043;
-    public static final int abc_switch_thumb_material=0x7f060044;
-    public static final int abc_switch_track_mtrl_alpha=0x7f060045;
-    public static final int abc_tab_indicator_material=0x7f060046;
-    public static final int abc_tab_indicator_mtrl_alpha=0x7f060047;
-    public static final int abc_text_cursor_material=0x7f060048;
-    public static final int abc_text_select_handle_left_mtrl_dark=0x7f060049;
-    public static final int abc_text_select_handle_left_mtrl_light=0x7f06004a;
-    public static final int abc_text_select_handle_middle_mtrl_dark=0x7f06004b;
-    public static final int abc_text_select_handle_middle_mtrl_light=0x7f06004c;
-    public static final int abc_text_select_handle_right_mtrl_dark=0x7f06004d;
-    public static final int abc_text_select_handle_right_mtrl_light=0x7f06004e;
-    public static final int abc_textfield_activated_mtrl_alpha=0x7f06004f;
-    public static final int abc_textfield_default_mtrl_alpha=0x7f060050;
-    public static final int abc_textfield_search_activated_mtrl_alpha=0x7f060051;
-    public static final int abc_textfield_search_default_mtrl_alpha=0x7f060052;
-    public static final int abc_textfield_search_material=0x7f060053;
-    public static final int abc_vector_test=0x7f060054;
-    public static final int common_full_open_on_phone=0x7f060055;
-    public static final int common_google_signin_btn_icon_dark=0x7f060056;
-    public static final int common_google_signin_btn_icon_dark_focused=0x7f060057;
-    public static final int common_google_signin_btn_icon_dark_normal=0x7f060058;
-    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f060059;
-    public static final int common_google_signin_btn_icon_disabled=0x7f06005a;
-    public static final int common_google_signin_btn_icon_light=0x7f06005b;
-    public static final int common_google_signin_btn_icon_light_focused=0x7f06005c;
-    public static final int common_google_signin_btn_icon_light_normal=0x7f06005d;
-    public static final int common_google_signin_btn_icon_light_normal_background=0x7f06005e;
-    public static final int common_google_signin_btn_text_dark=0x7f06005f;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f060060;
-    public static final int common_google_signin_btn_text_dark_normal=0x7f060061;
-    public static final int common_google_signin_btn_text_dark_normal_background=0x7f060062;
-    public static final int common_google_signin_btn_text_disabled=0x7f060063;
-    public static final int common_google_signin_btn_text_light=0x7f060064;
-    public static final int common_google_signin_btn_text_light_focused=0x7f060065;
-    public static final int common_google_signin_btn_text_light_normal=0x7f060066;
-    public static final int common_google_signin_btn_text_light_normal_background=0x7f060067;
-    public static final int googleg_disabled_color_18=0x7f060068;
-    public static final int googleg_standard_color_18=0x7f060069;
-    public static final int ic_launcher_background=0x7f06006a;
-    public static final int ic_launcher_foreground=0x7f06006b;
-    public static final int notification_action_background=0x7f06006c;
-    public static final int notification_bg=0x7f06006d;
-    public static final int notification_bg_low=0x7f06006e;
-    public static final int notification_bg_low_normal=0x7f06006f;
-    public static final int notification_bg_low_pressed=0x7f060070;
-    public static final int notification_bg_normal=0x7f060071;
-    public static final int notification_bg_normal_pressed=0x7f060072;
-    public static final int notification_icon_background=0x7f060073;
-    public static final int notification_template_icon_bg=0x7f060074;
-    public static final int notification_template_icon_low_bg=0x7f060075;
-    public static final int notification_tile_bg=0x7f060076;
-    public static final int notify_panel_notification_icon_bg=0x7f060077;
-    public static final int tooltip_frame_dark=0x7f060078;
-    public static final int tooltip_frame_light=0x7f060079;
+    public static final int abc_btn_check_material_anim=0x7f060005;
+    public static final int abc_btn_check_to_on_mtrl_000=0x7f060006;
+    public static final int abc_btn_check_to_on_mtrl_015=0x7f060007;
+    public static final int abc_btn_colored_material=0x7f060008;
+    public static final int abc_btn_default_mtrl_shape=0x7f060009;
+    public static final int abc_btn_radio_material=0x7f06000a;
+    public static final int abc_btn_radio_material_anim=0x7f06000b;
+    public static final int abc_btn_radio_to_on_mtrl_000=0x7f06000c;
+    public static final int abc_btn_radio_to_on_mtrl_015=0x7f06000d;
+    public static final int abc_btn_switch_to_on_mtrl_00001=0x7f06000e;
+    public static final int abc_btn_switch_to_on_mtrl_00012=0x7f06000f;
+    public static final int abc_cab_background_internal_bg=0x7f060010;
+    public static final int abc_cab_background_top_material=0x7f060011;
+    public static final int abc_cab_background_top_mtrl_alpha=0x7f060012;
+    public static final int abc_control_background_material=0x7f060013;
+    public static final int abc_dialog_material_background=0x7f060014;
+    public static final int abc_edit_text_material=0x7f060015;
+    public static final int abc_ic_ab_back_material=0x7f060016;
+    public static final int abc_ic_arrow_drop_right_black_24dp=0x7f060017;
+    public static final int abc_ic_clear_material=0x7f060018;
+    public static final int abc_ic_commit_search_api_mtrl_alpha=0x7f060019;
+    public static final int abc_ic_go_search_api_material=0x7f06001a;
+    public static final int abc_ic_menu_copy_mtrl_am_alpha=0x7f06001b;
+    public static final int abc_ic_menu_cut_mtrl_alpha=0x7f06001c;
+    public static final int abc_ic_menu_overflow_material=0x7f06001d;
+    public static final int abc_ic_menu_paste_mtrl_am_alpha=0x7f06001e;
+    public static final int abc_ic_menu_selectall_mtrl_alpha=0x7f06001f;
+    public static final int abc_ic_menu_share_mtrl_alpha=0x7f060020;
+    public static final int abc_ic_search_api_material=0x7f060021;
+    public static final int abc_ic_star_black_16dp=0x7f060022;
+    public static final int abc_ic_star_black_36dp=0x7f060023;
+    public static final int abc_ic_star_black_48dp=0x7f060024;
+    public static final int abc_ic_star_half_black_16dp=0x7f060025;
+    public static final int abc_ic_star_half_black_36dp=0x7f060026;
+    public static final int abc_ic_star_half_black_48dp=0x7f060027;
+    public static final int abc_ic_voice_search_api_material=0x7f060028;
+    public static final int abc_item_background_holo_dark=0x7f060029;
+    public static final int abc_item_background_holo_light=0x7f06002a;
+    public static final int abc_list_divider_material=0x7f06002b;
+    public static final int abc_list_divider_mtrl_alpha=0x7f06002c;
+    public static final int abc_list_focused_holo=0x7f06002d;
+    public static final int abc_list_longpressed_holo=0x7f06002e;
+    public static final int abc_list_pressed_holo_dark=0x7f06002f;
+    public static final int abc_list_pressed_holo_light=0x7f060030;
+    public static final int abc_list_selector_background_transition_holo_dark=0x7f060031;
+    public static final int abc_list_selector_background_transition_holo_light=0x7f060032;
+    public static final int abc_list_selector_disabled_holo_dark=0x7f060033;
+    public static final int abc_list_selector_disabled_holo_light=0x7f060034;
+    public static final int abc_list_selector_holo_dark=0x7f060035;
+    public static final int abc_list_selector_holo_light=0x7f060036;
+    public static final int abc_menu_hardkey_panel_mtrl_mult=0x7f060037;
+    public static final int abc_popup_background_mtrl_mult=0x7f060038;
+    public static final int abc_ratingbar_indicator_material=0x7f060039;
+    public static final int abc_ratingbar_material=0x7f06003a;
+    public static final int abc_ratingbar_small_material=0x7f06003b;
+    public static final int abc_scrubber_control_off_mtrl_alpha=0x7f06003c;
+    public static final int abc_scrubber_control_to_pressed_mtrl_000=0x7f06003d;
+    public static final int abc_scrubber_control_to_pressed_mtrl_005=0x7f06003e;
+    public static final int abc_scrubber_primary_mtrl_alpha=0x7f06003f;
+    public static final int abc_scrubber_track_mtrl_alpha=0x7f060040;
+    public static final int abc_seekbar_thumb_material=0x7f060041;
+    public static final int abc_seekbar_tick_mark_material=0x7f060042;
+    public static final int abc_seekbar_track_material=0x7f060043;
+    public static final int abc_spinner_mtrl_am_alpha=0x7f060044;
+    public static final int abc_spinner_textfield_background_material=0x7f060045;
+    public static final int abc_switch_thumb_material=0x7f060046;
+    public static final int abc_switch_track_mtrl_alpha=0x7f060047;
+    public static final int abc_tab_indicator_material=0x7f060048;
+    public static final int abc_tab_indicator_mtrl_alpha=0x7f060049;
+    public static final int abc_text_cursor_material=0x7f06004a;
+    public static final int abc_text_select_handle_left_mtrl_dark=0x7f06004b;
+    public static final int abc_text_select_handle_left_mtrl_light=0x7f06004c;
+    public static final int abc_text_select_handle_middle_mtrl_dark=0x7f06004d;
+    public static final int abc_text_select_handle_middle_mtrl_light=0x7f06004e;
+    public static final int abc_text_select_handle_right_mtrl_dark=0x7f06004f;
+    public static final int abc_text_select_handle_right_mtrl_light=0x7f060050;
+    public static final int abc_textfield_activated_mtrl_alpha=0x7f060051;
+    public static final int abc_textfield_default_mtrl_alpha=0x7f060052;
+    public static final int abc_textfield_search_activated_mtrl_alpha=0x7f060053;
+    public static final int abc_textfield_search_default_mtrl_alpha=0x7f060054;
+    public static final int abc_textfield_search_material=0x7f060055;
+    public static final int abc_vector_test=0x7f060056;
+    public static final int btn_checkbox_checked_mtrl=0x7f060057;
+    public static final int btn_checkbox_checked_to_unchecked_mtrl_animation=0x7f060058;
+    public static final int btn_checkbox_unchecked_mtrl=0x7f060059;
+    public static final int btn_checkbox_unchecked_to_checked_mtrl_animation=0x7f06005a;
+    public static final int btn_radio_off_mtrl=0x7f06005b;
+    public static final int btn_radio_off_to_on_mtrl_animation=0x7f06005c;
+    public static final int btn_radio_on_mtrl=0x7f06005d;
+    public static final int btn_radio_on_to_off_mtrl_animation=0x7f06005e;
+    public static final int common_full_open_on_phone=0x7f06005f;
+    public static final int common_google_signin_btn_icon_dark=0x7f060060;
+    public static final int common_google_signin_btn_icon_dark_focused=0x7f060061;
+    public static final int common_google_signin_btn_icon_dark_normal=0x7f060062;
+    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f060063;
+    public static final int common_google_signin_btn_icon_disabled=0x7f060064;
+    public static final int common_google_signin_btn_icon_light=0x7f060065;
+    public static final int common_google_signin_btn_icon_light_focused=0x7f060066;
+    public static final int common_google_signin_btn_icon_light_normal=0x7f060067;
+    public static final int common_google_signin_btn_icon_light_normal_background=0x7f060068;
+    public static final int common_google_signin_btn_text_dark=0x7f060069;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f06006a;
+    public static final int common_google_signin_btn_text_dark_normal=0x7f06006b;
+    public static final int common_google_signin_btn_text_dark_normal_background=0x7f06006c;
+    public static final int common_google_signin_btn_text_disabled=0x7f06006d;
+    public static final int common_google_signin_btn_text_light=0x7f06006e;
+    public static final int common_google_signin_btn_text_light_focused=0x7f06006f;
+    public static final int common_google_signin_btn_text_light_normal=0x7f060070;
+    public static final int common_google_signin_btn_text_light_normal_background=0x7f060071;
+    public static final int googleg_disabled_color_18=0x7f060072;
+    public static final int googleg_standard_color_18=0x7f060073;
+    public static final int ic_launcher_background=0x7f060074;
+    public static final int ic_launcher_foreground=0x7f060075;
+    public static final int notification_action_background=0x7f060076;
+    public static final int notification_bg=0x7f060077;
+    public static final int notification_bg_low=0x7f060078;
+    public static final int notification_bg_low_normal=0x7f060079;
+    public static final int notification_bg_low_pressed=0x7f06007a;
+    public static final int notification_bg_normal=0x7f06007b;
+    public static final int notification_bg_normal_pressed=0x7f06007c;
+    public static final int notification_icon_background=0x7f06007d;
+    public static final int notification_template_icon_bg=0x7f06007e;
+    public static final int notification_template_icon_low_bg=0x7f06007f;
+    public static final int notification_tile_bg=0x7f060080;
+    public static final int notify_panel_notification_icon_bg=0x7f060081;
+    public static final int tooltip_frame_dark=0x7f060082;
+    public static final int tooltip_frame_light=0x7f060083;
   }
   public static final class id {
     public static final int ALT=0x7f070000;
@@ -3514,162 +3678,210 @@ public final class R {
     public static final int RegisterButton=0x7f07000d;
     public static final int SHIFT=0x7f07000e;
     public static final int SYM=0x7f07000f;
-    public static final int action_bar=0x7f070010;
-    public static final int action_bar_activity_content=0x7f070011;
-    public static final int action_bar_container=0x7f070012;
-    public static final int action_bar_root=0x7f070013;
-    public static final int action_bar_spinner=0x7f070014;
-    public static final int action_bar_subtitle=0x7f070015;
-    public static final int action_bar_title=0x7f070016;
-    public static final int action_container=0x7f070017;
-    public static final int action_context_bar=0x7f070018;
-    public static final int action_divider=0x7f070019;
-    public static final int action_image=0x7f07001a;
-    public static final int action_menu_divider=0x7f07001b;
-    public static final int action_menu_presenter=0x7f07001c;
-    public static final int action_mode_bar=0x7f07001d;
-    public static final int action_mode_bar_stub=0x7f07001e;
-    public static final int action_mode_close_button=0x7f07001f;
-    public static final int action_text=0x7f070020;
-    public static final int actions=0x7f070021;
-    public static final int activity_chooser_view_content=0x7f070022;
-    public static final int add=0x7f070023;
-    public static final int adjust_height=0x7f070024;
-    public static final int adjust_width=0x7f070025;
-    public static final int alertTitle=0x7f070026;
-    public static final int all=0x7f070027;
-    public static final int always=0x7f070028;
-    public static final int async=0x7f070029;
-    public static final int auto=0x7f07002a;
-    public static final int barrier=0x7f07002b;
-    public static final int beginning=0x7f07002c;
-    public static final int blocking=0x7f07002d;
-    public static final int bottom=0x7f07002e;
-    public static final int button=0x7f07002f;
-    public static final int buttonPanel=0x7f070030;
-    public static final int center=0x7f070031;
-    public static final int center_horizontal=0x7f070032;
-    public static final int center_vertical=0x7f070033;
-    public static final int chains=0x7f070034;
-    public static final int checkbox=0x7f070035;
-    public static final int chronometer=0x7f070036;
-    public static final int clip_horizontal=0x7f070037;
-    public static final int clip_vertical=0x7f070038;
-    public static final int collapseActionView=0x7f070039;
-    public static final int content=0x7f07003a;
-    public static final int contentPanel=0x7f07003b;
-    public static final int custom=0x7f07003c;
-    public static final int customPanel=0x7f07003d;
-    public static final int dark=0x7f07003e;
-    public static final int decor_content_parent=0x7f07003f;
-    public static final int default_activity_button=0x7f070040;
-    public static final int dimensions=0x7f070041;
-    public static final int direct=0x7f070042;
-    public static final int disableHome=0x7f070043;
-    public static final int edit_query=0x7f070044;
-    public static final int end=0x7f070045;
-    public static final int expand_activities_button=0x7f070046;
-    public static final int expanded_menu=0x7f070047;
-    public static final int fill=0x7f070048;
-    public static final int fill_horizontal=0x7f070049;
-    public static final int fill_vertical=0x7f07004a;
-    public static final int forever=0x7f07004b;
-    public static final int gone=0x7f07004c;
-    public static final int group_divider=0x7f07004d;
-    public static final int groups=0x7f07004e;
-    public static final int home=0x7f07004f;
-    public static final int homeAsUp=0x7f070050;
-    public static final int icon=0x7f070051;
-    public static final int icon_group=0x7f070052;
-    public static final int icon_only=0x7f070053;
-    public static final int ifRoom=0x7f070054;
-    public static final int image=0x7f070055;
-    public static final int info=0x7f070056;
-    public static final int invisible=0x7f070057;
-    public static final int italic=0x7f070058;
-    public static final int left=0x7f070059;
-    public static final int light=0x7f07005a;
-    public static final int line1=0x7f07005b;
-    public static final int line3=0x7f07005c;
-    public static final int linearLayout=0x7f07005d;
-    public static final int listMode=0x7f07005e;
-    public static final int list_item=0x7f07005f;
-    public static final int message=0x7f070060;
-    public static final int middle=0x7f070061;
-    public static final int multiply=0x7f070062;
-    public static final int never=0x7f070063;
-    public static final int none=0x7f070064;
-    public static final int normal=0x7f070065;
-    public static final int notification_background=0x7f070066;
-    public static final int notification_main_column=0x7f070067;
-    public static final int notification_main_column_container=0x7f070068;
-    public static final int packed=0x7f070069;
-    public static final int parent=0x7f07006a;
-    public static final int parentPanel=0x7f07006b;
-    public static final int password=0x7f07006c;
-    public static final int percent=0x7f07006d;
-    public static final int progress_circular=0x7f07006e;
-    public static final int progress_horizontal=0x7f07006f;
-    public static final int radio=0x7f070070;
-    public static final int right=0x7f070071;
-    public static final int right_icon=0x7f070072;
-    public static final int right_side=0x7f070073;
-    public static final int screen=0x7f070074;
-    public static final int scrollIndicatorDown=0x7f070075;
-    public static final int scrollIndicatorUp=0x7f070076;
-    public static final int scrollView=0x7f070077;
-    public static final int search_badge=0x7f070078;
-    public static final int search_bar=0x7f070079;
-    public static final int search_button=0x7f07007a;
-    public static final int search_close_btn=0x7f07007b;
-    public static final int search_edit_frame=0x7f07007c;
-    public static final int search_go_btn=0x7f07007d;
-    public static final int search_mag_icon=0x7f07007e;
-    public static final int search_plate=0x7f07007f;
-    public static final int search_src_text=0x7f070080;
-    public static final int search_voice_btn=0x7f070081;
-    public static final int select_dialog_listview=0x7f070082;
-    public static final int shortcut=0x7f070083;
-    public static final int showCustom=0x7f070084;
-    public static final int showHome=0x7f070085;
-    public static final int showTitle=0x7f070086;
-    public static final int spacer=0x7f070087;
-    public static final int split_action_bar=0x7f070088;
-    public static final int spread=0x7f070089;
-    public static final int spread_inside=0x7f07008a;
-    public static final int src_atop=0x7f07008b;
-    public static final int src_in=0x7f07008c;
-    public static final int src_over=0x7f07008d;
-    public static final int standard=0x7f07008e;
-    public static final int start=0x7f07008f;
-    public static final int submenuarrow=0x7f070090;
-    public static final int submit_area=0x7f070091;
-    public static final int tabMode=0x7f070092;
-    public static final int tag_transition_group=0x7f070093;
-    public static final int tag_unhandled_key_event_manager=0x7f070094;
-    public static final int tag_unhandled_key_listeners=0x7f070095;
-    public static final int text=0x7f070096;
-    public static final int text2=0x7f070097;
-    public static final int textSpacerNoButtons=0x7f070098;
-    public static final int textSpacerNoTitle=0x7f070099;
-    public static final int textView=0x7f07009a;
-    public static final int textView2=0x7f07009b;
-    public static final int textView3=0x7f07009c;
-    public static final int textView4=0x7f07009d;
-    public static final int time=0x7f07009e;
-    public static final int title=0x7f07009f;
-    public static final int title2=0x7f0700a0;
-    public static final int titleDividerNoCustom=0x7f0700a1;
-    public static final int title_template=0x7f0700a2;
-    public static final int top=0x7f0700a3;
-    public static final int topPanel=0x7f0700a4;
-    public static final int uniform=0x7f0700a5;
-    public static final int up=0x7f0700a6;
-    public static final int useLogo=0x7f0700a7;
-    public static final int wide=0x7f0700a8;
-    public static final int withText=0x7f0700a9;
-    public static final int wrap=0x7f0700aa;
-    public static final int wrap_content=0x7f0700ab;
+    public static final int accessibility_action_clickable_span=0x7f070010;
+    public static final int accessibility_custom_action_0=0x7f070011;
+    public static final int accessibility_custom_action_1=0x7f070012;
+    public static final int accessibility_custom_action_10=0x7f070013;
+    public static final int accessibility_custom_action_11=0x7f070014;
+    public static final int accessibility_custom_action_12=0x7f070015;
+    public static final int accessibility_custom_action_13=0x7f070016;
+    public static final int accessibility_custom_action_14=0x7f070017;
+    public static final int accessibility_custom_action_15=0x7f070018;
+    public static final int accessibility_custom_action_16=0x7f070019;
+    public static final int accessibility_custom_action_17=0x7f07001a;
+    public static final int accessibility_custom_action_18=0x7f07001b;
+    public static final int accessibility_custom_action_19=0x7f07001c;
+    public static final int accessibility_custom_action_2=0x7f07001d;
+    public static final int accessibility_custom_action_20=0x7f07001e;
+    public static final int accessibility_custom_action_21=0x7f07001f;
+    public static final int accessibility_custom_action_22=0x7f070020;
+    public static final int accessibility_custom_action_23=0x7f070021;
+    public static final int accessibility_custom_action_24=0x7f070022;
+    public static final int accessibility_custom_action_25=0x7f070023;
+    public static final int accessibility_custom_action_26=0x7f070024;
+    public static final int accessibility_custom_action_27=0x7f070025;
+    public static final int accessibility_custom_action_28=0x7f070026;
+    public static final int accessibility_custom_action_29=0x7f070027;
+    public static final int accessibility_custom_action_3=0x7f070028;
+    public static final int accessibility_custom_action_30=0x7f070029;
+    public static final int accessibility_custom_action_31=0x7f07002a;
+    public static final int accessibility_custom_action_4=0x7f07002b;
+    public static final int accessibility_custom_action_5=0x7f07002c;
+    public static final int accessibility_custom_action_6=0x7f07002d;
+    public static final int accessibility_custom_action_7=0x7f07002e;
+    public static final int accessibility_custom_action_8=0x7f07002f;
+    public static final int accessibility_custom_action_9=0x7f070030;
+    public static final int action0=0x7f070031;
+    public static final int action_bar=0x7f070032;
+    public static final int action_bar_activity_content=0x7f070033;
+    public static final int action_bar_container=0x7f070034;
+    public static final int action_bar_root=0x7f070035;
+    public static final int action_bar_spinner=0x7f070036;
+    public static final int action_bar_subtitle=0x7f070037;
+    public static final int action_bar_title=0x7f070038;
+    public static final int action_container=0x7f070039;
+    public static final int action_context_bar=0x7f07003a;
+    public static final int action_divider=0x7f07003b;
+    public static final int action_image=0x7f07003c;
+    public static final int action_menu_divider=0x7f07003d;
+    public static final int action_menu_presenter=0x7f07003e;
+    public static final int action_mode_bar=0x7f07003f;
+    public static final int action_mode_bar_stub=0x7f070040;
+    public static final int action_mode_close_button=0x7f070041;
+    public static final int action_text=0x7f070042;
+    public static final int actions=0x7f070043;
+    public static final int activity_chooser_view_content=0x7f070044;
+    public static final int add=0x7f070045;
+    public static final int adjust_height=0x7f070046;
+    public static final int adjust_width=0x7f070047;
+    public static final int alertTitle=0x7f070048;
+    public static final int all=0x7f070049;
+    public static final int always=0x7f07004a;
+    public static final int async=0x7f07004b;
+    public static final int auto=0x7f07004c;
+    public static final int barrier=0x7f07004d;
+    public static final int beginning=0x7f07004e;
+    public static final int blocking=0x7f07004f;
+    public static final int bottom=0x7f070050;
+    public static final int button=0x7f070051;
+    public static final int buttonPanel=0x7f070052;
+    public static final int cancel_action=0x7f070053;
+    public static final int center=0x7f070054;
+    public static final int center_horizontal=0x7f070055;
+    public static final int center_vertical=0x7f070056;
+    public static final int chains=0x7f070057;
+    public static final int checkbox=0x7f070058;
+    public static final int checked=0x7f070059;
+    public static final int chronometer=0x7f07005a;
+    public static final int clip_horizontal=0x7f07005b;
+    public static final int clip_vertical=0x7f07005c;
+    public static final int collapseActionView=0x7f07005d;
+    public static final int content=0x7f07005e;
+    public static final int contentPanel=0x7f07005f;
+    public static final int custom=0x7f070060;
+    public static final int customPanel=0x7f070061;
+    public static final int dark=0x7f070062;
+    public static final int decor_content_parent=0x7f070063;
+    public static final int default_activity_button=0x7f070064;
+    public static final int dialog_button=0x7f070065;
+    public static final int dimensions=0x7f070066;
+    public static final int direct=0x7f070067;
+    public static final int disableHome=0x7f070068;
+    public static final int edit_query=0x7f070069;
+    public static final int end=0x7f07006a;
+    public static final int end_padder=0x7f07006b;
+    public static final int expand_activities_button=0x7f07006c;
+    public static final int expanded_menu=0x7f07006d;
+    public static final int fill=0x7f07006e;
+    public static final int fill_horizontal=0x7f07006f;
+    public static final int fill_vertical=0x7f070070;
+    public static final int forever=0x7f070071;
+    public static final int gone=0x7f070072;
+    public static final int group_divider=0x7f070073;
+    public static final int groups=0x7f070074;
+    public static final int home=0x7f070075;
+    public static final int homeAsUp=0x7f070076;
+    public static final int icon=0x7f070077;
+    public static final int icon_group=0x7f070078;
+    public static final int icon_only=0x7f070079;
+    public static final int ifRoom=0x7f07007a;
+    public static final int image=0x7f07007b;
+    public static final int info=0x7f07007c;
+    public static final int invisible=0x7f07007d;
+    public static final int italic=0x7f07007e;
+    public static final int left=0x7f07007f;
+    public static final int light=0x7f070080;
+    public static final int line1=0x7f070081;
+    public static final int line3=0x7f070082;
+    public static final int linearLayout=0x7f070083;
+    public static final int listMode=0x7f070084;
+    public static final int list_item=0x7f070085;
+    public static final int media_actions=0x7f070086;
+    public static final int message=0x7f070087;
+    public static final int middle=0x7f070088;
+    public static final int multiply=0x7f070089;
+    public static final int never=0x7f07008a;
+    public static final int none=0x7f07008b;
+    public static final int normal=0x7f07008c;
+    public static final int notification_background=0x7f07008d;
+    public static final int notification_main_column=0x7f07008e;
+    public static final int notification_main_column_container=0x7f07008f;
+    public static final int off=0x7f070090;
+    public static final int on=0x7f070091;
+    public static final int packed=0x7f070092;
+    public static final int parent=0x7f070093;
+    public static final int parentPanel=0x7f070094;
+    public static final int password=0x7f070095;
+    public static final int percent=0x7f070096;
+    public static final int progress_circular=0x7f070097;
+    public static final int progress_horizontal=0x7f070098;
+    public static final int radio=0x7f070099;
+    public static final int right=0x7f07009a;
+    public static final int right_icon=0x7f07009b;
+    public static final int right_side=0x7f07009c;
+    public static final int screen=0x7f07009d;
+    public static final int scrollIndicatorDown=0x7f07009e;
+    public static final int scrollIndicatorUp=0x7f07009f;
+    public static final int scrollView=0x7f0700a0;
+    public static final int search_badge=0x7f0700a1;
+    public static final int search_bar=0x7f0700a2;
+    public static final int search_button=0x7f0700a3;
+    public static final int search_close_btn=0x7f0700a4;
+    public static final int search_edit_frame=0x7f0700a5;
+    public static final int search_go_btn=0x7f0700a6;
+    public static final int search_mag_icon=0x7f0700a7;
+    public static final int search_plate=0x7f0700a8;
+    public static final int search_src_text=0x7f0700a9;
+    public static final int search_voice_btn=0x7f0700aa;
+    public static final int select_dialog_listview=0x7f0700ab;
+    public static final int shortcut=0x7f0700ac;
+    public static final int showCustom=0x7f0700ad;
+    public static final int showHome=0x7f0700ae;
+    public static final int showTitle=0x7f0700af;
+    public static final int spacer=0x7f0700b0;
+    public static final int split_action_bar=0x7f0700b1;
+    public static final int spread=0x7f0700b2;
+    public static final int spread_inside=0x7f0700b3;
+    public static final int src_atop=0x7f0700b4;
+    public static final int src_in=0x7f0700b5;
+    public static final int src_over=0x7f0700b6;
+    public static final int standard=0x7f0700b7;
+    public static final int start=0x7f0700b8;
+    public static final int status_bar_latest_event_content=0x7f0700b9;
+    public static final int submenuarrow=0x7f0700ba;
+    public static final int submit_area=0x7f0700bb;
+    public static final int tabMode=0x7f0700bc;
+    public static final int tag_accessibility_actions=0x7f0700bd;
+    public static final int tag_accessibility_clickable_spans=0x7f0700be;
+    public static final int tag_accessibility_heading=0x7f0700bf;
+    public static final int tag_accessibility_pane_title=0x7f0700c0;
+    public static final int tag_screen_reader_focusable=0x7f0700c1;
+    public static final int tag_transition_group=0x7f0700c2;
+    public static final int tag_unhandled_key_event_manager=0x7f0700c3;
+    public static final int tag_unhandled_key_listeners=0x7f0700c4;
+    public static final int text=0x7f0700c5;
+    public static final int text2=0x7f0700c6;
+    public static final int textSpacerNoButtons=0x7f0700c7;
+    public static final int textSpacerNoTitle=0x7f0700c8;
+    public static final int textView=0x7f0700c9;
+    public static final int textView2=0x7f0700ca;
+    public static final int textView3=0x7f0700cb;
+    public static final int textView4=0x7f0700cc;
+    public static final int time=0x7f0700cd;
+    public static final int title=0x7f0700ce;
+    public static final int title2=0x7f0700cf;
+    public static final int titleDividerNoCustom=0x7f0700d0;
+    public static final int title_template=0x7f0700d1;
+    public static final int top=0x7f0700d2;
+    public static final int topPanel=0x7f0700d3;
+    public static final int unchecked=0x7f0700d4;
+    public static final int uniform=0x7f0700d5;
+    public static final int up=0x7f0700d6;
+    public static final int useLogo=0x7f0700d7;
+    public static final int wide=0x7f0700d8;
+    public static final int withText=0x7f0700d9;
+    public static final int wrap=0x7f0700da;
+    public static final int wrap_content=0x7f0700db;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -3679,470 +3891,486 @@ public final class R {
     public static final int google_play_services_version=0x7f080004;
     public static final int status_bar_notification_info_maxnum=0x7f080005;
   }
+  public static final class interpolator {
+    public static final int btn_checkbox_checked_mtrl_animation_interpolator_0=0x7f090000;
+    public static final int btn_checkbox_checked_mtrl_animation_interpolator_1=0x7f090001;
+    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0=0x7f090002;
+    public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_1=0x7f090003;
+    public static final int btn_radio_to_off_mtrl_animation_interpolator_0=0x7f090004;
+    public static final int btn_radio_to_on_mtrl_animation_interpolator_0=0x7f090005;
+    public static final int fast_out_slow_in=0x7f090006;
+  }
   public static final class layout {
-    public static final int abc_action_bar_title_item=0x7f090000;
-    public static final int abc_action_bar_up_container=0x7f090001;
-    public static final int abc_action_menu_item_layout=0x7f090002;
-    public static final int abc_action_menu_layout=0x7f090003;
-    public static final int abc_action_mode_bar=0x7f090004;
-    public static final int abc_action_mode_close_item_material=0x7f090005;
-    public static final int abc_activity_chooser_view=0x7f090006;
-    public static final int abc_activity_chooser_view_list_item=0x7f090007;
-    public static final int abc_alert_dialog_button_bar_material=0x7f090008;
-    public static final int abc_alert_dialog_material=0x7f090009;
-    public static final int abc_alert_dialog_title_material=0x7f09000a;
-    public static final int abc_cascading_menu_item_layout=0x7f09000b;
-    public static final int abc_dialog_title_material=0x7f09000c;
-    public static final int abc_expanded_menu_layout=0x7f09000d;
-    public static final int abc_list_menu_item_checkbox=0x7f09000e;
-    public static final int abc_list_menu_item_icon=0x7f09000f;
-    public static final int abc_list_menu_item_layout=0x7f090010;
-    public static final int abc_list_menu_item_radio=0x7f090011;
-    public static final int abc_popup_menu_header_item_layout=0x7f090012;
-    public static final int abc_popup_menu_item_layout=0x7f090013;
-    public static final int abc_screen_content_include=0x7f090014;
-    public static final int abc_screen_simple=0x7f090015;
-    public static final int abc_screen_simple_overlay_action_mode=0x7f090016;
-    public static final int abc_screen_toolbar=0x7f090017;
-    public static final int abc_search_dropdown_item_icons_2line=0x7f090018;
-    public static final int abc_search_view=0x7f090019;
-    public static final int abc_select_dialog_material=0x7f09001a;
-    public static final int abc_tooltip=0x7f09001b;
-    public static final int activity_main=0x7f09001c;
-    public static final int activity_register=0x7f09001d;
-    public static final int notification_action=0x7f09001e;
-    public static final int notification_action_tombstone=0x7f09001f;
-    public static final int notification_template_custom_big=0x7f090020;
-    public static final int notification_template_icon_group=0x7f090021;
-    public static final int notification_template_part_chronometer=0x7f090022;
-    public static final int notification_template_part_time=0x7f090023;
-    public static final int select_dialog_item_material=0x7f090024;
-    public static final int select_dialog_multichoice_material=0x7f090025;
-    public static final int select_dialog_singlechoice_material=0x7f090026;
-    public static final int support_simple_spinner_dropdown_item=0x7f090027;
+    public static final int abc_action_bar_title_item=0x7f0a0000;
+    public static final int abc_action_bar_up_container=0x7f0a0001;
+    public static final int abc_action_menu_item_layout=0x7f0a0002;
+    public static final int abc_action_menu_layout=0x7f0a0003;
+    public static final int abc_action_mode_bar=0x7f0a0004;
+    public static final int abc_action_mode_close_item_material=0x7f0a0005;
+    public static final int abc_activity_chooser_view=0x7f0a0006;
+    public static final int abc_activity_chooser_view_list_item=0x7f0a0007;
+    public static final int abc_alert_dialog_button_bar_material=0x7f0a0008;
+    public static final int abc_alert_dialog_material=0x7f0a0009;
+    public static final int abc_alert_dialog_title_material=0x7f0a000a;
+    public static final int abc_cascading_menu_item_layout=0x7f0a000b;
+    public static final int abc_dialog_title_material=0x7f0a000c;
+    public static final int abc_expanded_menu_layout=0x7f0a000d;
+    public static final int abc_list_menu_item_checkbox=0x7f0a000e;
+    public static final int abc_list_menu_item_icon=0x7f0a000f;
+    public static final int abc_list_menu_item_layout=0x7f0a0010;
+    public static final int abc_list_menu_item_radio=0x7f0a0011;
+    public static final int abc_popup_menu_header_item_layout=0x7f0a0012;
+    public static final int abc_popup_menu_item_layout=0x7f0a0013;
+    public static final int abc_screen_content_include=0x7f0a0014;
+    public static final int abc_screen_simple=0x7f0a0015;
+    public static final int abc_screen_simple_overlay_action_mode=0x7f0a0016;
+    public static final int abc_screen_toolbar=0x7f0a0017;
+    public static final int abc_search_dropdown_item_icons_2line=0x7f0a0018;
+    public static final int abc_search_view=0x7f0a0019;
+    public static final int abc_select_dialog_material=0x7f0a001a;
+    public static final int abc_tooltip=0x7f0a001b;
+    public static final int activity_main=0x7f0a001c;
+    public static final int activity_register=0x7f0a001d;
+    public static final int custom_dialog=0x7f0a001e;
+    public static final int notification_action=0x7f0a001f;
+    public static final int notification_action_tombstone=0x7f0a0020;
+    public static final int notification_media_action=0x7f0a0021;
+    public static final int notification_media_cancel_action=0x7f0a0022;
+    public static final int notification_template_big_media=0x7f0a0023;
+    public static final int notification_template_big_media_custom=0x7f0a0024;
+    public static final int notification_template_big_media_narrow=0x7f0a0025;
+    public static final int notification_template_big_media_narrow_custom=0x7f0a0026;
+    public static final int notification_template_custom_big=0x7f0a0027;
+    public static final int notification_template_icon_group=0x7f0a0028;
+    public static final int notification_template_lines_media=0x7f0a0029;
+    public static final int notification_template_media=0x7f0a002a;
+    public static final int notification_template_media_custom=0x7f0a002b;
+    public static final int notification_template_part_chronometer=0x7f0a002c;
+    public static final int notification_template_part_time=0x7f0a002d;
+    public static final int select_dialog_item_material=0x7f0a002e;
+    public static final int select_dialog_multichoice_material=0x7f0a002f;
+    public static final int select_dialog_singlechoice_material=0x7f0a0030;
+    public static final int support_simple_spinner_dropdown_item=0x7f0a0031;
   }
   public static final class mipmap {
-    public static final int ic_launcher=0x7f0a0000;
-    public static final int ic_launcher_round=0x7f0a0001;
+    public static final int ic_launcher=0x7f0b0000;
+    public static final int ic_launcher_round=0x7f0b0001;
   }
   public static final class string {
-    public static final int abc_action_bar_home_description=0x7f0b0000;
-    public static final int abc_action_bar_up_description=0x7f0b0001;
-    public static final int abc_action_menu_overflow_description=0x7f0b0002;
-    public static final int abc_action_mode_done=0x7f0b0003;
-    public static final int abc_activity_chooser_view_see_all=0x7f0b0004;
-    public static final int abc_activitychooserview_choose_application=0x7f0b0005;
-    public static final int abc_capital_off=0x7f0b0006;
-    public static final int abc_capital_on=0x7f0b0007;
-    public static final int abc_font_family_body_1_material=0x7f0b0008;
-    public static final int abc_font_family_body_2_material=0x7f0b0009;
-    public static final int abc_font_family_button_material=0x7f0b000a;
-    public static final int abc_font_family_caption_material=0x7f0b000b;
-    public static final int abc_font_family_display_1_material=0x7f0b000c;
-    public static final int abc_font_family_display_2_material=0x7f0b000d;
-    public static final int abc_font_family_display_3_material=0x7f0b000e;
-    public static final int abc_font_family_display_4_material=0x7f0b000f;
-    public static final int abc_font_family_headline_material=0x7f0b0010;
-    public static final int abc_font_family_menu_material=0x7f0b0011;
-    public static final int abc_font_family_subhead_material=0x7f0b0012;
-    public static final int abc_font_family_title_material=0x7f0b0013;
-    public static final int abc_menu_alt_shortcut_label=0x7f0b0014;
-    public static final int abc_menu_ctrl_shortcut_label=0x7f0b0015;
-    public static final int abc_menu_delete_shortcut_label=0x7f0b0016;
-    public static final int abc_menu_enter_shortcut_label=0x7f0b0017;
-    public static final int abc_menu_function_shortcut_label=0x7f0b0018;
-    public static final int abc_menu_meta_shortcut_label=0x7f0b0019;
-    public static final int abc_menu_shift_shortcut_label=0x7f0b001a;
-    public static final int abc_menu_space_shortcut_label=0x7f0b001b;
-    public static final int abc_menu_sym_shortcut_label=0x7f0b001c;
-    public static final int abc_prepend_shortcut_label=0x7f0b001d;
-    public static final int abc_search_hint=0x7f0b001e;
-    public static final int abc_searchview_description_clear=0x7f0b001f;
-    public static final int abc_searchview_description_query=0x7f0b0020;
-    public static final int abc_searchview_description_search=0x7f0b0021;
-    public static final int abc_searchview_description_submit=0x7f0b0022;
-    public static final int abc_searchview_description_voice=0x7f0b0023;
-    public static final int abc_shareactionprovider_share_with=0x7f0b0024;
-    public static final int abc_shareactionprovider_share_with_application=0x7f0b0025;
-    public static final int abc_toolbar_collapse_description=0x7f0b0026;
-    public static final int app_name=0x7f0b0027;
-    public static final int common_google_play_services_enable_button=0x7f0b0028;
-    public static final int common_google_play_services_enable_text=0x7f0b0029;
-    public static final int common_google_play_services_enable_title=0x7f0b002a;
-    public static final int common_google_play_services_install_button=0x7f0b002b;
-    public static final int common_google_play_services_install_text=0x7f0b002c;
-    public static final int common_google_play_services_install_title=0x7f0b002d;
-    public static final int common_google_play_services_notification_channel_name=0x7f0b002e;
-    public static final int common_google_play_services_notification_ticker=0x7f0b002f;
-    public static final int common_google_play_services_unknown_issue=0x7f0b0030;
-    public static final int common_google_play_services_unsupported_text=0x7f0b0031;
-    public static final int common_google_play_services_update_button=0x7f0b0032;
-    public static final int common_google_play_services_update_text=0x7f0b0033;
-    public static final int common_google_play_services_update_title=0x7f0b0034;
-    public static final int common_google_play_services_updating_text=0x7f0b0035;
-    public static final int common_google_play_services_wear_update_text=0x7f0b0036;
-    public static final int common_open_on_phone=0x7f0b0037;
-    public static final int common_signin_button_text=0x7f0b0038;
-    public static final int common_signin_button_text_long=0x7f0b0039;
-    public static final int default_web_client_id=0x7f0b003a;
-    public static final int firebase_database_url=0x7f0b003b;
-    public static final int gcm_defaultSenderId=0x7f0b003c;
-    public static final int google_api_key=0x7f0b003d;
-    public static final int google_app_id=0x7f0b003e;
-    public static final int google_crash_reporting_api_key=0x7f0b003f;
-    public static final int google_storage_bucket=0x7f0b0040;
-    public static final int project_id=0x7f0b0041;
-    public static final int search_menu_title=0x7f0b0042;
-    public static final int status_bar_notification_info_overflow=0x7f0b0043;
+    public static final int abc_action_bar_home_description=0x7f0c0000;
+    public static final int abc_action_bar_up_description=0x7f0c0001;
+    public static final int abc_action_menu_overflow_description=0x7f0c0002;
+    public static final int abc_action_mode_done=0x7f0c0003;
+    public static final int abc_activity_chooser_view_see_all=0x7f0c0004;
+    public static final int abc_activitychooserview_choose_application=0x7f0c0005;
+    public static final int abc_capital_off=0x7f0c0006;
+    public static final int abc_capital_on=0x7f0c0007;
+    public static final int abc_menu_alt_shortcut_label=0x7f0c0008;
+    public static final int abc_menu_ctrl_shortcut_label=0x7f0c0009;
+    public static final int abc_menu_delete_shortcut_label=0x7f0c000a;
+    public static final int abc_menu_enter_shortcut_label=0x7f0c000b;
+    public static final int abc_menu_function_shortcut_label=0x7f0c000c;
+    public static final int abc_menu_meta_shortcut_label=0x7f0c000d;
+    public static final int abc_menu_shift_shortcut_label=0x7f0c000e;
+    public static final int abc_menu_space_shortcut_label=0x7f0c000f;
+    public static final int abc_menu_sym_shortcut_label=0x7f0c0010;
+    public static final int abc_prepend_shortcut_label=0x7f0c0011;
+    public static final int abc_search_hint=0x7f0c0012;
+    public static final int abc_searchview_description_clear=0x7f0c0013;
+    public static final int abc_searchview_description_query=0x7f0c0014;
+    public static final int abc_searchview_description_search=0x7f0c0015;
+    public static final int abc_searchview_description_submit=0x7f0c0016;
+    public static final int abc_searchview_description_voice=0x7f0c0017;
+    public static final int abc_shareactionprovider_share_with=0x7f0c0018;
+    public static final int abc_shareactionprovider_share_with_application=0x7f0c0019;
+    public static final int abc_toolbar_collapse_description=0x7f0c001a;
+    public static final int app_name=0x7f0c001b;
+    public static final int common_google_play_services_enable_button=0x7f0c001c;
+    public static final int common_google_play_services_enable_text=0x7f0c001d;
+    public static final int common_google_play_services_enable_title=0x7f0c001e;
+    public static final int common_google_play_services_install_button=0x7f0c001f;
+    public static final int common_google_play_services_install_text=0x7f0c0020;
+    public static final int common_google_play_services_install_title=0x7f0c0021;
+    public static final int common_google_play_services_notification_channel_name=0x7f0c0022;
+    public static final int common_google_play_services_notification_ticker=0x7f0c0023;
+    public static final int common_google_play_services_unknown_issue=0x7f0c0024;
+    public static final int common_google_play_services_unsupported_text=0x7f0c0025;
+    public static final int common_google_play_services_update_button=0x7f0c0026;
+    public static final int common_google_play_services_update_text=0x7f0c0027;
+    public static final int common_google_play_services_update_title=0x7f0c0028;
+    public static final int common_google_play_services_updating_text=0x7f0c0029;
+    public static final int common_google_play_services_wear_update_text=0x7f0c002a;
+    public static final int common_open_on_phone=0x7f0c002b;
+    public static final int common_signin_button_text=0x7f0c002c;
+    public static final int common_signin_button_text_long=0x7f0c002d;
+    public static final int default_web_client_id=0x7f0c002e;
+    public static final int firebase_database_url=0x7f0c002f;
+    public static final int gcm_defaultSenderId=0x7f0c0030;
+    public static final int google_api_key=0x7f0c0031;
+    public static final int google_app_id=0x7f0c0032;
+    public static final int google_crash_reporting_api_key=0x7f0c0033;
+    public static final int google_storage_bucket=0x7f0c0034;
+    public static final int project_id=0x7f0c0035;
+    public static final int search_menu_title=0x7f0c0036;
+    public static final int status_bar_notification_info_overflow=0x7f0c0037;
   }
   public static final class style {
-    public static final int AlertDialog_AppCompat=0x7f0c0000;
-    public static final int AlertDialog_AppCompat_Light=0x7f0c0001;
-    public static final int Animation_AppCompat_Dialog=0x7f0c0002;
-    public static final int Animation_AppCompat_DropDownUp=0x7f0c0003;
-    public static final int Animation_AppCompat_Tooltip=0x7f0c0004;
-    public static final int AppTheme=0x7f0c0005;
-    public static final int Base_AlertDialog_AppCompat=0x7f0c0006;
-    public static final int Base_AlertDialog_AppCompat_Light=0x7f0c0007;
-    public static final int Base_Animation_AppCompat_Dialog=0x7f0c0008;
-    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0c0009;
-    public static final int Base_Animation_AppCompat_Tooltip=0x7f0c000a;
-    public static final int Base_DialogWindowTitle_AppCompat=0x7f0c000b;
-    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0c000c;
-    public static final int Base_TextAppearance_AppCompat=0x7f0c000d;
-    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0c000e;
-    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0c000f;
-    public static final int Base_TextAppearance_AppCompat_Button=0x7f0c0010;
-    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0c0011;
-    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0c0012;
-    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0c0013;
-    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0c0014;
-    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0c0015;
-    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0c0016;
-    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0c0017;
-    public static final int Base_TextAppearance_AppCompat_Large=0x7f0c0018;
-    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0c0019;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c001a;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c001b;
-    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0c001c;
-    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0c001d;
-    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0c001e;
-    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0c001f;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c0020;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0c0021;
-    public static final int Base_TextAppearance_AppCompat_Small=0x7f0c0022;
-    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0c0023;
-    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0c0024;
-    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0c0025;
-    public static final int Base_TextAppearance_AppCompat_Title=0x7f0c0026;
-    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0c0027;
-    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0c0028;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c0029;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c002a;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c002b;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c002c;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c002d;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c002e;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c002f;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0c0030;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0c0031;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0c0032;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0c0033;
-    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c0034;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0c0035;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c0036;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c0037;
-    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0c0038;
-    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c0039;
-    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c003a;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c003b;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c003c;
-    public static final int Base_Theme_AppCompat=0x7f0c003d;
-    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0c003e;
-    public static final int Base_Theme_AppCompat_Dialog=0x7f0c003f;
-    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0c0040;
-    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0c0041;
-    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0c0042;
-    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0c0043;
-    public static final int Base_Theme_AppCompat_Light=0x7f0c0044;
-    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0c0045;
-    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0c0046;
-    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0c0047;
-    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0c0048;
-    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c0049;
-    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0c004a;
-    public static final int Base_ThemeOverlay_AppCompat=0x7f0c004b;
-    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0c004c;
-    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0c004d;
-    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c004e;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0c004f;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0c0050;
-    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0c0051;
-    public static final int Base_V21_Theme_AppCompat=0x7f0c0052;
-    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0c0053;
-    public static final int Base_V21_Theme_AppCompat_Light=0x7f0c0054;
-    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0c0055;
-    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0c0056;
-    public static final int Base_V22_Theme_AppCompat=0x7f0c0057;
-    public static final int Base_V22_Theme_AppCompat_Light=0x7f0c0058;
-    public static final int Base_V23_Theme_AppCompat=0x7f0c0059;
-    public static final int Base_V23_Theme_AppCompat_Light=0x7f0c005a;
-    public static final int Base_V26_Theme_AppCompat=0x7f0c005b;
-    public static final int Base_V26_Theme_AppCompat_Light=0x7f0c005c;
-    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0c005d;
-    public static final int Base_V28_Theme_AppCompat=0x7f0c005e;
-    public static final int Base_V28_Theme_AppCompat_Light=0x7f0c005f;
-    public static final int Base_V7_Theme_AppCompat=0x7f0c0060;
-    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0c0061;
-    public static final int Base_V7_Theme_AppCompat_Light=0x7f0c0062;
-    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0c0063;
-    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0c0064;
-    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0c0065;
-    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0c0066;
-    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0c0067;
-    public static final int Base_Widget_AppCompat_ActionBar=0x7f0c0068;
-    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0c0069;
-    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0c006a;
-    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0c006b;
-    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0c006c;
-    public static final int Base_Widget_AppCompat_ActionButton=0x7f0c006d;
-    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0c006e;
-    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0c006f;
-    public static final int Base_Widget_AppCompat_ActionMode=0x7f0c0070;
-    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0c0071;
-    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0c0072;
-    public static final int Base_Widget_AppCompat_Button=0x7f0c0073;
-    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0c0074;
-    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0c0075;
-    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c0076;
-    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0c0077;
-    public static final int Base_Widget_AppCompat_Button_Small=0x7f0c0078;
-    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0c0079;
-    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c007a;
-    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0c007b;
-    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0c007c;
-    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0c007d;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0c007e;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0c007f;
-    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0c0080;
-    public static final int Base_Widget_AppCompat_EditText=0x7f0c0081;
-    public static final int Base_Widget_AppCompat_ImageButton=0x7f0c0082;
-    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0c0083;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0c0084;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c0085;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0c0086;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c0087;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0c0088;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0c0089;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c008a;
-    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0c008b;
-    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0c008c;
-    public static final int Base_Widget_AppCompat_ListView=0x7f0c008d;
-    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0c008e;
-    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0c008f;
-    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0c0090;
-    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0c0091;
-    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0c0092;
-    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0c0093;
-    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0094;
-    public static final int Base_Widget_AppCompat_RatingBar=0x7f0c0095;
-    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0c0096;
-    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0c0097;
-    public static final int Base_Widget_AppCompat_SearchView=0x7f0c0098;
-    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0c0099;
-    public static final int Base_Widget_AppCompat_SeekBar=0x7f0c009a;
-    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0c009b;
-    public static final int Base_Widget_AppCompat_Spinner=0x7f0c009c;
-    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0c009d;
-    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0c009e;
-    public static final int Base_Widget_AppCompat_Toolbar=0x7f0c009f;
-    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c00a0;
-    public static final int Platform_AppCompat=0x7f0c00a1;
-    public static final int Platform_AppCompat_Light=0x7f0c00a2;
-    public static final int Platform_ThemeOverlay_AppCompat=0x7f0c00a3;
-    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0c00a4;
-    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0c00a5;
-    public static final int Platform_V21_AppCompat=0x7f0c00a6;
-    public static final int Platform_V21_AppCompat_Light=0x7f0c00a7;
-    public static final int Platform_V25_AppCompat=0x7f0c00a8;
-    public static final int Platform_V25_AppCompat_Light=0x7f0c00a9;
-    public static final int Platform_Widget_AppCompat_Spinner=0x7f0c00aa;
-    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0c00ab;
-    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0c00ac;
-    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0c00ad;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0c00ae;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0c00af;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0c00b0;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0c00b1;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0c00b2;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0c00b3;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0c00b4;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0c00b5;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0c00b6;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0c00b7;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0c00b8;
-    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0c00b9;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0c00ba;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0c00bb;
-    public static final int TextAppearance_AppCompat=0x7f0c00bc;
-    public static final int TextAppearance_AppCompat_Body1=0x7f0c00bd;
-    public static final int TextAppearance_AppCompat_Body2=0x7f0c00be;
-    public static final int TextAppearance_AppCompat_Button=0x7f0c00bf;
-    public static final int TextAppearance_AppCompat_Caption=0x7f0c00c0;
-    public static final int TextAppearance_AppCompat_Display1=0x7f0c00c1;
-    public static final int TextAppearance_AppCompat_Display2=0x7f0c00c2;
-    public static final int TextAppearance_AppCompat_Display3=0x7f0c00c3;
-    public static final int TextAppearance_AppCompat_Display4=0x7f0c00c4;
-    public static final int TextAppearance_AppCompat_Headline=0x7f0c00c5;
-    public static final int TextAppearance_AppCompat_Inverse=0x7f0c00c6;
-    public static final int TextAppearance_AppCompat_Large=0x7f0c00c7;
-    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0c00c8;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0c00c9;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0c00ca;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c00cb;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c00cc;
-    public static final int TextAppearance_AppCompat_Medium=0x7f0c00cd;
-    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0c00ce;
-    public static final int TextAppearance_AppCompat_Menu=0x7f0c00cf;
-    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c00d0;
-    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0c00d1;
-    public static final int TextAppearance_AppCompat_Small=0x7f0c00d2;
-    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0c00d3;
-    public static final int TextAppearance_AppCompat_Subhead=0x7f0c00d4;
-    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0c00d5;
-    public static final int TextAppearance_AppCompat_Title=0x7f0c00d6;
-    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0c00d7;
-    public static final int TextAppearance_AppCompat_Tooltip=0x7f0c00d8;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c00d9;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c00da;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c00db;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c00dc;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c00dd;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c00de;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0c00df;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c00e0;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0c00e1;
-    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0c00e2;
-    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0c00e3;
-    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0c00e4;
-    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0c00e5;
-    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c00e6;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0c00e7;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c00e8;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c00e9;
-    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0c00ea;
-    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c00eb;
-    public static final int TextAppearance_Compat_Notification=0x7f0c00ec;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0c00ed;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0c00ee;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0c00ef;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0c00f0;
-    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c00f1;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c00f2;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c00f3;
-    public static final int Theme_AppCompat=0x7f0c00f4;
-    public static final int Theme_AppCompat_CompactMenu=0x7f0c00f5;
-    public static final int Theme_AppCompat_DayNight=0x7f0c00f6;
-    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0c00f7;
-    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0c00f8;
-    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0c00f9;
-    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0c00fa;
-    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0c00fb;
-    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0c00fc;
-    public static final int Theme_AppCompat_Dialog=0x7f0c00fd;
-    public static final int Theme_AppCompat_Dialog_Alert=0x7f0c00fe;
-    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0c00ff;
-    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0c0100;
-    public static final int Theme_AppCompat_Light=0x7f0c0101;
-    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0c0102;
-    public static final int Theme_AppCompat_Light_Dialog=0x7f0c0103;
-    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0c0104;
-    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c0105;
-    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0c0106;
-    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0c0107;
-    public static final int Theme_AppCompat_NoActionBar=0x7f0c0108;
-    public static final int ThemeOverlay_AppCompat=0x7f0c0109;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0c010a;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f0c010b;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c010c;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0c010d;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0c010e;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f0c010f;
-    public static final int Widget_AppCompat_ActionBar=0x7f0c0110;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0c0111;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0c0112;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0c0113;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0c0114;
-    public static final int Widget_AppCompat_ActionButton=0x7f0c0115;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0c0116;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0c0117;
-    public static final int Widget_AppCompat_ActionMode=0x7f0c0118;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f0c0119;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0c011a;
-    public static final int Widget_AppCompat_Button=0x7f0c011b;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f0c011c;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0c011d;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c011e;
-    public static final int Widget_AppCompat_Button_Colored=0x7f0c011f;
-    public static final int Widget_AppCompat_Button_Small=0x7f0c0120;
-    public static final int Widget_AppCompat_ButtonBar=0x7f0c0121;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c0122;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0c0123;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0c0124;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0c0125;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0c0126;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0c0127;
-    public static final int Widget_AppCompat_EditText=0x7f0c0128;
-    public static final int Widget_AppCompat_ImageButton=0x7f0c0129;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f0c012a;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0c012b;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0c012c;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c012d;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0c012e;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0c012f;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c0130;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0c0131;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0c0132;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f0c0133;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0c0134;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0c0135;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0c0136;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0c0137;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0c0138;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0c0139;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0c013a;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0c013b;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0c013c;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c013d;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f0c013e;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0c013f;
-    public static final int Widget_AppCompat_ListMenuView=0x7f0c0140;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f0c0141;
-    public static final int Widget_AppCompat_ListView=0x7f0c0142;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f0c0143;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f0c0144;
-    public static final int Widget_AppCompat_PopupMenu=0x7f0c0145;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0c0146;
-    public static final int Widget_AppCompat_PopupWindow=0x7f0c0147;
-    public static final int Widget_AppCompat_ProgressBar=0x7f0c0148;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0149;
-    public static final int Widget_AppCompat_RatingBar=0x7f0c014a;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0c014b;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f0c014c;
-    public static final int Widget_AppCompat_SearchView=0x7f0c014d;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0c014e;
-    public static final int Widget_AppCompat_SeekBar=0x7f0c014f;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0c0150;
-    public static final int Widget_AppCompat_Spinner=0x7f0c0151;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0c0152;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c0153;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0c0154;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0c0155;
-    public static final int Widget_AppCompat_Toolbar=0x7f0c0156;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c0157;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0c0158;
-    public static final int Widget_Compat_NotificationActionText=0x7f0c0159;
-    public static final int Widget_Support_CoordinatorLayout=0x7f0c015a;
+    public static final int AlertDialog_AppCompat=0x7f0d0000;
+    public static final int AlertDialog_AppCompat_Light=0x7f0d0001;
+    public static final int Animation_AppCompat_Dialog=0x7f0d0002;
+    public static final int Animation_AppCompat_DropDownUp=0x7f0d0003;
+    public static final int Animation_AppCompat_Tooltip=0x7f0d0004;
+    public static final int AppTheme=0x7f0d0005;
+    public static final int Base_AlertDialog_AppCompat=0x7f0d0006;
+    public static final int Base_AlertDialog_AppCompat_Light=0x7f0d0007;
+    public static final int Base_Animation_AppCompat_Dialog=0x7f0d0008;
+    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0d0009;
+    public static final int Base_Animation_AppCompat_Tooltip=0x7f0d000a;
+    public static final int Base_DialogWindowTitle_AppCompat=0x7f0d000b;
+    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0d000c;
+    public static final int Base_TextAppearance_AppCompat=0x7f0d000d;
+    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0d000e;
+    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0d000f;
+    public static final int Base_TextAppearance_AppCompat_Button=0x7f0d0010;
+    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0d0011;
+    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0d0012;
+    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0d0013;
+    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0d0014;
+    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0d0015;
+    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0d0016;
+    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0d0017;
+    public static final int Base_TextAppearance_AppCompat_Large=0x7f0d0018;
+    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0d0019;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d001a;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d001b;
+    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0d001c;
+    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0d001d;
+    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0d001e;
+    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0d001f;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0020;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0d0021;
+    public static final int Base_TextAppearance_AppCompat_Small=0x7f0d0022;
+    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0d0023;
+    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0d0024;
+    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0d0025;
+    public static final int Base_TextAppearance_AppCompat_Title=0x7f0d0026;
+    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0d0027;
+    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0d0028;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d0029;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d002a;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d002b;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d002c;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d002d;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d002e;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d002f;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0d0030;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d0031;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d0032;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d0033;
+    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0034;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d0035;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d0036;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d0037;
+    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0d0038;
+    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d0039;
+    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d003a;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d003b;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d003c;
+    public static final int Base_Theme_AppCompat=0x7f0d003d;
+    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0d003e;
+    public static final int Base_Theme_AppCompat_Dialog=0x7f0d003f;
+    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0d0040;
+    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0d0041;
+    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0d0042;
+    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0d0043;
+    public static final int Base_Theme_AppCompat_Light=0x7f0d0044;
+    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0d0045;
+    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0d0046;
+    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0d0047;
+    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0d0048;
+    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0049;
+    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0d004a;
+    public static final int Base_ThemeOverlay_AppCompat=0x7f0d004b;
+    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0d004c;
+    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d004d;
+    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d004e;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0d004f;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0050;
+    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0051;
+    public static final int Base_V21_Theme_AppCompat=0x7f0d0052;
+    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d0053;
+    public static final int Base_V21_Theme_AppCompat_Light=0x7f0d0054;
+    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d0055;
+    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0d0056;
+    public static final int Base_V22_Theme_AppCompat=0x7f0d0057;
+    public static final int Base_V22_Theme_AppCompat_Light=0x7f0d0058;
+    public static final int Base_V23_Theme_AppCompat=0x7f0d0059;
+    public static final int Base_V23_Theme_AppCompat_Light=0x7f0d005a;
+    public static final int Base_V26_Theme_AppCompat=0x7f0d005b;
+    public static final int Base_V26_Theme_AppCompat_Light=0x7f0d005c;
+    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0d005d;
+    public static final int Base_V28_Theme_AppCompat=0x7f0d005e;
+    public static final int Base_V28_Theme_AppCompat_Light=0x7f0d005f;
+    public static final int Base_V7_Theme_AppCompat=0x7f0d0060;
+    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0061;
+    public static final int Base_V7_Theme_AppCompat_Light=0x7f0d0062;
+    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0d0063;
+    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0d0064;
+    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0d0065;
+    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0d0066;
+    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0d0067;
+    public static final int Base_Widget_AppCompat_ActionBar=0x7f0d0068;
+    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0d0069;
+    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0d006a;
+    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0d006b;
+    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0d006c;
+    public static final int Base_Widget_AppCompat_ActionButton=0x7f0d006d;
+    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0d006e;
+    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0d006f;
+    public static final int Base_Widget_AppCompat_ActionMode=0x7f0d0070;
+    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0d0071;
+    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0d0072;
+    public static final int Base_Widget_AppCompat_Button=0x7f0d0073;
+    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0d0074;
+    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0d0075;
+    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0076;
+    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0d0077;
+    public static final int Base_Widget_AppCompat_Button_Small=0x7f0d0078;
+    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0d0079;
+    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d007a;
+    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0d007b;
+    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0d007c;
+    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0d007d;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0d007e;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0d007f;
+    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0d0080;
+    public static final int Base_Widget_AppCompat_EditText=0x7f0d0081;
+    public static final int Base_Widget_AppCompat_ImageButton=0x7f0d0082;
+    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0d0083;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0084;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0085;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0086;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0087;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0088;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0d0089;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d008a;
+    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0d008b;
+    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0d008c;
+    public static final int Base_Widget_AppCompat_ListView=0x7f0d008d;
+    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0d008e;
+    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0d008f;
+    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0d0090;
+    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0d0091;
+    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0d0092;
+    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0d0093;
+    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0094;
+    public static final int Base_Widget_AppCompat_RatingBar=0x7f0d0095;
+    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0d0096;
+    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0d0097;
+    public static final int Base_Widget_AppCompat_SearchView=0x7f0d0098;
+    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0d0099;
+    public static final int Base_Widget_AppCompat_SeekBar=0x7f0d009a;
+    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0d009b;
+    public static final int Base_Widget_AppCompat_Spinner=0x7f0d009c;
+    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0d009d;
+    public static final int Base_Widget_AppCompat_TextView=0x7f0d009e;
+    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0d009f;
+    public static final int Base_Widget_AppCompat_Toolbar=0x7f0d00a0;
+    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00a1;
+    public static final int Platform_AppCompat=0x7f0d00a2;
+    public static final int Platform_AppCompat_Light=0x7f0d00a3;
+    public static final int Platform_ThemeOverlay_AppCompat=0x7f0d00a4;
+    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d00a5;
+    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0d00a6;
+    public static final int Platform_V21_AppCompat=0x7f0d00a7;
+    public static final int Platform_V21_AppCompat_Light=0x7f0d00a8;
+    public static final int Platform_V25_AppCompat=0x7f0d00a9;
+    public static final int Platform_V25_AppCompat_Light=0x7f0d00aa;
+    public static final int Platform_Widget_AppCompat_Spinner=0x7f0d00ab;
+    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0d00ac;
+    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d00ad;
+    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0d00ae;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d00af;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d00b0;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut=0x7f0d00b1;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow=0x7f0d00b2;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d00b3;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title=0x7f0d00b4;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d00b5;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d00b6;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d00b7;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d00b8;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d00b9;
+    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d00ba;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d00bb;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d00bc;
+    public static final int TextAppearance_AppCompat=0x7f0d00bd;
+    public static final int TextAppearance_AppCompat_Body1=0x7f0d00be;
+    public static final int TextAppearance_AppCompat_Body2=0x7f0d00bf;
+    public static final int TextAppearance_AppCompat_Button=0x7f0d00c0;
+    public static final int TextAppearance_AppCompat_Caption=0x7f0d00c1;
+    public static final int TextAppearance_AppCompat_Display1=0x7f0d00c2;
+    public static final int TextAppearance_AppCompat_Display2=0x7f0d00c3;
+    public static final int TextAppearance_AppCompat_Display3=0x7f0d00c4;
+    public static final int TextAppearance_AppCompat_Display4=0x7f0d00c5;
+    public static final int TextAppearance_AppCompat_Headline=0x7f0d00c6;
+    public static final int TextAppearance_AppCompat_Inverse=0x7f0d00c7;
+    public static final int TextAppearance_AppCompat_Large=0x7f0d00c8;
+    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d00c9;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d00ca;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d00cb;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d00cc;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d00cd;
+    public static final int TextAppearance_AppCompat_Medium=0x7f0d00ce;
+    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d00cf;
+    public static final int TextAppearance_AppCompat_Menu=0x7f0d00d0;
+    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d00d1;
+    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d00d2;
+    public static final int TextAppearance_AppCompat_Small=0x7f0d00d3;
+    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d00d4;
+    public static final int TextAppearance_AppCompat_Subhead=0x7f0d00d5;
+    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d00d6;
+    public static final int TextAppearance_AppCompat_Title=0x7f0d00d7;
+    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d00d8;
+    public static final int TextAppearance_AppCompat_Tooltip=0x7f0d00d9;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d00da;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d00db;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d00dc;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d00dd;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d00de;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d00df;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d00e0;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d00e1;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d00e2;
+    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0d00e3;
+    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d00e4;
+    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d00e5;
+    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d00e6;
+    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d00e7;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d00e8;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d00e9;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d00ea;
+    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d00eb;
+    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d00ec;
+    public static final int TextAppearance_Compat_Notification=0x7f0d00ed;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0d00ee;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0d00ef;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0d00f0;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0d00f1;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0d00f2;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0d00f3;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0d00f4;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0d00f5;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0d00f6;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d00f7;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d00f8;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d00f9;
+    public static final int Theme_AppCompat=0x7f0d00fa;
+    public static final int Theme_AppCompat_CompactMenu=0x7f0d00fb;
+    public static final int Theme_AppCompat_DayNight=0x7f0d00fc;
+    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0d00fd;
+    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0d00fe;
+    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0d00ff;
+    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0d0100;
+    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0d0101;
+    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0d0102;
+    public static final int Theme_AppCompat_Dialog=0x7f0d0103;
+    public static final int Theme_AppCompat_Dialog_Alert=0x7f0d0104;
+    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0d0105;
+    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d0106;
+    public static final int Theme_AppCompat_Light=0x7f0d0107;
+    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d0108;
+    public static final int Theme_AppCompat_Light_Dialog=0x7f0d0109;
+    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0d010a;
+    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d010b;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d010c;
+    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d010d;
+    public static final int Theme_AppCompat_NoActionBar=0x7f0d010e;
+    public static final int ThemeOverlay_AppCompat=0x7f0d010f;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d0110;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f0d0111;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d0112;
+    public static final int ThemeOverlay_AppCompat_DayNight=0x7f0d0113;
+    public static final int ThemeOverlay_AppCompat_DayNight_ActionBar=0x7f0d0114;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0d0115;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0116;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f0d0117;
+    public static final int Widget_AppCompat_ActionBar=0x7f0d0118;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d0119;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d011a;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d011b;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d011c;
+    public static final int Widget_AppCompat_ActionButton=0x7f0d011d;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d011e;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d011f;
+    public static final int Widget_AppCompat_ActionMode=0x7f0d0120;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f0d0121;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d0122;
+    public static final int Widget_AppCompat_Button=0x7f0d0123;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f0d0124;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0d0125;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0126;
+    public static final int Widget_AppCompat_Button_Colored=0x7f0d0127;
+    public static final int Widget_AppCompat_Button_Small=0x7f0d0128;
+    public static final int Widget_AppCompat_ButtonBar=0x7f0d0129;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d012a;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0d012b;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0d012c;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d012d;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d012e;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d012f;
+    public static final int Widget_AppCompat_EditText=0x7f0d0130;
+    public static final int Widget_AppCompat_ImageButton=0x7f0d0131;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f0d0132;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0133;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d0134;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0135;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d0136;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0137;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0138;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0139;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d013a;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f0d013b;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d013c;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d013d;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d013e;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d013f;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d0140;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d0141;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d0142;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d0143;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d0144;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0145;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f0d0146;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d0147;
+    public static final int Widget_AppCompat_ListMenuView=0x7f0d0148;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f0d0149;
+    public static final int Widget_AppCompat_ListView=0x7f0d014a;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f0d014b;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f0d014c;
+    public static final int Widget_AppCompat_PopupMenu=0x7f0d014d;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d014e;
+    public static final int Widget_AppCompat_PopupWindow=0x7f0d014f;
+    public static final int Widget_AppCompat_ProgressBar=0x7f0d0150;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0151;
+    public static final int Widget_AppCompat_RatingBar=0x7f0d0152;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0d0153;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f0d0154;
+    public static final int Widget_AppCompat_SearchView=0x7f0d0155;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0d0156;
+    public static final int Widget_AppCompat_SeekBar=0x7f0d0157;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0d0158;
+    public static final int Widget_AppCompat_Spinner=0x7f0d0159;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d015a;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d015b;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0d015c;
+    public static final int Widget_AppCompat_TextView=0x7f0d015d;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0d015e;
+    public static final int Widget_AppCompat_Toolbar=0x7f0d015f;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d0160;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0d0161;
+    public static final int Widget_Compat_NotificationActionText=0x7f0d0162;
+    public static final int Widget_Support_CoordinatorLayout=0x7f0d0163;
   }
   public static final class styleable {
     /**
@@ -4152,39 +4380,39 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.example.famchat:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.famchat:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.famchat:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.famchat:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.famchat:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #ActionBar_background com.example.finalproject:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.finalproject:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.finalproject:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.finalproject:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.finalproject:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.famchat:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.famchat:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.famchat:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.famchat:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.finalproject:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.finalproject:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.finalproject:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.finalproject:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.famchat:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.example.famchat:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.example.famchat:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.example.famchat:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.example.famchat:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.famchat:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.famchat:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.example.famchat:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.example.famchat:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.famchat:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.example.famchat:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.finalproject:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.example.finalproject:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.example.finalproject:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.example.finalproject:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.example.finalproject:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.finalproject:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.finalproject:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.example.finalproject:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.example.finalproject:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.finalproject:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.example.finalproject:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.example.famchat:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.example.famchat:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.example.famchat:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #ActionBar_logo com.example.finalproject:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.example.finalproject:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.example.finalproject:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.famchat:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.famchat:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.example.famchat:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.famchat:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.example.famchat:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.famchat:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.finalproject:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.finalproject:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.example.finalproject:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.finalproject:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.example.finalproject:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.finalproject:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -4217,14 +4445,14 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f020031, 0x7f020032, 0x7f020033, 0x7f020060, 
-      0x7f020061, 0x7f020062, 0x7f020063, 0x7f020064, 
-      0x7f020065, 0x7f020068, 0x7f02006d, 0x7f02006e, 
-      0x7f020079, 0x7f02008a, 0x7f02008b, 0x7f02008c, 
-      0x7f02008d, 0x7f02008e, 0x7f020095, 0x7f020098, 
-      0x7f0200e0, 0x7f0200e7, 0x7f0200f2, 0x7f0200f5, 
-      0x7f0200f6, 0x7f020112, 0x7f020115, 0x7f020130, 
-      0x7f020139
+      0x7f020031, 0x7f020032, 0x7f020033, 0x7f020061, 
+      0x7f020062, 0x7f020063, 0x7f020064, 0x7f020065, 
+      0x7f020066, 0x7f020069, 0x7f02006e, 0x7f02006f, 
+      0x7f020082, 0x7f020093, 0x7f020094, 0x7f020095, 
+      0x7f020096, 0x7f020097, 0x7f02009e, 0x7f0200a1, 
+      0x7f0200ed, 0x7f0200f5, 0x7f020100, 0x7f020103, 
+      0x7f020104, 0x7f020120, 0x7f020123, 0x7f02013f, 
+      0x7f020148
     };
     /**
      * <p>
@@ -4236,7 +4464,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:background
+     * @attr name com.example.finalproject:background
      */
     public static final int ActionBar_background=0;
     /**
@@ -4252,7 +4480,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:backgroundSplit
+     * @attr name com.example.finalproject:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
@@ -4268,7 +4496,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:backgroundStacked
+     * @attr name com.example.finalproject:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
@@ -4283,7 +4511,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetEnd
+     * @attr name com.example.finalproject:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
@@ -4298,7 +4526,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetEndWithActions
+     * @attr name com.example.finalproject:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
@@ -4313,7 +4541,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetLeft
+     * @attr name com.example.finalproject:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
@@ -4328,7 +4556,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetRight
+     * @attr name com.example.finalproject:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
@@ -4343,7 +4571,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetStart
+     * @attr name com.example.finalproject:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
@@ -4358,7 +4586,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetStartWithNavigation
+     * @attr name com.example.finalproject:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
@@ -4371,7 +4599,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:customNavigationLayout
+     * @attr name com.example.finalproject:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
@@ -4394,7 +4622,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:displayOptions
+     * @attr name com.example.finalproject:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
@@ -4407,7 +4635,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:divider
+     * @attr name com.example.finalproject:divider
      */
     public static final int ActionBar_divider=11;
     /**
@@ -4421,7 +4649,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:elevation
+     * @attr name com.example.finalproject:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
@@ -4435,7 +4663,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:height
+     * @attr name com.example.finalproject:height
      */
     public static final int ActionBar_height=13;
     /**
@@ -4446,7 +4674,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:hideOnContentScroll
+     * @attr name com.example.finalproject:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
@@ -4459,7 +4687,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:homeAsUpIndicator
+     * @attr name com.example.finalproject:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
@@ -4472,7 +4700,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:homeLayout
+     * @attr name com.example.finalproject:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
@@ -4485,7 +4713,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:icon
+     * @attr name com.example.finalproject:icon
      */
     public static final int ActionBar_icon=17;
     /**
@@ -4498,7 +4726,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:indeterminateProgressStyle
+     * @attr name com.example.finalproject:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
@@ -4513,7 +4741,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:itemPadding
+     * @attr name com.example.finalproject:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
@@ -4526,7 +4754,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:logo
+     * @attr name com.example.finalproject:logo
      */
     public static final int ActionBar_logo=20;
     /**
@@ -4545,7 +4773,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:navigationMode
+     * @attr name com.example.finalproject:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
@@ -4559,7 +4787,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:popupTheme
+     * @attr name com.example.finalproject:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
@@ -4573,7 +4801,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:progressBarPadding
+     * @attr name com.example.finalproject:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
@@ -4586,7 +4814,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:progressBarStyle
+     * @attr name com.example.finalproject:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
@@ -4597,7 +4825,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:subtitle
+     * @attr name com.example.finalproject:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
@@ -4610,7 +4838,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:subtitleTextStyle
+     * @attr name com.example.finalproject:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
@@ -4621,7 +4849,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:title
+     * @attr name com.example.finalproject:title
      */
     public static final int ActionBar_title=27;
     /**
@@ -4634,7 +4862,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:titleTextStyle
+     * @attr name com.example.finalproject:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -4716,12 +4944,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.example.famchat:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.famchat:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.famchat:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.example.famchat:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.famchat:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.famchat:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.example.finalproject:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.finalproject:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.finalproject:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.example.finalproject:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.finalproject:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.finalproject:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -4731,8 +4959,8 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f020031, 0x7f020032, 0x7f02004c, 0x7f02008a, 
-      0x7f020115, 0x7f020139
+      0x7f020031, 0x7f020032, 0x7f02004d, 0x7f020093, 
+      0x7f020123, 0x7f020148
     };
     /**
      * <p>
@@ -4744,7 +4972,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:background
+     * @attr name com.example.finalproject:background
      */
     public static final int ActionMode_background=0;
     /**
@@ -4760,7 +4988,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:backgroundSplit
+     * @attr name com.example.finalproject:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
@@ -4773,7 +5001,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:closeItemLayout
+     * @attr name com.example.finalproject:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
@@ -4787,7 +5015,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:height
+     * @attr name com.example.finalproject:height
      */
     public static final int ActionMode_height=3;
     /**
@@ -4800,7 +5028,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:subtitleTextStyle
+     * @attr name com.example.finalproject:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
@@ -4813,7 +5041,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:titleTextStyle
+     * @attr name com.example.finalproject:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -4823,14 +5051,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.famchat:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.famchat:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.finalproject:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.finalproject:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f02007b, 0x7f020096
+      0x7f020084, 0x7f02009f
     };
     /**
      * <p>
@@ -4846,7 +5074,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:expandActivityOverflowButtonDrawable
+     * @attr name com.example.finalproject:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
@@ -4857,7 +5085,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:initialActivityCount
+     * @attr name com.example.finalproject:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -4868,13 +5096,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.example.famchat:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.famchat:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.example.famchat:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.example.famchat:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.famchat:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.example.famchat:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.famchat:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.example.finalproject:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.finalproject:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.example.finalproject:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.example.finalproject:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.finalproject:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.example.finalproject:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.finalproject:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -4886,8 +5114,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f020040, 0x7f020041, 0x7f0200d7, 
-      0x7f0200d8, 0x7f0200e4, 0x7f020107, 0x7f020108
+      0x010100f2, 0x7f020041, 0x7f020042, 0x7f0200e2, 
+      0x7f0200e3, 0x7f0200f2, 0x7f020115, 0x7f020116
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -4902,7 +5130,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4911,11 +5139,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:buttonIconDimen
+     * @attr name com.example.finalproject:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4923,11 +5151,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonPanelSideLayout
+     * @attr name com.example.finalproject:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4935,11 +5163,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listItemLayout
+     * @attr name com.example.finalproject:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4947,11 +5175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listLayout
+     * @attr name com.example.finalproject:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4959,21 +5187,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:multiChoiceItemLayout
+     * @attr name com.example.finalproject:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:showTitle
+     * @attr name com.example.finalproject:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4981,7 +5209,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:singleChoiceItemLayout
+     * @attr name com.example.finalproject:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -5205,9 +5433,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.famchat:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.example.famchat:tint}</code></td><td>Tint to apply to the image source.</td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.famchat:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.finalproject:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.example.finalproject:tint}</code></td><td>Tint to apply to the image source.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.finalproject:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -5215,7 +5443,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f02010d, 0x7f02012e, 0x7f02012f
+      0x01010119, 0x7f02011b, 0x7f02013d, 0x7f02013e
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -5243,7 +5471,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:srcCompat
+     * @attr name com.example.finalproject:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
@@ -5255,7 +5483,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:tint
+     * @attr name com.example.finalproject:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
@@ -5282,7 +5510,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:tintMode
+     * @attr name com.example.finalproject:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -5293,9 +5521,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.famchat:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.famchat:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.famchat:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.finalproject:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.finalproject:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.finalproject:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -5303,7 +5531,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f02012b, 0x7f02012c, 0x7f02012d
+      0x01010142, 0x7f02013a, 0x7f02013b, 0x7f02013c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -5327,7 +5555,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:tickMark
+     * @attr name com.example.finalproject:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
@@ -5339,7 +5567,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:tickMarkTint
+     * @attr name com.example.finalproject:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
@@ -5366,7 +5594,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:tickMarkTintMode
+     * @attr name com.example.finalproject:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -5506,18 +5734,30 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.famchat:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.famchat:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.famchat:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.finalproject:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.finalproject:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.finalproject:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
      * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.famchat:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.finalproject:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
      * <code>uniform</code>.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.famchat:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.famchat:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.famchat:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.famchat:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.famchat:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.famchat:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.finalproject:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat com.example.finalproject:drawableBottomCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat com.example.finalproject:drawableEndCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat com.example.finalproject:drawableLeftCompat}</code></td><td>Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat com.example.finalproject:drawableRightCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat com.example.finalproject:drawableStartCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTint com.example.finalproject:drawableTint}</code></td><td>Tint to apply to the compound (left, top, etc.) drawables.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode com.example.finalproject:drawableTintMode}</code></td><td>Blending mode used to apply the compound (left, top, etc.) drawables tint.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat com.example.finalproject:drawableTopCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.finalproject:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.finalproject:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.example.finalproject:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.finalproject:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.finalproject:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.finalproject:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textLocale com.example.finalproject:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -5525,16 +5765,29 @@ public final class R {
      * @see #AppCompatTextView_autoSizePresetSizes
      * @see #AppCompatTextView_autoSizeStepGranularity
      * @see #AppCompatTextView_autoSizeTextType
+     * @see #AppCompatTextView_drawableBottomCompat
+     * @see #AppCompatTextView_drawableEndCompat
+     * @see #AppCompatTextView_drawableLeftCompat
+     * @see #AppCompatTextView_drawableRightCompat
+     * @see #AppCompatTextView_drawableStartCompat
+     * @see #AppCompatTextView_drawableTint
+     * @see #AppCompatTextView_drawableTintMode
+     * @see #AppCompatTextView_drawableTopCompat
      * @see #AppCompatTextView_firstBaselineToTopHeight
      * @see #AppCompatTextView_fontFamily
+     * @see #AppCompatTextView_fontVariationSettings
      * @see #AppCompatTextView_lastBaselineToBottomHeight
      * @see #AppCompatTextView_lineHeight
      * @see #AppCompatTextView_textAllCaps
+     * @see #AppCompatTextView_textLocale
      */
     public static final int[] AppCompatTextView={
       0x01010034, 0x7f02002c, 0x7f02002d, 0x7f02002e, 
-      0x7f02002f, 0x7f020030, 0x7f02007c, 0x7f02007e, 
-      0x7f02009a, 0x7f0200d4, 0x7f02011b
+      0x7f02002f, 0x7f020030, 0x7f020073, 0x7f020074, 
+      0x7f020075, 0x7f020076, 0x7f020078, 0x7f020079, 
+      0x7f02007a, 0x7f02007b, 0x7f020085, 0x7f020087, 
+      0x7f02008f, 0x7f0200a3, 0x7f0200dd, 0x7f020129, 
+      0x7f020134
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -5559,7 +5812,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:autoSizeMaxTextSize
+     * @attr name com.example.finalproject:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
@@ -5573,7 +5826,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:autoSizeMinTextSize
+     * @attr name com.example.finalproject:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
@@ -5588,7 +5841,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:autoSizePresetSizes
+     * @attr name com.example.finalproject:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
@@ -5604,7 +5857,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:autoSizeStepGranularity
+     * @attr name com.example.finalproject:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
@@ -5624,9 +5877,122 @@ public final class R {
      * container.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:autoSizeTextType
+     * @attr name com.example.finalproject:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#drawableBottomCompat}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableBottomCompat
+     */
+    public static final int AppCompatTextView_drawableBottomCompat=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#drawableEndCompat}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableEndCompat
+     */
+    public static final int AppCompatTextView_drawableEndCompat=7;
+    /**
+     * <p>
+     * @attr description
+     * Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableLeftCompat
+     */
+    public static final int AppCompatTextView_drawableLeftCompat=8;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#drawableRightCompat}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableRightCompat
+     */
+    public static final int AppCompatTextView_drawableRightCompat=9;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#drawableStartCompat}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableStartCompat
+     */
+    public static final int AppCompatTextView_drawableStartCompat=10;
+    /**
+     * <p>
+     * @attr description
+     * Tint to apply to the compound (left, top, etc.) drawables.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableTint
+     */
+    public static final int AppCompatTextView_drawableTint=11;
+    /**
+     * <p>
+     * @attr description
+     * Blending mode used to apply the compound (left, top, etc.) drawables tint.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
+     * </table>
+     *
+     * @attr name com.example.finalproject:drawableTintMode
+     */
+    public static final int AppCompatTextView_drawableTintMode=12;
+    /**
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#drawableTopCompat}
+     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:drawableTopCompat
+     */
+    public static final int AppCompatTextView_drawableTopCompat=13;
     /**
      * <p>
      * @attr description
@@ -5639,9 +6005,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:firstBaselineToTopHeight
+     * @attr name com.example.finalproject:firstBaselineToTopHeight
      */
-    public static final int AppCompatTextView_firstBaselineToTopHeight=6;
+    public static final int AppCompatTextView_firstBaselineToTopHeight=14;
     /**
      * <p>
      * @attr description
@@ -5650,9 +6016,20 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontFamily
+     * @attr name com.example.finalproject:fontFamily
      */
-    public static final int AppCompatTextView_fontFamily=7;
+    public static final int AppCompatTextView_fontFamily=15;
+    /**
+     * <p>
+     * @attr description
+     * OpenType font variation settings, available after api 26.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.example.finalproject:fontVariationSettings
+     */
+    public static final int AppCompatTextView_fontVariationSettings=16;
     /**
      * <p>
      * @attr description
@@ -5665,9 +6042,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:lastBaselineToBottomHeight
+     * @attr name com.example.finalproject:lastBaselineToBottomHeight
      */
-    public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
+    public static final int AppCompatTextView_lastBaselineToBottomHeight=17;
     /**
      * <p>
      * @attr description
@@ -5680,9 +6057,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:lineHeight
+     * @attr name com.example.finalproject:lineHeight
      */
-    public static final int AppCompatTextView_lineHeight=9;
+    public static final int AppCompatTextView_lineHeight=18;
     /**
      * <p>
      * @attr description
@@ -5695,9 +6072,24 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:textAllCaps
+     * @attr name com.example.finalproject:textAllCaps
      */
-    public static final int AppCompatTextView_textAllCaps=10;
+    public static final int AppCompatTextView_textAllCaps=19;
+    /**
+     * <p>
+     * @attr description
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.example.finalproject:textLocale
+     */
+    public static final int AppCompatTextView_textLocale=20;
     /**
      * Attributes that can be used with a AppCompatTheme.
      * <p>Includes the following attributes:</p>
@@ -5707,142 +6099,146 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.famchat:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.famchat:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.famchat:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.finalproject:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.finalproject:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.finalproject:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.famchat:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.finalproject:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
      * bar used to present Action Modes.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.famchat:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.famchat:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.famchat:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.famchat:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.famchat:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.famchat:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.finalproject:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.finalproject:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.finalproject:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.finalproject:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.finalproject:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.finalproject:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
      * action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.famchat:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.finalproject:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
      * and layouts destined for the action bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.famchat:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.famchat:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.famchat:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.finalproject:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.finalproject:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.finalproject:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
      * appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.famchat:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.famchat:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.famchat:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.famchat:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.famchat:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.famchat:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.famchat:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.famchat:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.famchat:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.famchat:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.famchat:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.famchat:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.famchat:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.famchat:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.famchat:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.famchat:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.famchat:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.famchat:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.famchat:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.famchat:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.famchat:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.famchat:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.famchat:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.famchat:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.famchat:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.famchat:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.famchat:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.famchat:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.famchat:buttonStyle}</code></td><td>Normal Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.famchat:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.famchat:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.famchat:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.famchat:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.famchat:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.famchat:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.famchat:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.famchat:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.famchat:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.famchat:colorError}</code></td><td>Color used for error states and things that need to be drawn to
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.finalproject:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.finalproject:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.finalproject:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.finalproject:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.finalproject:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.finalproject:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.finalproject:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.finalproject:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.finalproject:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.finalproject:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.finalproject:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.finalproject:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.finalproject:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.finalproject:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.finalproject:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.finalproject:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.finalproject:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.finalproject:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.finalproject:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.finalproject:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.finalproject:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.finalproject:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.finalproject:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.finalproject:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.finalproject:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.finalproject:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.finalproject:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.finalproject:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.finalproject:buttonStyle}</code></td><td>Normal Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.finalproject:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.finalproject:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.finalproject:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.finalproject:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.finalproject:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.finalproject:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.finalproject:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.finalproject:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.finalproject:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.finalproject:colorError}</code></td><td>Color used for error states and things that need to be drawn to
      * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.famchat:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.famchat:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.famchat:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.famchat:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.famchat:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.famchat:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.famchat:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.famchat:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.famchat:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.famchat:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.famchat:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.famchat:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.famchat:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.famchat:editTextStyle}</code></td><td>Default EditText style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.famchat:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.famchat:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.famchat:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.famchat:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.famchat:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.famchat:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.famchat:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.famchat:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.famchat:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.famchat:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.famchat:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.famchat:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.famchat:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.famchat:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.famchat:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.famchat:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.famchat:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.famchat:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.famchat:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.famchat:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.famchat:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.famchat:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.famchat:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.finalproject:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.finalproject:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.finalproject:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.finalproject:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.finalproject:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.finalproject:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.finalproject:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.finalproject:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.finalproject:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.finalproject:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.finalproject:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.finalproject:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.finalproject:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.finalproject:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.finalproject:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.finalproject:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.finalproject:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated com.example.finalproject:listChoiceIndicatorMultipleAnimated}</code></td><td>Animated Drawable to use for single choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated com.example.finalproject:listChoiceIndicatorSingleAnimated}</code></td><td>Animated Drawable to use for multiple choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.finalproject:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.finalproject:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.finalproject:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.finalproject:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.finalproject:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.finalproject:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd com.example.finalproject:listPreferredItemPaddingEnd}</code></td><td>The preferred padding along the end edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.finalproject:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.finalproject:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart com.example.finalproject:listPreferredItemPaddingStart}</code></td><td>The preferred padding along the start edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.finalproject:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.finalproject:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.finalproject:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.finalproject:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.finalproject:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.finalproject:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.finalproject:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.finalproject:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.finalproject:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.finalproject:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.finalproject:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.finalproject:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
      * have a clear visual border along the edges.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.famchat:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.famchat:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.famchat:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.famchat:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.famchat:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.famchat:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.famchat:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.famchat:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.famchat:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.famchat:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.famchat:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.famchat:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.famchat:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.famchat:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.famchat:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.famchat:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.famchat:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.famchat:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.famchat:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.famchat:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.finalproject:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.finalproject:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.finalproject:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.finalproject:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.finalproject:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.finalproject:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.finalproject:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.finalproject:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.finalproject:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.finalproject:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.finalproject:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.finalproject:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.finalproject:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.finalproject:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.finalproject:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.finalproject:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.finalproject:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.finalproject:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.finalproject:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.finalproject:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.famchat:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.finalproject:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
      * application content.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.famchat:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.finalproject:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.famchat:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.finalproject:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.famchat:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.finalproject:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.famchat:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.finalproject:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
      * that is, when in landscape.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.famchat:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.finalproject:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.famchat:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.finalproject:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.famchat:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.finalproject:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
      * axis of the screen.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.famchat:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.finalproject:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -5916,14 +6312,18 @@ public final class R {
      * @see #AppCompatTheme_homeAsUpIndicator
      * @see #AppCompatTheme_imageButtonStyle
      * @see #AppCompatTheme_listChoiceBackgroundIndicator
+     * @see #AppCompatTheme_listChoiceIndicatorMultipleAnimated
+     * @see #AppCompatTheme_listChoiceIndicatorSingleAnimated
      * @see #AppCompatTheme_listDividerAlertDialog
      * @see #AppCompatTheme_listMenuViewStyle
      * @see #AppCompatTheme_listPopupWindowStyle
      * @see #AppCompatTheme_listPreferredItemHeight
      * @see #AppCompatTheme_listPreferredItemHeightLarge
      * @see #AppCompatTheme_listPreferredItemHeightSmall
+     * @see #AppCompatTheme_listPreferredItemPaddingEnd
      * @see #AppCompatTheme_listPreferredItemPaddingLeft
      * @see #AppCompatTheme_listPreferredItemPaddingRight
+     * @see #AppCompatTheme_listPreferredItemPaddingStart
      * @see #AppCompatTheme_panelBackground
      * @see #AppCompatTheme_panelMenuListTheme
      * @see #AppCompatTheme_panelMenuListWidth
@@ -5978,26 +6378,27 @@ public final class R {
       0x7f020021, 0x7f020022, 0x7f020023, 0x7f020024, 
       0x7f020025, 0x7f02002b, 0x7f020039, 0x7f02003a, 
       0x7f02003b, 0x7f02003c, 0x7f02003d, 0x7f02003e, 
-      0x7f020043, 0x7f020044, 0x7f020048, 0x7f020049, 
-      0x7f020050, 0x7f020051, 0x7f020052, 0x7f020053, 
-      0x7f020054, 0x7f020055, 0x7f020056, 0x7f020057, 
-      0x7f020058, 0x7f02005a, 0x7f020066, 0x7f02006a, 
-      0x7f02006b, 0x7f02006c, 0x7f02006f, 0x7f020071, 
-      0x7f020074, 0x7f020075, 0x7f020076, 0x7f020077, 
-      0x7f020078, 0x7f02008c, 0x7f020094, 0x7f0200d5, 
-      0x7f0200d6, 0x7f0200d9, 0x7f0200da, 0x7f0200db, 
-      0x7f0200dc, 0x7f0200dd, 0x7f0200de, 0x7f0200df, 
-      0x7f0200ee, 0x7f0200ef, 0x7f0200f0, 0x7f0200f1, 
-      0x7f0200f3, 0x7f0200f9, 0x7f0200fa, 0x7f0200fb, 
-      0x7f0200fc, 0x7f020100, 0x7f020101, 0x7f020102, 
-      0x7f020103, 0x7f02010a, 0x7f02010b, 0x7f020119, 
-      0x7f02011c, 0x7f02011d, 0x7f02011e, 0x7f02011f, 
-      0x7f020120, 0x7f020121, 0x7f020122, 0x7f020123, 
-      0x7f020124, 0x7f020125, 0x7f02013a, 0x7f02013b, 
-      0x7f02013c, 0x7f02013d, 0x7f020143, 0x7f020145, 
-      0x7f020146, 0x7f020147, 0x7f020148, 0x7f020149, 
-      0x7f02014a, 0x7f02014b, 0x7f02014c, 0x7f02014d, 
-      0x7f02014e
+      0x7f020044, 0x7f020045, 0x7f020049, 0x7f02004a, 
+      0x7f020051, 0x7f020052, 0x7f020053, 0x7f020054, 
+      0x7f020055, 0x7f020056, 0x7f020057, 0x7f020058, 
+      0x7f020059, 0x7f02005b, 0x7f020067, 0x7f02006b, 
+      0x7f02006c, 0x7f02006d, 0x7f020070, 0x7f020072, 
+      0x7f02007d, 0x7f02007e, 0x7f02007f, 0x7f020080, 
+      0x7f020081, 0x7f020095, 0x7f02009d, 0x7f0200de, 
+      0x7f0200df, 0x7f0200e0, 0x7f0200e1, 0x7f0200e4, 
+      0x7f0200e5, 0x7f0200e6, 0x7f0200e7, 0x7f0200e8, 
+      0x7f0200e9, 0x7f0200ea, 0x7f0200eb, 0x7f0200ec, 
+      0x7f0200fc, 0x7f0200fd, 0x7f0200fe, 0x7f0200ff, 
+      0x7f020101, 0x7f020107, 0x7f020108, 0x7f020109, 
+      0x7f02010a, 0x7f02010e, 0x7f02010f, 0x7f020110, 
+      0x7f020111, 0x7f020118, 0x7f020119, 0x7f020127, 
+      0x7f02012a, 0x7f02012b, 0x7f02012c, 0x7f02012d, 
+      0x7f02012e, 0x7f02012f, 0x7f020130, 0x7f020131, 
+      0x7f020132, 0x7f020133, 0x7f020149, 0x7f02014a, 
+      0x7f02014b, 0x7f02014c, 0x7f020152, 0x7f020154, 
+      0x7f020155, 0x7f020156, 0x7f020157, 0x7f020158, 
+      0x7f020159, 0x7f02015a, 0x7f02015b, 0x7f02015c, 
+      0x7f02015d
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -6031,7 +6432,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarDivider
+     * @attr name com.example.finalproject:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
@@ -6044,7 +6445,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarItemBackground
+     * @attr name com.example.finalproject:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
@@ -6058,7 +6459,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarPopupTheme
+     * @attr name com.example.finalproject:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
@@ -6081,7 +6482,7 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:actionBarSize
+     * @attr name com.example.finalproject:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
@@ -6097,7 +6498,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarSplitStyle
+     * @attr name com.example.finalproject:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
@@ -6110,11 +6511,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarStyle
+     * @attr name com.example.finalproject:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6122,7 +6523,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarTabBarStyle
+     * @attr name com.example.finalproject:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
@@ -6135,11 +6536,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarTabStyle
+     * @attr name com.example.finalproject:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6147,7 +6548,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarTabTextStyle
+     * @attr name com.example.finalproject:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
@@ -6162,7 +6563,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarTheme
+     * @attr name com.example.finalproject:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
@@ -6181,7 +6582,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionBarWidgetTheme
+     * @attr name com.example.finalproject:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
@@ -6194,7 +6595,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionButtonStyle
+     * @attr name com.example.finalproject:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
@@ -6207,7 +6608,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionDropDownStyle
+     * @attr name com.example.finalproject:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
@@ -6221,7 +6622,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionMenuTextAppearance
+     * @attr name com.example.finalproject:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
@@ -6237,7 +6638,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:actionMenuTextColor
+     * @attr name com.example.finalproject:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
@@ -6250,11 +6651,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeBackground
+     * @attr name com.example.finalproject:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6262,7 +6663,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeCloseButtonStyle
+     * @attr name com.example.finalproject:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
@@ -6275,7 +6676,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeCloseDrawable
+     * @attr name com.example.finalproject:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
@@ -6288,7 +6689,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeCopyDrawable
+     * @attr name com.example.finalproject:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
@@ -6301,7 +6702,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeCutDrawable
+     * @attr name com.example.finalproject:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
@@ -6314,7 +6715,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeFindDrawable
+     * @attr name com.example.finalproject:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
@@ -6327,7 +6728,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModePasteDrawable
+     * @attr name com.example.finalproject:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
@@ -6340,7 +6741,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModePopupWindowStyle
+     * @attr name com.example.finalproject:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
@@ -6353,7 +6754,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeSelectAllDrawable
+     * @attr name com.example.finalproject:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
@@ -6366,7 +6767,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeShareDrawable
+     * @attr name com.example.finalproject:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
@@ -6379,11 +6780,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeSplitBackground
+     * @attr name com.example.finalproject:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6391,7 +6792,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeStyle
+     * @attr name com.example.finalproject:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
@@ -6404,11 +6805,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionModeWebSearchDrawable
+     * @attr name com.example.finalproject:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6416,11 +6817,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionOverflowButtonStyle
+     * @attr name com.example.finalproject:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6428,7 +6829,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionOverflowMenuStyle
+     * @attr name com.example.finalproject:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
@@ -6441,11 +6842,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:activityChooserViewStyle
+     * @attr name com.example.finalproject:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6453,21 +6854,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:alertDialogButtonGroupStyle
+     * @attr name com.example.finalproject:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:alertDialogCenterButtons
+     * @attr name com.example.finalproject:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6475,7 +6876,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:alertDialogStyle
+     * @attr name com.example.finalproject:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
@@ -6488,7 +6889,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:alertDialogTheme
+     * @attr name com.example.finalproject:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -6501,7 +6902,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:autoCompleteTextViewStyle
+     * @attr name com.example.finalproject:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
@@ -6514,7 +6915,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:borderlessButtonStyle
+     * @attr name com.example.finalproject:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
@@ -6527,7 +6928,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonBarButtonStyle
+     * @attr name com.example.finalproject:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
@@ -6540,7 +6941,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonBarNegativeButtonStyle
+     * @attr name com.example.finalproject:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
@@ -6553,7 +6954,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonBarNeutralButtonStyle
+     * @attr name com.example.finalproject:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
@@ -6566,7 +6967,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonBarPositiveButtonStyle
+     * @attr name com.example.finalproject:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
@@ -6579,7 +6980,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonBarStyle
+     * @attr name com.example.finalproject:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
@@ -6592,7 +6993,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonStyle
+     * @attr name com.example.finalproject:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
@@ -6605,7 +7006,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:buttonStyleSmall
+     * @attr name com.example.finalproject:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
@@ -6618,7 +7019,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:checkboxStyle
+     * @attr name com.example.finalproject:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
@@ -6631,7 +7032,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:checkedTextViewStyle
+     * @attr name com.example.finalproject:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
@@ -6644,7 +7045,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorAccent
+     * @attr name com.example.finalproject:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
@@ -6656,7 +7057,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorBackgroundFloating
+     * @attr name com.example.finalproject:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
@@ -6668,7 +7069,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorButtonNormal
+     * @attr name com.example.finalproject:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
@@ -6680,7 +7081,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorControlActivated
+     * @attr name com.example.finalproject:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
@@ -6692,7 +7093,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorControlHighlight
+     * @attr name com.example.finalproject:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
@@ -6704,7 +7105,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorControlNormal
+     * @attr name com.example.finalproject:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
@@ -6721,7 +7122,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorError
+     * @attr name com.example.finalproject:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
@@ -6734,7 +7135,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorPrimary
+     * @attr name com.example.finalproject:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
@@ -6747,7 +7148,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorPrimaryDark
+     * @attr name com.example.finalproject:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
@@ -6759,7 +7160,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:colorSwitchThumbNormal
+     * @attr name com.example.finalproject:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
@@ -6772,7 +7173,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:controlBackground
+     * @attr name com.example.finalproject:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
@@ -6786,7 +7187,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:dialogCornerRadius
+     * @attr name com.example.finalproject:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
@@ -6800,7 +7201,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:dialogPreferredPadding
+     * @attr name com.example.finalproject:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
@@ -6813,7 +7214,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:dialogTheme
+     * @attr name com.example.finalproject:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
@@ -6826,7 +7227,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:dividerHorizontal
+     * @attr name com.example.finalproject:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
@@ -6839,7 +7240,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:dividerVertical
+     * @attr name com.example.finalproject:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
@@ -6852,7 +7253,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:dropDownListViewStyle
+     * @attr name com.example.finalproject:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
@@ -6866,7 +7267,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:dropdownListPreferredItemHeight
+     * @attr name com.example.finalproject:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
@@ -6879,7 +7280,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:editTextBackground
+     * @attr name com.example.finalproject:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
@@ -6895,7 +7296,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:editTextColor
+     * @attr name com.example.finalproject:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
@@ -6908,7 +7309,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:editTextStyle
+     * @attr name com.example.finalproject:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
@@ -6921,7 +7322,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:homeAsUpIndicator
+     * @attr name com.example.finalproject:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
@@ -6934,7 +7335,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:imageButtonStyle
+     * @attr name com.example.finalproject:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
@@ -6947,9 +7348,35 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listChoiceBackgroundIndicator
+     * @attr name com.example.finalproject:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
+    /**
+     * <p>
+     * @attr description
+     * Animated Drawable to use for single choice indicators.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:listChoiceIndicatorMultipleAnimated
+     */
+    public static final int AppCompatTheme_listChoiceIndicatorMultipleAnimated=72;
+    /**
+     * <p>
+     * @attr description
+     * Animated Drawable to use for multiple choice indicators.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:listChoiceIndicatorSingleAnimated
+     */
+    public static final int AppCompatTheme_listChoiceIndicatorSingleAnimated=73;
     /**
      * <p>
      * @attr description
@@ -6960,9 +7387,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listDividerAlertDialog
+     * @attr name com.example.finalproject:listDividerAlertDialog
      */
-    public static final int AppCompatTheme_listDividerAlertDialog=72;
+    public static final int AppCompatTheme_listDividerAlertDialog=74;
     /**
      * <p>
      * @attr description
@@ -6973,11 +7400,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listMenuViewStyle
+     * @attr name com.example.finalproject:listMenuViewStyle
      */
-    public static final int AppCompatTheme_listMenuViewStyle=73;
+    public static final int AppCompatTheme_listMenuViewStyle=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6985,9 +7412,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:listPopupWindowStyle
+     * @attr name com.example.finalproject:listPopupWindowStyle
      */
-    public static final int AppCompatTheme_listPopupWindowStyle=74;
+    public static final int AppCompatTheme_listPopupWindowStyle=76;
     /**
      * <p>
      * @attr description
@@ -6999,9 +7426,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:listPreferredItemHeight
+     * @attr name com.example.finalproject:listPreferredItemHeight
      */
-    public static final int AppCompatTheme_listPreferredItemHeight=75;
+    public static final int AppCompatTheme_listPreferredItemHeight=77;
     /**
      * <p>
      * @attr description
@@ -7013,9 +7440,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:listPreferredItemHeightLarge
+     * @attr name com.example.finalproject:listPreferredItemHeightLarge
      */
-    public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
+    public static final int AppCompatTheme_listPreferredItemHeightLarge=78;
     /**
      * <p>
      * @attr description
@@ -7027,9 +7454,23 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:listPreferredItemHeightSmall
+     * @attr name com.example.finalproject:listPreferredItemHeightSmall
      */
-    public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
+    public static final int AppCompatTheme_listPreferredItemHeightSmall=79;
+    /**
+     * <p>
+     * @attr description
+     * The preferred padding along the end edge of list items.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.example.finalproject:listPreferredItemPaddingEnd
+     */
+    public static final int AppCompatTheme_listPreferredItemPaddingEnd=80;
     /**
      * <p>
      * @attr description
@@ -7041,9 +7482,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:listPreferredItemPaddingLeft
+     * @attr name com.example.finalproject:listPreferredItemPaddingLeft
      */
-    public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
+    public static final int AppCompatTheme_listPreferredItemPaddingLeft=81;
     /**
      * <p>
      * @attr description
@@ -7055,9 +7496,23 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:listPreferredItemPaddingRight
+     * @attr name com.example.finalproject:listPreferredItemPaddingRight
      */
-    public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
+    public static final int AppCompatTheme_listPreferredItemPaddingRight=82;
+    /**
+     * <p>
+     * @attr description
+     * The preferred padding along the start edge of list items.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.example.finalproject:listPreferredItemPaddingStart
+     */
+    public static final int AppCompatTheme_listPreferredItemPaddingStart=83;
     /**
      * <p>
      * @attr description
@@ -7068,9 +7523,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:panelBackground
+     * @attr name com.example.finalproject:panelBackground
      */
-    public static final int AppCompatTheme_panelBackground=80;
+    public static final int AppCompatTheme_panelBackground=84;
     /**
      * <p>
      * @attr description
@@ -7081,9 +7536,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:panelMenuListTheme
+     * @attr name com.example.finalproject:panelMenuListTheme
      */
-    public static final int AppCompatTheme_panelMenuListTheme=81;
+    public static final int AppCompatTheme_panelMenuListTheme=85;
     /**
      * <p>
      * @attr description
@@ -7095,9 +7550,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:panelMenuListWidth
+     * @attr name com.example.finalproject:panelMenuListWidth
      */
-    public static final int AppCompatTheme_panelMenuListWidth=82;
+    public static final int AppCompatTheme_panelMenuListWidth=86;
     /**
      * <p>
      * @attr description
@@ -7108,9 +7563,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:popupMenuStyle
+     * @attr name com.example.finalproject:popupMenuStyle
      */
-    public static final int AppCompatTheme_popupMenuStyle=83;
+    public static final int AppCompatTheme_popupMenuStyle=87;
     /**
      * <p>
      * @attr description
@@ -7121,9 +7576,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:popupWindowStyle
+     * @attr name com.example.finalproject:popupWindowStyle
      */
-    public static final int AppCompatTheme_popupWindowStyle=84;
+    public static final int AppCompatTheme_popupWindowStyle=88;
     /**
      * <p>
      * @attr description
@@ -7134,9 +7589,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:radioButtonStyle
+     * @attr name com.example.finalproject:radioButtonStyle
      */
-    public static final int AppCompatTheme_radioButtonStyle=85;
+    public static final int AppCompatTheme_radioButtonStyle=89;
     /**
      * <p>
      * @attr description
@@ -7147,9 +7602,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:ratingBarStyle
+     * @attr name com.example.finalproject:ratingBarStyle
      */
-    public static final int AppCompatTheme_ratingBarStyle=86;
+    public static final int AppCompatTheme_ratingBarStyle=90;
     /**
      * <p>
      * @attr description
@@ -7160,9 +7615,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:ratingBarStyleIndicator
+     * @attr name com.example.finalproject:ratingBarStyleIndicator
      */
-    public static final int AppCompatTheme_ratingBarStyleIndicator=87;
+    public static final int AppCompatTheme_ratingBarStyleIndicator=91;
     /**
      * <p>
      * @attr description
@@ -7173,9 +7628,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:ratingBarStyleSmall
+     * @attr name com.example.finalproject:ratingBarStyleSmall
      */
-    public static final int AppCompatTheme_ratingBarStyleSmall=88;
+    public static final int AppCompatTheme_ratingBarStyleSmall=92;
     /**
      * <p>
      * @attr description
@@ -7186,9 +7641,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:searchViewStyle
+     * @attr name com.example.finalproject:searchViewStyle
      */
-    public static final int AppCompatTheme_searchViewStyle=89;
+    public static final int AppCompatTheme_searchViewStyle=93;
     /**
      * <p>
      * @attr description
@@ -7199,9 +7654,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:seekBarStyle
+     * @attr name com.example.finalproject:seekBarStyle
      */
-    public static final int AppCompatTheme_seekBarStyle=90;
+    public static final int AppCompatTheme_seekBarStyle=94;
     /**
      * <p>
      * @attr description
@@ -7214,9 +7669,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:selectableItemBackground
+     * @attr name com.example.finalproject:selectableItemBackground
      */
-    public static final int AppCompatTheme_selectableItemBackground=91;
+    public static final int AppCompatTheme_selectableItemBackground=95;
     /**
      * <p>
      * @attr description
@@ -7227,9 +7682,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:selectableItemBackgroundBorderless
+     * @attr name com.example.finalproject:selectableItemBackgroundBorderless
      */
-    public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
+    public static final int AppCompatTheme_selectableItemBackgroundBorderless=96;
     /**
      * <p>
      * @attr description
@@ -7240,9 +7695,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:spinnerDropDownItemStyle
+     * @attr name com.example.finalproject:spinnerDropDownItemStyle
      */
-    public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
+    public static final int AppCompatTheme_spinnerDropDownItemStyle=97;
     /**
      * <p>
      * @attr description
@@ -7253,9 +7708,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:spinnerStyle
+     * @attr name com.example.finalproject:spinnerStyle
      */
-    public static final int AppCompatTheme_spinnerStyle=94;
+    public static final int AppCompatTheme_spinnerStyle=98;
     /**
      * <p>
      * @attr description
@@ -7266,9 +7721,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:switchStyle
+     * @attr name com.example.finalproject:switchStyle
      */
-    public static final int AppCompatTheme_switchStyle=95;
+    public static final int AppCompatTheme_switchStyle=99;
     /**
      * <p>
      * @attr description
@@ -7279,9 +7734,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceLargePopupMenu
+     * @attr name com.example.finalproject:textAppearanceLargePopupMenu
      */
-    public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
+    public static final int AppCompatTheme_textAppearanceLargePopupMenu=100;
     /**
      * <p>
      * @attr description
@@ -7292,9 +7747,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceListItem
+     * @attr name com.example.finalproject:textAppearanceListItem
      */
-    public static final int AppCompatTheme_textAppearanceListItem=97;
+    public static final int AppCompatTheme_textAppearanceListItem=101;
     /**
      * <p>
      * @attr description
@@ -7305,9 +7760,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceListItemSecondary
+     * @attr name com.example.finalproject:textAppearanceListItemSecondary
      */
-    public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
+    public static final int AppCompatTheme_textAppearanceListItemSecondary=102;
     /**
      * <p>
      * @attr description
@@ -7318,9 +7773,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceListItemSmall
+     * @attr name com.example.finalproject:textAppearanceListItemSmall
      */
-    public static final int AppCompatTheme_textAppearanceListItemSmall=99;
+    public static final int AppCompatTheme_textAppearanceListItemSmall=103;
     /**
      * <p>
      * @attr description
@@ -7331,9 +7786,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearancePopupMenuHeader
+     * @attr name com.example.finalproject:textAppearancePopupMenuHeader
      */
-    public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
+    public static final int AppCompatTheme_textAppearancePopupMenuHeader=104;
     /**
      * <p>
      * @attr description
@@ -7344,9 +7799,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceSearchResultSubtitle
+     * @attr name com.example.finalproject:textAppearanceSearchResultSubtitle
      */
-    public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
+    public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=105;
     /**
      * <p>
      * @attr description
@@ -7357,9 +7812,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceSearchResultTitle
+     * @attr name com.example.finalproject:textAppearanceSearchResultTitle
      */
-    public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
+    public static final int AppCompatTheme_textAppearanceSearchResultTitle=106;
     /**
      * <p>
      * @attr description
@@ -7370,9 +7825,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:textAppearanceSmallPopupMenu
+     * @attr name com.example.finalproject:textAppearanceSmallPopupMenu
      */
-    public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
+    public static final int AppCompatTheme_textAppearanceSmallPopupMenu=107;
     /**
      * <p>
      * @attr description
@@ -7386,9 +7841,9 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:textColorAlertDialogListItem
+     * @attr name com.example.finalproject:textColorAlertDialogListItem
      */
-    public static final int AppCompatTheme_textColorAlertDialogListItem=104;
+    public static final int AppCompatTheme_textColorAlertDialogListItem=108;
     /**
      * <p>
      * @attr description
@@ -7402,9 +7857,9 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:textColorSearchUrl
+     * @attr name com.example.finalproject:textColorSearchUrl
      */
-    public static final int AppCompatTheme_textColorSearchUrl=105;
+    public static final int AppCompatTheme_textColorSearchUrl=109;
     /**
      * <p>
      * @attr description
@@ -7415,9 +7870,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:toolbarNavigationButtonStyle
+     * @attr name com.example.finalproject:toolbarNavigationButtonStyle
      */
-    public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
+    public static final int AppCompatTheme_toolbarNavigationButtonStyle=110;
     /**
      * <p>
      * @attr description
@@ -7428,9 +7883,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:toolbarStyle
+     * @attr name com.example.finalproject:toolbarStyle
      */
-    public static final int AppCompatTheme_toolbarStyle=107;
+    public static final int AppCompatTheme_toolbarStyle=111;
     /**
      * <p>
      * @attr description
@@ -7444,9 +7899,9 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:tooltipForegroundColor
+     * @attr name com.example.finalproject:tooltipForegroundColor
      */
-    public static final int AppCompatTheme_tooltipForegroundColor=108;
+    public static final int AppCompatTheme_tooltipForegroundColor=112;
     /**
      * <p>
      * @attr description
@@ -7457,19 +7912,19 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:tooltipFrameBackground
+     * @attr name com.example.finalproject:tooltipFrameBackground
      */
-    public static final int AppCompatTheme_tooltipFrameBackground=109;
+    public static final int AppCompatTheme_tooltipFrameBackground=113;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:viewInflaterClass
+     * @attr name com.example.finalproject:viewInflaterClass
      */
-    public static final int AppCompatTheme_viewInflaterClass=110;
+    public static final int AppCompatTheme_viewInflaterClass=114;
     /**
      * <p>
      * @attr description
@@ -7479,9 +7934,9 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:windowActionBar
+     * @attr name com.example.finalproject:windowActionBar
      */
-    public static final int AppCompatTheme_windowActionBar=111;
+    public static final int AppCompatTheme_windowActionBar=115;
     /**
      * <p>
      * @attr description
@@ -7492,9 +7947,9 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:windowActionBarOverlay
+     * @attr name com.example.finalproject:windowActionBarOverlay
      */
-    public static final int AppCompatTheme_windowActionBarOverlay=112;
+    public static final int AppCompatTheme_windowActionBarOverlay=116;
     /**
      * <p>
      * @attr description
@@ -7504,9 +7959,9 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:windowActionModeOverlay
+     * @attr name com.example.finalproject:windowActionModeOverlay
      */
-    public static final int AppCompatTheme_windowActionModeOverlay=113;
+    public static final int AppCompatTheme_windowActionModeOverlay=117;
     /**
      * <p>
      * @attr description
@@ -7524,9 +7979,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowFixedHeightMajor
+     * @attr name com.example.finalproject:windowFixedHeightMajor
      */
-    public static final int AppCompatTheme_windowFixedHeightMajor=114;
+    public static final int AppCompatTheme_windowFixedHeightMajor=118;
     /**
      * <p>
      * @attr description
@@ -7544,9 +7999,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowFixedHeightMinor
+     * @attr name com.example.finalproject:windowFixedHeightMinor
      */
-    public static final int AppCompatTheme_windowFixedHeightMinor=115;
+    public static final int AppCompatTheme_windowFixedHeightMinor=119;
     /**
      * <p>
      * @attr description
@@ -7564,9 +8019,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowFixedWidthMajor
+     * @attr name com.example.finalproject:windowFixedWidthMajor
      */
-    public static final int AppCompatTheme_windowFixedWidthMajor=116;
+    public static final int AppCompatTheme_windowFixedWidthMajor=120;
     /**
      * <p>
      * @attr description
@@ -7584,9 +8039,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowFixedWidthMinor
+     * @attr name com.example.finalproject:windowFixedWidthMinor
      */
-    public static final int AppCompatTheme_windowFixedWidthMinor=117;
+    public static final int AppCompatTheme_windowFixedWidthMinor=121;
     /**
      * <p>
      * @attr description
@@ -7605,9 +8060,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowMinWidthMajor
+     * @attr name com.example.finalproject:windowMinWidthMajor
      */
-    public static final int AppCompatTheme_windowMinWidthMajor=118;
+    public static final int AppCompatTheme_windowMinWidthMajor=122;
     /**
      * <p>
      * @attr description
@@ -7626,9 +8081,9 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.famchat:windowMinWidthMinor
+     * @attr name com.example.finalproject:windowMinWidthMinor
      */
-    public static final int AppCompatTheme_windowMinWidthMinor=119;
+    public static final int AppCompatTheme_windowMinWidthMinor=123;
     /**
      * <p>
      * @attr description
@@ -7637,9 +8092,9 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:windowNoTitle
+     * @attr name com.example.finalproject:windowNoTitle
      */
-    public static final int AppCompatTheme_windowNoTitle=120;
+    public static final int AppCompatTheme_windowNoTitle=124;
     /**
      * Attributes that can be used with a ButtonBarLayout.
      * <p>Includes the following attributes:</p>
@@ -7647,7 +8102,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.famchat:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.finalproject:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
      * enough space to lay them out side-by-side.</td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
@@ -7664,7 +8119,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:allowStacking
+     * @attr name com.example.finalproject:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -7676,7 +8131,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.famchat:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.finalproject:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -7713,7 +8168,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:alpha
+     * @attr name com.example.finalproject:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -7724,15 +8179,17 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.famchat:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.famchat:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonCompat com.example.finalproject:buttonCompat}</code></td><td>Compat attr to load backported drawable types</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.finalproject:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.finalproject:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
      * </table>
      * @see #CompoundButton_android_button
+     * @see #CompoundButton_buttonCompat
      * @see #CompoundButton_buttonTint
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-      0x01010107, 0x7f020045, 0x7f020046
+      0x01010107, 0x7f02003f, 0x7f020046, 0x7f020047
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -7749,15 +8206,28 @@ public final class R {
     /**
      * <p>
      * @attr description
+     * Compat attr to load backported drawable types
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:buttonCompat
+     */
+    public static final int CompoundButton_buttonCompat=1;
+    /**
+     * <p>
+     * @attr description
      * Tint to apply to the button drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:buttonTint
+     * @attr name com.example.finalproject:buttonTint
      */
-    public static final int CompoundButton_buttonTint=1;
+    public static final int CompoundButton_buttonTint=2;
     /**
      * <p>
      * @attr description
@@ -7782,9 +8252,9 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:buttonTintMode
+     * @attr name com.example.finalproject:buttonTintMode
      */
-    public static final int CompoundButton_buttonTintMode=2;
+    public static final int CompoundButton_buttonTintMode=3;
     /**
      * Attributes that can be used with a ConstraintLayout_Layout.
      * <p>Includes the following attributes:</p>
@@ -7797,61 +8267,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.example.famchat:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.example.famchat:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.example.famchat:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.example.famchat:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.example.famchat:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.example.famchat:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.example.famchat:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.example.famchat:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.example.famchat:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.example.famchat:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.example.famchat:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.example.famchat:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.example.famchat:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.example.famchat:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.example.famchat:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.example.famchat:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.example.famchat:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.example.famchat:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.example.famchat:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.example.famchat:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.example.famchat:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.example.famchat:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.example.famchat:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.example.famchat:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.example.famchat:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.example.famchat:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.example.famchat:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.example.famchat:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.example.famchat:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.example.famchat:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.example.famchat:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.example.famchat:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.example.famchat:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.example.famchat:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.example.famchat:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.example.famchat:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.example.famchat:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.example.famchat:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.example.famchat:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.example.famchat:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.example.famchat:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.example.famchat:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.example.famchat:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.example.famchat:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.example.famchat:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.example.famchat:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.example.famchat:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.example.famchat:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.example.famchat:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.example.famchat:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.example.famchat:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.example.famchat:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.example.famchat:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.example.famchat:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.example.famchat:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.example.finalproject:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.example.finalproject:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.example.finalproject:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.example.finalproject:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.example.finalproject:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.example.finalproject:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.example.finalproject:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.example.finalproject:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.example.finalproject:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.example.finalproject:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.example.finalproject:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.example.finalproject:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.example.finalproject:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.example.finalproject:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.example.finalproject:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.example.finalproject:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.example.finalproject:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.example.finalproject:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.example.finalproject:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.example.finalproject:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.example.finalproject:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.example.finalproject:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.example.finalproject:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.example.finalproject:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.example.finalproject:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.example.finalproject:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.example.finalproject:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.example.finalproject:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.example.finalproject:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.example.finalproject:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.example.finalproject:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.example.finalproject:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.example.finalproject:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.example.finalproject:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.example.finalproject:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.example.finalproject:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.example.finalproject:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.example.finalproject:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.example.finalproject:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.example.finalproject:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.example.finalproject:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.example.finalproject:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.example.finalproject:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.example.finalproject:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.example.finalproject:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.example.finalproject:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.example.finalproject:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.example.finalproject:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.example.finalproject:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.example.finalproject:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.example.finalproject:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.example.finalproject:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.example.finalproject:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.example.finalproject:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.example.finalproject:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -7916,20 +8386,20 @@ public final class R {
      */
     public static final int[] ConstraintLayout_Layout={
       0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x7f020037, 0x7f020038, 0x7f020047, 
-      0x7f02005c, 0x7f02005d, 0x7f02009f, 0x7f0200a0, 
-      0x7f0200a1, 0x7f0200a2, 0x7f0200a3, 0x7f0200a4, 
-      0x7f0200a5, 0x7f0200a6, 0x7f0200a7, 0x7f0200a8, 
-      0x7f0200a9, 0x7f0200aa, 0x7f0200ab, 0x7f0200ac, 
-      0x7f0200ad, 0x7f0200ae, 0x7f0200af, 0x7f0200b0, 
-      0x7f0200b1, 0x7f0200b2, 0x7f0200b3, 0x7f0200b4, 
-      0x7f0200b5, 0x7f0200b6, 0x7f0200b7, 0x7f0200b8, 
-      0x7f0200b9, 0x7f0200ba, 0x7f0200bb, 0x7f0200bc, 
-      0x7f0200bd, 0x7f0200be, 0x7f0200bf, 0x7f0200c0, 
-      0x7f0200c1, 0x7f0200c2, 0x7f0200c3, 0x7f0200c4, 
-      0x7f0200c5, 0x7f0200c6, 0x7f0200c7, 0x7f0200c9, 
+      0x01010140, 0x7f020037, 0x7f020038, 0x7f020048, 
+      0x7f02005d, 0x7f02005e, 0x7f0200a8, 0x7f0200a9, 
+      0x7f0200aa, 0x7f0200ab, 0x7f0200ac, 0x7f0200ad, 
+      0x7f0200ae, 0x7f0200af, 0x7f0200b0, 0x7f0200b1, 
+      0x7f0200b2, 0x7f0200b3, 0x7f0200b4, 0x7f0200b5, 
+      0x7f0200b6, 0x7f0200b7, 0x7f0200b8, 0x7f0200b9, 
+      0x7f0200ba, 0x7f0200bb, 0x7f0200bc, 0x7f0200bd, 
+      0x7f0200be, 0x7f0200bf, 0x7f0200c0, 0x7f0200c1, 
+      0x7f0200c2, 0x7f0200c3, 0x7f0200c4, 0x7f0200c5, 
+      0x7f0200c6, 0x7f0200c7, 0x7f0200c8, 0x7f0200c9, 
       0x7f0200ca, 0x7f0200cb, 0x7f0200cc, 0x7f0200cd, 
-      0x7f0200ce, 0x7f0200cf, 0x7f0200d0, 0x7f0200d3
+      0x7f0200ce, 0x7f0200cf, 0x7f0200d0, 0x7f0200d2, 
+      0x7f0200d3, 0x7f0200d4, 0x7f0200d5, 0x7f0200d6, 
+      0x7f0200d7, 0x7f0200d8, 0x7f0200d9, 0x7f0200dc
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -8001,17 +8471,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:barrierAllowsGoneWidgets
+     * @attr name com.example.finalproject:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8028,21 +8498,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:barrierDirection
+     * @attr name com.example.finalproject:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:chainUseRtl
+     * @attr name com.example.finalproject:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8050,50 +8520,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:constraintSet
+     * @attr name com.example.finalproject:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:constraint_referenced_ids
+     * @attr name com.example.finalproject:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:layout_constrainedHeight
+     * @attr name com.example.finalproject:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:layout_constrainedWidth
+     * @attr name com.example.finalproject:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintBaseline_creator
+     * @attr name com.example.finalproject:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8109,20 +8579,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBaseline_toBaselineOf
+     * @attr name com.example.finalproject:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintBottom_creator
+     * @attr name com.example.finalproject:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8138,11 +8608,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBottom_toBottomOf
+     * @attr name com.example.finalproject:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8158,11 +8628,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBottom_toTopOf
+     * @attr name com.example.finalproject:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8170,20 +8640,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:layout_constraintCircle
+     * @attr name com.example.finalproject:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintCircleAngle
+     * @attr name com.example.finalproject:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8192,21 +8662,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintCircleRadius
+     * @attr name com.example.finalproject:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:layout_constraintDimensionRatio
+     * @attr name com.example.finalproject:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8222,11 +8692,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintEnd_toEndOf
+     * @attr name com.example.finalproject:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8242,11 +8712,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintEnd_toStartOf
+     * @attr name com.example.finalproject:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8255,11 +8725,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintGuide_begin
+     * @attr name com.example.finalproject:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8268,20 +8738,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintGuide_end
+     * @attr name com.example.finalproject:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintGuide_percent
+     * @attr name com.example.finalproject:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8295,11 +8765,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_default
+     * @attr name com.example.finalproject:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8316,11 +8786,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_max
+     * @attr name com.example.finalproject:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8337,29 +8807,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_min
+     * @attr name com.example.finalproject:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHeight_percent
+     * @attr name com.example.finalproject:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_bias
+     * @attr name com.example.finalproject:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8373,29 +8843,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_chainStyle
+     * @attr name com.example.finalproject:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_weight
+     * @attr name com.example.finalproject:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintLeft_creator
+     * @attr name com.example.finalproject:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8411,11 +8881,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintLeft_toLeftOf
+     * @attr name com.example.finalproject:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8431,20 +8901,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintLeft_toRightOf
+     * @attr name com.example.finalproject:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintRight_creator
+     * @attr name com.example.finalproject:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8460,11 +8930,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintRight_toLeftOf
+     * @attr name com.example.finalproject:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8480,11 +8950,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintRight_toRightOf
+     * @attr name com.example.finalproject:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8500,11 +8970,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintStart_toEndOf
+     * @attr name com.example.finalproject:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8520,20 +8990,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintStart_toStartOf
+     * @attr name com.example.finalproject:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintTop_creator
+     * @attr name com.example.finalproject:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8549,11 +9019,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintTop_toBottomOf
+     * @attr name com.example.finalproject:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8569,20 +9039,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintTop_toTopOf
+     * @attr name com.example.finalproject:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintVertical_bias
+     * @attr name com.example.finalproject:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8596,20 +9066,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintVertical_chainStyle
+     * @attr name com.example.finalproject:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintVertical_weight
+     * @attr name com.example.finalproject:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8623,11 +9093,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_default
+     * @attr name com.example.finalproject:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8644,11 +9114,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_max
+     * @attr name com.example.finalproject:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8665,20 +9135,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_min
+     * @attr name com.example.finalproject:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintWidth_percent
+     * @attr name com.example.finalproject:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8687,11 +9157,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_editor_absoluteX
+     * @attr name com.example.finalproject:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8700,11 +9170,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_editor_absoluteY
+     * @attr name com.example.finalproject:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8713,11 +9183,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginBottom
+     * @attr name com.example.finalproject:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8726,11 +9196,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginEnd
+     * @attr name com.example.finalproject:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8739,11 +9209,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginLeft
+     * @attr name com.example.finalproject:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8752,11 +9222,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginRight
+     * @attr name com.example.finalproject:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8765,11 +9235,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginStart
+     * @attr name com.example.finalproject:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8778,11 +9248,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginTop
+     * @attr name com.example.finalproject:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8800,7 +9270,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_optimizationLevel
+     * @attr name com.example.finalproject:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -8810,17 +9280,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.example.famchat:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.example.famchat:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.example.finalproject:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.example.finalproject:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
      */
     public static final int[] ConstraintLayout_placeholder={
-      0x7f02005e, 0x7f02007a
+      0x7f02005f, 0x7f020083
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8828,11 +9298,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:content
+     * @attr name com.example.finalproject:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8845,7 +9315,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:emptyVisibility
+     * @attr name com.example.finalproject:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -8882,59 +9352,59 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.example.famchat:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.example.famchat:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.example.famchat:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.example.famchat:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.example.famchat:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.example.famchat:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.example.famchat:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.example.famchat:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.example.famchat:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.example.famchat:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.example.famchat:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.example.famchat:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.example.famchat:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.example.famchat:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.example.famchat:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.example.famchat:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.example.famchat:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.example.famchat:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.example.famchat:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.example.famchat:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.example.famchat:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.example.famchat:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.example.famchat:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.example.famchat:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.example.famchat:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.example.famchat:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.example.famchat:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.example.famchat:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.example.famchat:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.example.famchat:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.example.famchat:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.example.famchat:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.example.famchat:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.example.famchat:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.example.famchat:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.example.famchat:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.example.famchat:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.example.famchat:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.example.famchat:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.example.famchat:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.example.famchat:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.example.famchat:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.example.famchat:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.example.famchat:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.example.famchat:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.example.famchat:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.example.famchat:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.example.famchat:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.example.famchat:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.example.famchat:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.example.famchat:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.example.famchat:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.example.famchat:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.example.finalproject:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.example.finalproject:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.example.finalproject:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.example.finalproject:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.example.finalproject:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.example.finalproject:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.example.finalproject:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.example.finalproject:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.example.finalproject:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.example.finalproject:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.example.finalproject:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.example.finalproject:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.example.finalproject:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.example.finalproject:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.example.finalproject:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.example.finalproject:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.example.finalproject:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.example.finalproject:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.example.finalproject:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.example.finalproject:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.example.finalproject:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.example.finalproject:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.example.finalproject:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.example.finalproject:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.example.finalproject:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.example.finalproject:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.example.finalproject:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.example.finalproject:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.example.finalproject:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.example.finalproject:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.example.finalproject:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.example.finalproject:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.example.finalproject:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.example.finalproject:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.example.finalproject:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.example.finalproject:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.example.finalproject:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.example.finalproject:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.example.finalproject:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.example.finalproject:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.example.finalproject:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.example.finalproject:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.example.finalproject:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.example.finalproject:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.example.finalproject:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.example.finalproject:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.example.finalproject:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.example.finalproject:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.example.finalproject:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.example.finalproject:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.example.finalproject:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.example.finalproject:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.example.finalproject:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -9025,19 +9495,19 @@ public final class R {
       0x01010322, 0x01010323, 0x01010324, 0x01010325, 
       0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
       0x010103b6, 0x010103fa, 0x01010440, 0x7f020037, 
-      0x7f020038, 0x7f020047, 0x7f02005d, 0x7f02009f, 
-      0x7f0200a0, 0x7f0200a1, 0x7f0200a2, 0x7f0200a3, 
-      0x7f0200a4, 0x7f0200a5, 0x7f0200a6, 0x7f0200a7, 
-      0x7f0200a8, 0x7f0200a9, 0x7f0200aa, 0x7f0200ab, 
-      0x7f0200ac, 0x7f0200ad, 0x7f0200ae, 0x7f0200af, 
-      0x7f0200b0, 0x7f0200b1, 0x7f0200b2, 0x7f0200b3, 
-      0x7f0200b4, 0x7f0200b5, 0x7f0200b6, 0x7f0200b7, 
-      0x7f0200b8, 0x7f0200b9, 0x7f0200ba, 0x7f0200bb, 
-      0x7f0200bc, 0x7f0200bd, 0x7f0200be, 0x7f0200bf, 
-      0x7f0200c0, 0x7f0200c1, 0x7f0200c2, 0x7f0200c3, 
-      0x7f0200c4, 0x7f0200c5, 0x7f0200c6, 0x7f0200c7, 
+      0x7f020038, 0x7f020048, 0x7f02005e, 0x7f0200a8, 
+      0x7f0200a9, 0x7f0200aa, 0x7f0200ab, 0x7f0200ac, 
+      0x7f0200ad, 0x7f0200ae, 0x7f0200af, 0x7f0200b0, 
+      0x7f0200b1, 0x7f0200b2, 0x7f0200b3, 0x7f0200b4, 
+      0x7f0200b5, 0x7f0200b6, 0x7f0200b7, 0x7f0200b8, 
+      0x7f0200b9, 0x7f0200ba, 0x7f0200bb, 0x7f0200bc, 
+      0x7f0200bd, 0x7f0200be, 0x7f0200bf, 0x7f0200c0, 
+      0x7f0200c1, 0x7f0200c2, 0x7f0200c3, 0x7f0200c4, 
+      0x7f0200c5, 0x7f0200c6, 0x7f0200c7, 0x7f0200c8, 
       0x7f0200c9, 0x7f0200ca, 0x7f0200cb, 0x7f0200cc, 
-      0x7f0200cd, 0x7f0200ce, 0x7f0200cf, 0x7f0200d0
+      0x7f0200cd, 0x7f0200ce, 0x7f0200cf, 0x7f0200d0, 
+      0x7f0200d2, 0x7f0200d3, 0x7f0200d4, 0x7f0200d5, 
+      0x7f0200d6, 0x7f0200d7, 0x7f0200d8, 0x7f0200d9
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -9395,17 +9865,17 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:barrierAllowsGoneWidgets
+     * @attr name com.example.finalproject:barrierAllowsGoneWidgets
      */
     public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9422,60 +9892,60 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:barrierDirection
+     * @attr name com.example.finalproject:barrierDirection
      */
     public static final int ConstraintSet_barrierDirection=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:chainUseRtl
+     * @attr name com.example.finalproject:chainUseRtl
      */
     public static final int ConstraintSet_chainUseRtl=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:constraint_referenced_ids
+     * @attr name com.example.finalproject:constraint_referenced_ids
      */
     public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:layout_constrainedHeight
+     * @attr name com.example.finalproject:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:layout_constrainedWidth
+     * @attr name com.example.finalproject:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintBaseline_creator
+     * @attr name com.example.finalproject:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9491,20 +9961,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBaseline_toBaselineOf
+     * @attr name com.example.finalproject:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintBottom_creator
+     * @attr name com.example.finalproject:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9520,11 +9990,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBottom_toBottomOf
+     * @attr name com.example.finalproject:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9540,11 +10010,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintBottom_toTopOf
+     * @attr name com.example.finalproject:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9552,20 +10022,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:layout_constraintCircle
+     * @attr name com.example.finalproject:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintCircleAngle
+     * @attr name com.example.finalproject:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9574,21 +10044,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintCircleRadius
+     * @attr name com.example.finalproject:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:layout_constraintDimensionRatio
+     * @attr name com.example.finalproject:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9604,11 +10074,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintEnd_toEndOf
+     * @attr name com.example.finalproject:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9624,11 +10094,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintEnd_toStartOf
+     * @attr name com.example.finalproject:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9637,11 +10107,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintGuide_begin
+     * @attr name com.example.finalproject:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9650,20 +10120,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_constraintGuide_end
+     * @attr name com.example.finalproject:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintGuide_percent
+     * @attr name com.example.finalproject:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9677,11 +10147,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_default
+     * @attr name com.example.finalproject:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9698,11 +10168,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_max
+     * @attr name com.example.finalproject:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9719,29 +10189,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHeight_min
+     * @attr name com.example.finalproject:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHeight_percent
+     * @attr name com.example.finalproject:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_bias
+     * @attr name com.example.finalproject:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9755,29 +10225,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_chainStyle
+     * @attr name com.example.finalproject:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintHorizontal_weight
+     * @attr name com.example.finalproject:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintLeft_creator
+     * @attr name com.example.finalproject:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9793,11 +10263,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintLeft_toLeftOf
+     * @attr name com.example.finalproject:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9813,20 +10283,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintLeft_toRightOf
+     * @attr name com.example.finalproject:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintRight_creator
+     * @attr name com.example.finalproject:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9842,11 +10312,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintRight_toLeftOf
+     * @attr name com.example.finalproject:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9862,11 +10332,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintRight_toRightOf
+     * @attr name com.example.finalproject:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9882,11 +10352,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintStart_toEndOf
+     * @attr name com.example.finalproject:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9902,20 +10372,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintStart_toStartOf
+     * @attr name com.example.finalproject:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_constraintTop_creator
+     * @attr name com.example.finalproject:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9931,11 +10401,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintTop_toBottomOf
+     * @attr name com.example.finalproject:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9951,20 +10421,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintTop_toTopOf
+     * @attr name com.example.finalproject:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintVertical_bias
+     * @attr name com.example.finalproject:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9978,20 +10448,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintVertical_chainStyle
+     * @attr name com.example.finalproject:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintVertical_weight
+     * @attr name com.example.finalproject:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10005,11 +10475,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_default
+     * @attr name com.example.finalproject:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10026,11 +10496,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_max
+     * @attr name com.example.finalproject:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10047,20 +10517,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_constraintWidth_min
+     * @attr name com.example.finalproject:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:layout_constraintWidth_percent
+     * @attr name com.example.finalproject:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10069,11 +10539,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_editor_absoluteX
+     * @attr name com.example.finalproject:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10082,11 +10552,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_editor_absoluteY
+     * @attr name com.example.finalproject:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10095,11 +10565,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginBottom
+     * @attr name com.example.finalproject:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10108,11 +10578,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginEnd
+     * @attr name com.example.finalproject:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10121,11 +10591,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginLeft
+     * @attr name com.example.finalproject:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10134,11 +10604,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginRight
+     * @attr name com.example.finalproject:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10147,11 +10617,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginStart
+     * @attr name com.example.finalproject:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10160,7 +10630,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:layout_goneMarginTop
+     * @attr name com.example.finalproject:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
@@ -10170,15 +10640,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.famchat:keylines}</code></td><td>A reference to an array of integers representing the
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.finalproject:keylines}</code></td><td>A reference to an array of integers representing the
      * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.famchat:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.finalproject:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f020099, 0x7f02010f
+      0x7f0200a2, 0x7f02011d
     };
     /**
      * <p>
@@ -10194,7 +10664,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:keylines
+     * @attr name com.example.finalproject:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
@@ -10210,7 +10680,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:statusBarBackground
+     * @attr name com.example.finalproject:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -10221,15 +10691,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.famchat:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.famchat:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.finalproject:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.finalproject:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
      * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.famchat:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.finalproject:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
      * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.famchat:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.famchat:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.finalproject:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.finalproject:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
      * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.famchat:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.finalproject:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -10240,8 +10710,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f02009c, 0x7f02009d, 0x7f02009e, 
-      0x7f0200c8, 0x7f0200d1, 0x7f0200d2
+      0x010100b3, 0x7f0200a5, 0x7f0200a6, 0x7f0200a7, 
+      0x7f0200d1, 0x7f0200da, 0x7f0200db
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -10282,7 +10752,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:layout_anchor
+     * @attr name com.example.finalproject:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
@@ -10319,7 +10789,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_anchorGravity
+     * @attr name com.example.finalproject:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
@@ -10331,7 +10801,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:layout_behavior
+     * @attr name com.example.finalproject:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
@@ -10355,7 +10825,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_dodgeInsetEdges
+     * @attr name com.example.finalproject:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
@@ -10379,7 +10849,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:layout_insetEdge
+     * @attr name com.example.finalproject:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
@@ -10391,7 +10861,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:layout_keyline
+     * @attr name com.example.finalproject:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -10401,14 +10871,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.famchat:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.famchat:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.famchat:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.famchat:color}</code></td><td>The drawing color for the bars</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.famchat:drawableSize}</code></td><td>The total size of the drawable</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.famchat:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.famchat:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.famchat:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.finalproject:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.finalproject:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.finalproject:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.finalproject:color}</code></td><td>The drawing color for the bars</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.finalproject:drawableSize}</code></td><td>The total size of the drawable</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.finalproject:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.finalproject:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.finalproject:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -10420,8 +10890,8 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f020029, 0x7f02002a, 0x7f020036, 0x7f02004f, 
-      0x7f020072, 0x7f020088, 0x7f020109, 0x7f020127
+      0x7f020029, 0x7f02002a, 0x7f020036, 0x7f020050, 
+      0x7f020077, 0x7f020091, 0x7f020117, 0x7f020136
     };
     /**
      * <p>
@@ -10434,7 +10904,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:arrowHeadLength
+     * @attr name com.example.finalproject:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
@@ -10448,7 +10918,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:arrowShaftLength
+     * @attr name com.example.finalproject:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
@@ -10462,7 +10932,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:barLength
+     * @attr name com.example.finalproject:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
@@ -10474,7 +10944,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:color
+     * @attr name com.example.finalproject:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
@@ -10488,7 +10958,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:drawableSize
+     * @attr name com.example.finalproject:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
@@ -10502,7 +10972,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:gapBetweenBars
+     * @attr name com.example.finalproject:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
@@ -10513,7 +10983,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:spinBars
+     * @attr name com.example.finalproject:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
@@ -10527,7 +10997,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:thickness
+     * @attr name com.example.finalproject:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -10537,12 +11007,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.famchat:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.famchat:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.famchat:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.famchat:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.famchat:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.famchat:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.finalproject:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.finalproject:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.finalproject:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.finalproject:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.finalproject:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.finalproject:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -10552,8 +11022,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f02007f, 0x7f020080, 0x7f020081, 0x7f020082, 
-      0x7f020083, 0x7f020084
+      0x7f020088, 0x7f020089, 0x7f02008a, 0x7f02008b, 
+      0x7f02008c, 0x7f02008d
     };
     /**
      * <p>
@@ -10563,7 +11033,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontProviderAuthority
+     * @attr name com.example.finalproject:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
@@ -10580,7 +11050,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:fontProviderCerts
+     * @attr name com.example.finalproject:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
@@ -10612,7 +11082,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:fontProviderFetchStrategy
+     * @attr name com.example.finalproject:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
@@ -10631,7 +11101,7 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:fontProviderFetchTimeout
+     * @attr name com.example.finalproject:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
@@ -10643,7 +11113,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontProviderPackage
+     * @attr name com.example.finalproject:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
@@ -10655,7 +11125,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontProviderQuery
+     * @attr name com.example.finalproject:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -10670,11 +11140,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.example.famchat:font}</code></td><td>The reference to the font file to be used.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.famchat:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.famchat:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.famchat:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.famchat:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.example.finalproject:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.finalproject:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.finalproject:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.finalproject:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.finalproject:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -10689,8 +11159,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f02007d, 0x7f020085, 0x7f020086, 
-      0x7f020087, 0x7f020142
+      0x01010570, 0x7f020086, 0x7f02008e, 0x7f02008f, 
+      0x7f020090, 0x7f020151
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -10761,7 +11231,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:font
+     * @attr name com.example.finalproject:font
      */
     public static final int FontFamilyFont_font=5;
     /**
@@ -10781,7 +11251,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:fontStyle
+     * @attr name com.example.finalproject:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
@@ -10795,7 +11265,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontVariationSettings
+     * @attr name com.example.finalproject:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
@@ -10809,7 +11279,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:fontWeight
+     * @attr name com.example.finalproject:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
@@ -10820,7 +11290,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.famchat:ttcIndex
+     * @attr name com.example.finalproject:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -11109,11 +11579,11 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.famchat:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.famchat:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.famchat:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.finalproject:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.finalproject:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.finalproject:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
      * the minimum size of the largest child.</td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.famchat:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.finalproject:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -11127,8 +11597,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
       0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f02006e, 0x7f020070, 0x7f0200e3, 
-      0x7f020105
+      0x01010128, 0x7f02006f, 0x7f020071, 0x7f0200f0, 
+      0x7f020113
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -11228,7 +11698,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:divider
+     * @attr name com.example.finalproject:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
@@ -11242,7 +11712,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:dividerPadding
+     * @attr name com.example.finalproject:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
@@ -11255,7 +11725,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:measureWithLargestChild
+     * @attr name com.example.finalproject:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
@@ -11275,7 +11745,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:showDividers
+     * @attr name com.example.finalproject:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -11433,38 +11903,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.example.famchat:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.famchat:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.famchat:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop com.example.finalproject:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.finalproject:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.finalproject:imageAspectRatioAdjust}</code></td><td></td></tr>
      * </table>
      * @see #LoadingImageView_circleCrop
      * @see #LoadingImageView_imageAspectRatio
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-      0x7f02004a, 0x7f020092, 0x7f020093
+      0x7f02004b, 0x7f02009b, 0x7f02009c
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#circleCrop}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#circleCrop}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:circleCrop
+     * @attr name com.example.finalproject:circleCrop
      */
     public static final int LoadingImageView_circleCrop=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#imageAspectRatio}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#imageAspectRatio}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.famchat:imageAspectRatio
+     * @attr name com.example.finalproject:imageAspectRatio
      */
     public static final int LoadingImageView_imageAspectRatio=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#imageAspectRatioAdjust}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#imageAspectRatioAdjust}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11478,7 +11948,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:imageAspectRatioAdjust
+     * @attr name com.example.finalproject:imageAspectRatioAdjust
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
@@ -11612,18 +12082,18 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.example.famchat:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.famchat:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
+     * <tr><td><code>{@link #MenuItem_actionLayout com.example.finalproject:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.finalproject:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
      * and perform operations such as default action for that menu item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.famchat:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.finalproject:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
      * action view.</td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.famchat:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.example.famchat:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.example.famchat:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.famchat:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.famchat:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.example.famchat:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.example.famchat:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.finalproject:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.example.finalproject:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.example.finalproject:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.finalproject:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.finalproject:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.example.finalproject:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.example.finalproject:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -11654,8 +12124,8 @@ public final class R {
       0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
       0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
       0x0101026f, 0x7f02000d, 0x7f02001f, 0x7f020020, 
-      0x7f020028, 0x7f02005f, 0x7f02008f, 0x7f020090, 
-      0x7f0200e8, 0x7f020104, 0x7f02013e
+      0x7f020028, 0x7f020060, 0x7f020098, 0x7f020099, 
+      0x7f0200f6, 0x7f020112, 0x7f02014d
     };
     /**
      * <p>
@@ -11832,7 +12302,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:actionLayout
+     * @attr name com.example.finalproject:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
@@ -11846,7 +12316,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:actionProviderClass
+     * @attr name com.example.finalproject:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
@@ -11859,7 +12329,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:actionViewClass
+     * @attr name com.example.finalproject:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
@@ -11882,7 +12352,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:alphabeticModifiers
+     * @attr name com.example.finalproject:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -11893,7 +12363,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:contentDescription
+     * @attr name com.example.finalproject:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
@@ -11905,7 +12375,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:iconTint
+     * @attr name com.example.finalproject:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
@@ -11932,7 +12402,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:iconTintMode
+     * @attr name com.example.finalproject:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
@@ -11955,7 +12425,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:numericModifiers
+     * @attr name com.example.finalproject:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
@@ -11985,7 +12455,7 @@ public final class R {
      * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:showAsAction
+     * @attr name com.example.finalproject:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
@@ -11996,7 +12466,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:tooltipText
+     * @attr name com.example.finalproject:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -12013,8 +12483,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.famchat:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.famchat:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.finalproject:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.finalproject:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -12028,8 +12498,8 @@ public final class R {
      */
     public static final int[] MenuView={
       0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f0200f4, 
-      0x7f020110
+      0x0101012f, 0x01010130, 0x01010131, 0x7f020102, 
+      0x7f02011e
     };
     /**
      * <p>
@@ -12133,7 +12603,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:preserveIconSpacing
+     * @attr name com.example.finalproject:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
@@ -12146,7 +12616,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:subMenuArrow
+     * @attr name com.example.finalproject:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -12158,14 +12628,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.famchat:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.finalproject:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f0200e9
+      0x01010176, 0x010102c9, 0x7f0200f7
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -12202,7 +12672,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:overlapAnchor
+     * @attr name com.example.finalproject:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -12212,12 +12682,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.famchat:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.finalproject:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f02010e
+      0x7f02011c
     };
     /**
      * <p>
@@ -12227,7 +12697,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:state_above_anchor
+     * @attr name com.example.finalproject:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -12237,14 +12707,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.famchat:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.famchat:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.finalproject:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.finalproject:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f0200ea, 0x7f0200ed
+      0x7f0200f8, 0x7f0200fb
     };
     /**
      * <p>
@@ -12257,7 +12727,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:paddingBottomNoButtons
+     * @attr name com.example.finalproject:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
@@ -12271,7 +12741,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:paddingTopNoTitle
+     * @attr name com.example.finalproject:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -12285,20 +12755,20 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.example.famchat:closeIcon}</code></td><td>Close button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.example.famchat:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.famchat:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
+     * <tr><td><code>{@link #SearchView_closeIcon com.example.finalproject:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.example.finalproject:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.finalproject:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.example.famchat:goIcon}</code></td><td>Go button icon</td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.famchat:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.example.famchat:layout}</code></td><td>The layout to use for the search view.</td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.example.famchat:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.example.famchat:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.famchat:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.example.famchat:searchIcon}</code></td><td>Search icon</td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.example.famchat:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.famchat:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.example.famchat:voiceIcon}</code></td><td>Voice button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.example.finalproject:goIcon}</code></td><td>Go button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.finalproject:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.example.finalproject:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.example.finalproject:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.example.finalproject:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.finalproject:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.example.finalproject:searchIcon}</code></td><td>Search icon</td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.example.finalproject:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.finalproject:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.example.finalproject:voiceIcon}</code></td><td>Voice button icon</td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -12320,10 +12790,10 @@ public final class R {
      */
     public static final int[] SearchView={
       0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f02004b, 0x7f02005b, 0x7f020069, 0x7f020089, 
-      0x7f020091, 0x7f02009b, 0x7f0200f7, 0x7f0200f8, 
-      0x7f0200fe, 0x7f0200ff, 0x7f020111, 0x7f020116, 
-      0x7f020144
+      0x7f02004c, 0x7f02005c, 0x7f02006a, 0x7f020092, 
+      0x7f02009a, 0x7f0200a4, 0x7f020105, 0x7f020106, 
+      0x7f02010c, 0x7f02010d, 0x7f02011f, 0x7f020124, 
+      0x7f020153
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -12448,7 +12918,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:closeIcon
+     * @attr name com.example.finalproject:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
@@ -12461,7 +12931,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:commitIcon
+     * @attr name com.example.finalproject:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
@@ -12473,7 +12943,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:defaultQueryHint
+     * @attr name com.example.finalproject:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
@@ -12486,7 +12956,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:goIcon
+     * @attr name com.example.finalproject:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
@@ -12498,7 +12968,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:iconifiedByDefault
+     * @attr name com.example.finalproject:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
@@ -12511,7 +12981,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:layout
+     * @attr name com.example.finalproject:layout
      */
     public static final int SearchView_layout=9;
     /**
@@ -12524,7 +12994,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:queryBackground
+     * @attr name com.example.finalproject:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
@@ -12535,7 +13005,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:queryHint
+     * @attr name com.example.finalproject:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
@@ -12548,7 +13018,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:searchHintIcon
+     * @attr name com.example.finalproject:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
@@ -12561,7 +13031,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:searchIcon
+     * @attr name com.example.finalproject:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
@@ -12574,7 +13044,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:submitBackground
+     * @attr name com.example.finalproject:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
@@ -12587,7 +13057,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:suggestionRowLayout
+     * @attr name com.example.finalproject:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
@@ -12600,7 +13070,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:voiceIcon
+     * @attr name com.example.finalproject:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -12610,19 +13080,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SignInButton_buttonSize com.example.famchat:buttonSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_colorScheme com.example.famchat:colorScheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_scopeUris com.example.famchat:scopeUris}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_buttonSize com.example.finalproject:buttonSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_colorScheme com.example.finalproject:colorScheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_scopeUris com.example.finalproject:scopeUris}</code></td><td></td></tr>
      * </table>
      * @see #SignInButton_buttonSize
      * @see #SignInButton_colorScheme
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-      0x7f020042, 0x7f020059, 0x7f0200fd
+      0x7f020043, 0x7f02005a, 0x7f02010b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#buttonSize}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#buttonSize}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12640,11 +13110,11 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:buttonSize
+     * @attr name com.example.finalproject:buttonSize
      */
     public static final int SignInButton_buttonSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#colorScheme}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#colorScheme}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12662,11 +13132,11 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:colorScheme
+     * @attr name com.example.finalproject:colorScheme
      */
     public static final int SignInButton_colorScheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#scopeUris}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#scopeUris}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12676,7 +13146,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:scopeUris
+     * @attr name com.example.finalproject:scopeUris
      */
     public static final int SignInButton_scopeUris=2;
     /**
@@ -12690,7 +13160,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.example.famchat:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Spinner_popupTheme com.example.finalproject:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
      * </table>
      * @see #Spinner_android_entries
@@ -12701,7 +13171,7 @@ public final class R {
      */
     public static final int[] Spinner={
       0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f0200f2
+      0x7f020100
     };
     /**
      * <p>
@@ -12779,7 +13249,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:popupTheme
+     * @attr name com.example.finalproject:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -12919,17 +13389,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.example.famchat:showText}</code></td><td>Whether to draw on/off text.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.famchat:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.famchat:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.famchat:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.famchat:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.famchat:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.famchat:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.famchat:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.example.famchat:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.famchat:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.famchat:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.example.finalproject:showText}</code></td><td>Whether to draw on/off text.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.finalproject:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.finalproject:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.finalproject:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.finalproject:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.finalproject:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.finalproject:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.finalproject:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.example.finalproject:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.finalproject:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.finalproject:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -12947,10 +13417,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f020106, 
-      0x7f02010c, 0x7f020117, 0x7f020118, 0x7f02011a, 
-      0x7f020128, 0x7f020129, 0x7f02012a, 0x7f02013f, 
-      0x7f020140, 0x7f020141
+      0x01010124, 0x01010125, 0x01010142, 0x7f020114, 
+      0x7f02011a, 0x7f020125, 0x7f020126, 0x7f020128, 
+      0x7f020137, 0x7f020138, 0x7f020139, 0x7f02014e, 
+      0x7f02014f, 0x7f020150
     };
     /**
      * <p>
@@ -12995,7 +13465,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:showText
+     * @attr name com.example.finalproject:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
@@ -13006,7 +13476,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:splitTrack
+     * @attr name com.example.finalproject:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
@@ -13020,7 +13490,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:switchMinWidth
+     * @attr name com.example.finalproject:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
@@ -13034,7 +13504,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:switchPadding
+     * @attr name com.example.finalproject:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
@@ -13047,7 +13517,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:switchTextAppearance
+     * @attr name com.example.finalproject:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
@@ -13061,7 +13531,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:thumbTextPadding
+     * @attr name com.example.finalproject:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
@@ -13073,7 +13543,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:thumbTint
+     * @attr name com.example.finalproject:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
@@ -13100,7 +13570,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:thumbTintMode
+     * @attr name com.example.finalproject:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
@@ -13113,7 +13583,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:track
+     * @attr name com.example.finalproject:track
      */
     public static final int SwitchCompat_track=11;
     /**
@@ -13125,7 +13595,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:trackTint
+     * @attr name com.example.finalproject:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
@@ -13152,7 +13622,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:trackTintMode
+     * @attr name com.example.finalproject:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -13173,8 +13643,12 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.famchat:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.famchat:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_android_textFontWeight android:textFontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.finalproject:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.example.finalproject:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.finalproject:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textLocale com.example.finalproject:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -13187,14 +13661,17 @@ public final class R {
      * @see #TextAppearance_android_shadowDy
      * @see #TextAppearance_android_shadowRadius
      * @see #TextAppearance_android_fontFamily
+     * @see #TextAppearance_android_textFontWeight
      * @see #TextAppearance_fontFamily
+     * @see #TextAppearance_fontVariationSettings
      * @see #TextAppearance_textAllCaps
+     * @see #TextAppearance_textLocale
      */
     public static final int[] TextAppearance={
       0x01010095, 0x01010096, 0x01010097, 0x01010098, 
       0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
-      0x01010163, 0x01010164, 0x010103ac, 0x7f02007e, 
-      0x7f02011b
+      0x01010163, 0x01010164, 0x010103ac, 0x01010585, 
+      0x7f020087, 0x7f02008f, 0x7f020129, 0x7f020134
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -13340,6 +13817,15 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
+     * <p>This symbol is the offset where the {@link android.R.attr#textFontWeight}
+     * attribute's value can be found in the {@link #TextAppearance} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name android:textFontWeight
+     */
+    public static final int TextAppearance_android_textFontWeight=11;
+    /**
      * <p>
      * @attr description
      * The attribute for the font family.
@@ -13347,9 +13833,20 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:fontFamily
+     * @attr name com.example.finalproject:fontFamily
      */
-    public static final int TextAppearance_fontFamily=11;
+    public static final int TextAppearance_fontFamily=12;
+    /**
+     * <p>
+     * @attr description
+     * OpenType font variation settings, available aftear api 26.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.example.finalproject:fontVariationSettings
+     */
+    public static final int TextAppearance_fontVariationSettings=13;
     /**
      * <p>
      * @attr description
@@ -13362,9 +13859,24 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.famchat:textAllCaps
+     * @attr name com.example.finalproject:textAllCaps
      */
-    public static final int TextAppearance_textAllCaps=12;
+    public static final int TextAppearance_textAllCaps=14;
+    /**
+     * <p>
+     * @attr description
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.example.finalproject:textLocale
+     */
+    public static final int TextAppearance_textLocale=15;
     /**
      * Attributes that can be used with a Toolbar.
      * <p>Includes the following attributes:</p>
@@ -13374,40 +13886,41 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.example.famchat:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.famchat:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.famchat:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.famchat:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.famchat:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.example.finalproject:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.finalproject:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.finalproject:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.finalproject:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.finalproject:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
      * are present.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.famchat:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.famchat:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.famchat:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.famchat:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.finalproject:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.finalproject:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.finalproject:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.finalproject:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
      * is present, such as the Up button.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.example.famchat:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.example.famchat:logoDescription}</code></td><td>A content description string to describe the appearance of the
+     * <tr><td><code>{@link #Toolbar_logo com.example.finalproject:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.example.finalproject:logoDescription}</code></td><td>A content description string to describe the appearance of the
      * associated logo image.</td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.famchat:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.famchat:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.finalproject:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_menu com.example.finalproject:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.finalproject:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
      * located at the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.famchat:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.finalproject:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
      * the start of the toolbar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.example.famchat:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * <tr><td><code>{@link #Toolbar_popupTheme com.example.finalproject:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
      * shown by widgets in the action bar.</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.example.famchat:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.famchat:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.famchat:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.example.famchat:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.example.famchat:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
+     * <tr><td><code>{@link #Toolbar_subtitle com.example.finalproject:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.finalproject:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.finalproject:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.example.finalproject:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.example.finalproject:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
      * of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.famchat:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.famchat:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.famchat:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.famchat:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.example.famchat:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.famchat:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.famchat:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.finalproject:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.finalproject:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.finalproject:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.finalproject:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.example.finalproject:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.finalproject:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.finalproject:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -13423,6 +13936,7 @@ public final class R {
      * @see #Toolbar_logo
      * @see #Toolbar_logoDescription
      * @see #Toolbar_maxButtonHeight
+     * @see #Toolbar_menu
      * @see #Toolbar_navigationContentDescription
      * @see #Toolbar_navigationIcon
      * @see #Toolbar_popupTheme
@@ -13441,14 +13955,14 @@ public final class R {
      */
     @Deprecated
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f02003f, 0x7f02004d, 
-      0x7f02004e, 0x7f020060, 0x7f020061, 0x7f020062, 
-      0x7f020063, 0x7f020064, 0x7f020065, 0x7f0200e0, 
-      0x7f0200e1, 0x7f0200e2, 0x7f0200e5, 0x7f0200e6, 
-      0x7f0200f2, 0x7f020112, 0x7f020113, 0x7f020114, 
-      0x7f020130, 0x7f020131, 0x7f020132, 0x7f020133, 
-      0x7f020134, 0x7f020135, 0x7f020136, 0x7f020137, 
-      0x7f020138
+      0x010100af, 0x01010140, 0x7f020040, 0x7f02004e, 
+      0x7f02004f, 0x7f020061, 0x7f020062, 0x7f020063, 
+      0x7f020064, 0x7f020065, 0x7f020066, 0x7f0200ed, 
+      0x7f0200ee, 0x7f0200ef, 0x7f0200f1, 0x7f0200f3, 
+      0x7f0200f4, 0x7f020100, 0x7f020120, 0x7f020121, 
+      0x7f020122, 0x7f02013f, 0x7f020140, 0x7f020141, 
+      0x7f020142, 0x7f020143, 0x7f020144, 0x7f020145, 
+      0x7f020146, 0x7f020147
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -13493,7 +14007,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13503,10 +14017,11 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
      * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
      * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:buttonGravity
+     * @attr name com.example.finalproject:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
@@ -13517,7 +14032,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:collapseContentDescription
+     * @attr name com.example.finalproject:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
@@ -13530,7 +14045,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:collapseIcon
+     * @attr name com.example.finalproject:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
@@ -13545,7 +14060,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetEnd
+     * @attr name com.example.finalproject:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
@@ -13560,7 +14075,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetEndWithActions
+     * @attr name com.example.finalproject:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
@@ -13575,7 +14090,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetLeft
+     * @attr name com.example.finalproject:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
@@ -13590,7 +14105,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetRight
+     * @attr name com.example.finalproject:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
@@ -13605,7 +14120,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetStart
+     * @attr name com.example.finalproject:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
@@ -13620,7 +14135,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:contentInsetStartWithNavigation
+     * @attr name com.example.finalproject:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
@@ -13634,7 +14149,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:logo
+     * @attr name com.example.finalproject:logo
      */
     public static final int Toolbar_logo=11;
     /**
@@ -13646,11 +14161,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:logoDescription
+     * @attr name com.example.finalproject:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13659,9 +14174,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:maxButtonHeight
+     * @attr name com.example.finalproject:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
+    /**
+     * <p>
+     * @attr description
+     * Menu resource to inflate to be shown in the toolbar
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.example.finalproject:menu
+     */
+    public static final int Toolbar_menu=14;
     /**
      * <p>
      * @attr description
@@ -13671,9 +14199,9 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:navigationContentDescription
+     * @attr name com.example.finalproject:navigationContentDescription
      */
-    public static final int Toolbar_navigationContentDescription=14;
+    public static final int Toolbar_navigationContentDescription=15;
     /**
      * <p>
      * @attr description
@@ -13685,9 +14213,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:navigationIcon
+     * @attr name com.example.finalproject:navigationIcon
      */
-    public static final int Toolbar_navigationIcon=15;
+    public static final int Toolbar_navigationIcon=16;
     /**
      * <p>
      * @attr description
@@ -13699,9 +14227,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:popupTheme
+     * @attr name com.example.finalproject:popupTheme
      */
-    public static final int Toolbar_popupTheme=16;
+    public static final int Toolbar_popupTheme=17;
     /**
      * <p>
      * @attr description
@@ -13710,11 +14238,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:subtitle
+     * @attr name com.example.finalproject:subtitle
      */
-    public static final int Toolbar_subtitle=17;
+    public static final int Toolbar_subtitle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13722,9 +14250,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:subtitleTextAppearance
+     * @attr name com.example.finalproject:subtitleTextAppearance
      */
-    public static final int Toolbar_subtitleTextAppearance=18;
+    public static final int Toolbar_subtitleTextAppearance=19;
     /**
      * <p>
      * @attr description
@@ -13734,19 +14262,19 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:subtitleTextColor
+     * @attr name com.example.finalproject:subtitleTextColor
      */
-    public static final int Toolbar_subtitleTextColor=19;
+    public static final int Toolbar_subtitleTextColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.famchat:title
+     * @attr name com.example.finalproject:title
      */
-    public static final int Toolbar_title=20;
+    public static final int Toolbar_title=21;
     /**
      * <p>
      * @attr description
@@ -13759,9 +14287,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMargin
+     * @attr name com.example.finalproject:titleMargin
      */
-    public static final int Toolbar_titleMargin=21;
+    public static final int Toolbar_titleMargin=22;
     /**
      * <p>
      * @attr description
@@ -13775,9 +14303,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMarginBottom
+     * @attr name com.example.finalproject:titleMarginBottom
      */
-    public static final int Toolbar_titleMarginBottom=22;
+    public static final int Toolbar_titleMarginBottom=23;
     /**
      * <p>
      * @attr description
@@ -13791,9 +14319,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMarginEnd
+     * @attr name com.example.finalproject:titleMarginEnd
      */
-    public static final int Toolbar_titleMarginEnd=23;
+    public static final int Toolbar_titleMarginEnd=24;
     /**
      * <p>
      * @attr description
@@ -13807,9 +14335,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMarginStart
+     * @attr name com.example.finalproject:titleMarginStart
      */
-    public static final int Toolbar_titleMarginStart=24;
+    public static final int Toolbar_titleMarginStart=25;
     /**
      * <p>
      * @attr description
@@ -13823,9 +14351,9 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMarginTop
+     * @attr name com.example.finalproject:titleMarginTop
      */
-    public static final int Toolbar_titleMarginTop=25;
+    public static final int Toolbar_titleMarginTop=26;
     /**
      * <p>
      * @attr description
@@ -13837,12 +14365,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:titleMargins
+     * @attr name com.example.finalproject:titleMargins
      */
     @Deprecated
-    public static final int Toolbar_titleMargins=26;
+    public static final int Toolbar_titleMargins=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.famchat.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.finalproject.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13850,9 +14378,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:titleTextAppearance
+     * @attr name com.example.finalproject:titleTextAppearance
      */
-    public static final int Toolbar_titleTextAppearance=27;
+    public static final int Toolbar_titleTextAppearance=28;
     /**
      * <p>
      * @attr description
@@ -13862,9 +14390,9 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:titleTextColor
+     * @attr name com.example.finalproject:titleTextColor
      */
-    public static final int Toolbar_titleTextColor=28;
+    public static final int Toolbar_titleTextColor=29;
     /**
      * Attributes that can be used with a View.
      * <p>Includes the following attributes:</p>
@@ -13874,9 +14402,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.example.famchat:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.example.famchat:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
-     * <tr><td><code>{@link #View_theme com.example.famchat:theme}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.example.finalproject:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.example.finalproject:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_theme com.example.finalproject:theme}</code></td><td>Deprecated.</td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -13885,8 +14413,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f0200eb, 0x7f0200ec, 
-      0x7f020126
+      0x01010000, 0x010100da, 0x7f0200f9, 0x7f0200fa, 
+      0x7f020135
     };
     /**
      * <p>
@@ -13938,7 +14466,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:paddingEnd
+     * @attr name com.example.finalproject:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
@@ -13952,7 +14480,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.famchat:paddingStart
+     * @attr name com.example.finalproject:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
@@ -13965,7 +14493,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.famchat:theme
+     * @attr name com.example.finalproject:theme
      */
     public static final int View_theme=4;
     /**
@@ -13976,8 +14504,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.famchat:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.famchat:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.finalproject:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.finalproject:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -14010,7 +14538,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.famchat:backgroundTint
+     * @attr name com.example.finalproject:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
@@ -14037,7 +14565,7 @@ public final class R {
      * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
-     * @attr name com.example.famchat:backgroundTintMode
+     * @attr name com.example.finalproject:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

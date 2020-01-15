@@ -16,13 +16,15 @@ import java.util.jar.Attributes;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private Button BackToLogin;
-    private EditText EmailEntry;
-    private EditText NameEntry;
-    private EditText PasswordEntry;
-    private Button CreateAccountButton;
+    Button BackToLogin;
+    EditText EmailEntry;
+    EditText NameEntry;
+    EditText PasswordEntry;
+    Button CreateAccountButton;
 
     DatabaseReference Userdatabase;
+
+    Users User;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +40,13 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        Userdatabase = FirebaseDatabase.getInstance().getReference("Users");
         EmailEntry = (EditText) findViewById(R.id.EmailEntry);
         NameEntry = (EditText) findViewById(R.id.NameEntry);
         PasswordEntry = (EditText) findViewById(R.id.PasswordEntry);
         CreateAccountButton = (Button) findViewById(R.id.CreateAccountButton);
+        Userdatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
         CreateAccountButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 createUser();
@@ -55,6 +56,8 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     public void createUser() {
+        User = new Users();
+
         String email = EmailEntry.getText().toString().trim();
         String password = PasswordEntry.getText().toString().trim();
         String name = NameEntry.getText().toString().trim();
@@ -62,13 +65,11 @@ public class RegisterActivity extends AppCompatActivity {
         if (email.isEmpty() || password.isEmpty() || name.isEmpty()) {
             Toast.makeText(this, "Please make sure that all fields are filled out", Toast.LENGTH_LONG).show();
         } else {
-            String ID = Userdatabase.push().getKey();
+            User.setEmail(email);
+            User.setPassword(password);
+            User.setName(name);
 
-            Users User = new Users(email,password,name);
-
-            Userdatabase.child(ID).setValue(name);
-
-
+            Userdatabase.push().setValue(User);
 
             Toast.makeText(this, "New Account Created", Toast.LENGTH_LONG).show();
         }
