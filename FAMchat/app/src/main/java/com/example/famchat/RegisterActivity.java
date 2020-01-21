@@ -1,5 +1,6 @@
 package com.example.famchat;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,8 +10,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.jar.Attributes;
 
@@ -35,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         BackToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class); //Switch to login activity
                 startActivity(intent);
             }
         });
@@ -51,27 +56,47 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 createUser();
             }
-        });
+        }); //Create user function if the button is pressed
     }
 
 
     public void createUser() {
+        //Create and get texts from fields into strings
+        final String email = EmailEntry.getText().toString().trim();
+        final String password = PasswordEntry.getText().toString().trim();
+        final String name = NameEntry.getText().toString().trim();
+        //Create new User object
         User = new Users();
+        Query emailQuery = FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("email").equalTo(email);//Query to check if the email already exists
+        //Add listener in case the email exists
+        emailQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.getChildrenCount() > 0) { //If even one identical email already exists, then prompt the user to login with it or use a different email
+                    Toast.makeText(RegisterActivity.this, "Account with this email already exists. Please Login or use different email", Toast.LENGTH_SHORT).show();
+                } else { //If email is unique
+                    if (email.isEmpty() || password.isEmpty() || name.isEmpty()) { //Check if all fields are filled properly
+                        Toast.makeText(RegisterActivity.this, "Please make sure that all fields are filled out", Toast.LENGTH_LONG).show();
+                    } else {
+                        //Set info for the user
+                        User.setEmail(email);
+                        User.setPassword(password);
+                        User.setName(name);
 
-        String email = EmailEntry.getText().toString().trim();
-        String password = PasswordEntry.getText().toString().trim();
-        String name = NameEntry.getText().toString().trim();
+                        Userdatabase.push().setValue(User); //Push user's info to the database
 
-        if (email.isEmpty() || password.isEmpty() || name.isEmpty()) {
-            Toast.makeText(this, "Please make sure that all fields are filled out", Toast.LENGTH_LONG).show();
-        } else {
-            User.setEmail(email);
-            User.setPassword(password);
-            User.setName(name);
+                        Toast.makeText(RegisterActivity.this, "New Account Created", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
 
-            Userdatabase.push().setValue(User);
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            Toast.makeText(this, "New Account Created", Toast.LENGTH_LONG).show();
-        }
+            }
+        });
+
+
+
     }
 }
