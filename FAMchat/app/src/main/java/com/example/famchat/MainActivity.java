@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,14 +18,10 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button RegisterButton;
+    Button RegisterButton;
     Button LoginButton;
     EditText EmailText;
     EditText PasswordText;
-
-    DatabaseReference userDatabase;
-
-    Users User;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,19 +65,31 @@ public class MainActivity extends AppCompatActivity {
         final String Password = PasswordText.getText().toString().trim();
 
         FirebaseDatabase.getInstance().getReference().child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
+            int check = 0;
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Users user = snapshot.getValue(Users.class);
 
                     if ((Email.equals(user.getEmail())) && (Password.equals(user.getPassword()))) {
+                        check = 1;
                         Toast.makeText(MainActivity.this, "Logged in", Toast.LENGTH_LONG).show();
-                        //Leads to chat activity
+                        CurrentUser currentUser = new CurrentUser();
+                        currentUser.setEmail(Email);
+                        currentUser.setName(user.getName());
+                        if (user.getGroupID().equals("NULL")){
+                            Intent intent = new Intent(MainActivity.this, FirstLoginActivity.class);
+                            startActivity(intent);
+                        }else{
+                            Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+                            startActivity(intent);
+                        }
+                        //Leads to Home activity or first login activity
                     }
                 }
-
-                Toast.makeText(MainActivity.this, "Please make sure that the Email and Password are entered correctly", Toast.LENGTH_LONG).show();
-
+                if(check == 0){
+                    Toast.makeText(MainActivity.this, "Please make sure that the Email and Password are entered correctly", Toast.LENGTH_LONG).show();
+                }
             }
 
             @Override

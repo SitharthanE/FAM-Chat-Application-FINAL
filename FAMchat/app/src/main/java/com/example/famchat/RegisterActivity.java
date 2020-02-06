@@ -65,6 +65,11 @@ public class RegisterActivity extends AppCompatActivity {
         final String email = EmailEntry.getText().toString().trim();
         final String password = PasswordEntry.getText().toString().trim();
         final String name = NameEntry.getText().toString().trim();
+        final String groupID = "NULL";
+        final Double latitude = 0.0;
+        final Double longitude = 0.0;
+
+
         //Create new User object
         User = new Users();
         Query emailQuery = FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("email").equalTo(email);//Query to check if the email already exists
@@ -82,6 +87,9 @@ public class RegisterActivity extends AppCompatActivity {
                         User.setEmail(email);
                         User.setPassword(password);
                         User.setName(name);
+                        User.setGroupID(groupID);
+                        User.setLatitude(latitude);
+                        User.setLongitude(longitude);
 
                         Userdatabase.push().setValue(User); //Push user's info to the database
 

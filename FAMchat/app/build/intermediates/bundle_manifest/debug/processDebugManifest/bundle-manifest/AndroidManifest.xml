@@ -24,6 +24,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.famchat.CreateGroupActivity" />
+        <activity android:name="com.example.famchat.HomeActivity" />
+        <activity android:name="com.example.famchat.FirstLoginActivity" />
         <activity android:name="com.example.famchat.RegisterActivity" />
         <activity android:name="com.example.famchat.MainActivity" >
             <intent-filter>
@@ -32,6 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
