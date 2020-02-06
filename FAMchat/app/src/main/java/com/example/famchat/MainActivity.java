@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
@@ -80,9 +79,11 @@ public class MainActivity extends AppCompatActivity {
                         if (user.getGroupID().equals("NULL")){
                             Intent intent = new Intent(MainActivity.this, FirstLoginActivity.class);
                             startActivity(intent);
+                            finish();
                         }else{
                             Intent intent = new Intent(MainActivity.this,HomeActivity.class);
                             startActivity(intent);
+                            finish();
                         }
                         //Leads to Home activity or first login activity
                     }
