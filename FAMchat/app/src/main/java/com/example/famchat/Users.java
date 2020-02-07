@@ -8,6 +8,7 @@ public class Users {
     private Double Latitude;
     private Double Longitude;
     private String GroupID;
+    private String Status;
 
     public Users(){
     }
@@ -58,6 +59,14 @@ public class Users {
 
     public void setName(String name) {
         Name = name;
+    }
+
+    public String getStatus() {
+        return Status;
+    }
+
+    public void setStatus(String status) {
+        Status = status;
     }
 }
 

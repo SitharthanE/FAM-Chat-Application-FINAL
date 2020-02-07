@@ -81,6 +81,8 @@ public class CreateGroupActivity extends AppCompatActivity {
 
                         Userdatabase.push().setValue(Group); //Push Groups info to the database
 
+
+
                         Toast.makeText(CreateGroupActivity.this, "New Group Created for your Family!", Toast.LENGTH_LONG).show();
                     }
                 }
