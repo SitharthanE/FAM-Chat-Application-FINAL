@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,7 +50,6 @@ public class RegisterActivity extends AppCompatActivity {
         NameEntry = (EditText) findViewById(R.id.NameEntry);
         PasswordEntry = (EditText) findViewById(R.id.PasswordEntry);
         CreateAccountButton = (Button) findViewById(R.id.CreateAccountButton);
-        Userdatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
         CreateAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         final String groupID = "NULL";
         final Double latitude = 0.0;
         final Double longitude = 0.0;
+        final String status = "NA";
 
 
         //Create new User object
@@ -90,8 +91,11 @@ public class RegisterActivity extends AppCompatActivity {
                         User.setGroupID(groupID);
                         User.setLatitude(latitude);
                         User.setLongitude(longitude);
+                        User.setStatus(status);
 
-                        Userdatabase.push().setValue(User); //Push user's info to the database
+                        String newEmail = email.replace(".", ",");
+                        Userdatabase = FirebaseDatabase.getInstance().getReference();
+                        Userdatabase.child("Users").child(newEmail).setValue(User); //Push user's info to the database
 
                         Toast.makeText(RegisterActivity.this, "New Account Created", Toast.LENGTH_LONG).show();
                     }

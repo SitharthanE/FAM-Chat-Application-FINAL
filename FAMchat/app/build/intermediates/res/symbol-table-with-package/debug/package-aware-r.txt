@@ -1448,6 +1448,7 @@ id GroupNameText
 id GroupPasswordText
 id GroupSafeCodeText
 id JoinButton
+id JoinGroupButton
 id LoginButton
 id META
 id NameEntry
@@ -1728,6 +1729,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView11
+id textView12
+id textView13
 id textView15
 id textView16
 id textView17
@@ -1833,6 +1837,7 @@ layout abc_tooltip
 layout activity_create_group
 layout activity_first_login
 layout activity_home
+layout activity_join
 layout activity_main
 layout activity_register
 layout custom_dialog

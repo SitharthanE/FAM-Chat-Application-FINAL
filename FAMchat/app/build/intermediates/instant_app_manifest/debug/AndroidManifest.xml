@@ -25,6 +25,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.famchat.JoinActivity" />
         <activity android:name="com.example.famchat.CreateGroupActivity" />
         <activity android:name="com.example.famchat.HomeActivity" />
         <activity android:name="com.example.famchat.FirstLoginActivity" />

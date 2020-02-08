@@ -2376,6 +2376,10 @@
         "source": "/Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/056590f3b3aeb2b088a0406a37acf0b2/material-1.1.0/res/layout/design_menu_item_action_area.xml"
     },
     {
+        "merged": "/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/build/intermediates/res/merged/debug/layout_activity_join.xml.flat",
+        "source": "/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/res/layout/activity_join.xml"
+    },
+    {
         "merged": "/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
         "source": "/Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
     },

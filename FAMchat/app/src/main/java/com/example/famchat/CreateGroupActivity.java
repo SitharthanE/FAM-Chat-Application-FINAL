@@ -3,6 +3,7 @@ package com.example.famchat;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -79,11 +80,38 @@ public class CreateGroupActivity extends AppCompatActivity {
                         Group.setSafeCode(GroupSafeCode);
                         Group.setEmergencyCode(GroupEmergencyCode);
 
-                        Userdatabase.push().setValue(Group); //Push Groups info to the database
+                        Userdatabase.child(GroupID).setValue(Group); //Push Groups info to the database
 
+                        FirebaseDatabase.getInstance().getReference().child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                    Users user = snapshot.getValue(Users.class);
 
+                                    if ((GlobalVariable.CurrentEmail.equals(user.getEmail()))) {
+                                        GlobalVariable.CurrentGroupID = GroupID;
+                                        user.setStatus("Leader");
+                                        user.setGroupID(GroupID);
 
-                        Toast.makeText(CreateGroupActivity.this, "New Group Created for your Family!", Toast.LENGTH_LONG).show();
+                                        Userdatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+                                        String newemail = GlobalVariable.CurrentEmail.replace(".", ",");
+                                        Userdatabase.child(newemail).setValue(user);
+                                        Toast.makeText(CreateGroupActivity.this, "Group Created and you have been assigned as leader!", Toast.LENGTH_LONG).show();
+                                        Intent intent = new Intent(CreateGroupActivity.this, HomeActivity.class);
+                                        startActivity(intent);
+                                        finish();
+
+                                        //Leads to Home activity
+                                    }
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+
                     }
                 }
             }

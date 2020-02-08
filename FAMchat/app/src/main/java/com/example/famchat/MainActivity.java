@@ -72,10 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
                     if ((Email.equals(user.getEmail())) && (Password.equals(user.getPassword()))) {
                         check = 1;
+                        GlobalVariable.CurrentEmail = Email;
                         Toast.makeText(MainActivity.this, "Logged in", Toast.LENGTH_LONG).show();
-                        CurrentUser currentUser = new CurrentUser();
-                        currentUser.setEmail(Email);
-                        currentUser.setName(user.getName());
                         if (user.getGroupID().equals("NULL")){
                             Intent intent = new Intent(MainActivity.this, FirstLoginActivity.class);
                             startActivity(intent);

@@ -23,7 +23,7 @@
 15-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/43720d577be18a5997601411d57b2a93/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:22-64
 16
 17    <application
-17-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:8:5-30:19
+17-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:8:5-31:19
 18        android:allowBackup="true"
 18-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:9:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -40,66 +40,69 @@
 25        android:testOnly="true"
 26        android:theme="@style/AppTheme" >
 26-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:14:9-40
-27        <activity android:name="com.example.famchat.CreateGroupActivity" />
-27-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:15:9-66
-27-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:15:19-54
-28        <activity android:name="com.example.famchat.HomeActivity" />
-28-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:16:9-50
-28-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:16:19-47
-29        <activity android:name="com.example.famchat.FirstLoginActivity" />
-29-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:17:9-56
-29-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:17:19-53
-30        <activity android:name="com.example.famchat.RegisterActivity" />
-30-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:18:9-54
-30-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:18:19-51
-31        <activity android:name="com.example.famchat.MainActivity" >
-31-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:19:9-25:20
-31-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:19:19-47
-32            <intent-filter>
-32-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:20:13-24:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:21:17-69
-33-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:21:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:23:17-77
-35-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:23:27-74
-36            </intent-filter>
-37        </activity>
-38
-39        <meta-data
-39-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:27:9-29:57
-40            android:name="preloaded_fonts"
-40-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:28:13-43
-41            android:resource="@array/preloaded_fonts" />
-41-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:29:13-54
-42
-43        <activity
-43-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-44            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-44-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-45            android:exported="false"
-45-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-46            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-46-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-47
-48        <provider
-48-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
-49            android:name="com.google.firebase.provider.FirebaseInitProvider"
-49-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
-50            android:authorities="com.example.finalproject.firebaseinitprovider"
-50-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
-51            android:exported="false"
-51-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
-52            android:initOrder="100" />
-52-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
-53
-54        <meta-data
-54-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
-55            android:name="com.google.android.gms.version"
-55-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
-56            android:value="@integer/google_play_services_version" />
-56-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
-57    </application>
-58
-59</manifest>
+27        <activity android:name="com.example.famchat.JoinActivity" />
+27-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:15:9-59
+27-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:15:19-47
+28        <activity android:name="com.example.famchat.CreateGroupActivity" />
+28-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:16:9-57
+28-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:16:19-54
+29        <activity android:name="com.example.famchat.HomeActivity" />
+29-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:17:9-50
+29-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:17:19-47
+30        <activity android:name="com.example.famchat.FirstLoginActivity" />
+30-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:18:9-56
+30-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:18:19-53
+31        <activity android:name="com.example.famchat.RegisterActivity" />
+31-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:19:9-54
+31-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:19:19-51
+32        <activity android:name="com.example.famchat.MainActivity" >
+32-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:20:9-26:20
+32-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:20:19-47
+33            <intent-filter>
+33-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:21:13-25:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:22:17-69
+34-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:22:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:24:17-77
+36-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:24:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <meta-data
+40-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:28:9-30:57
+41            android:name="preloaded_fonts"
+41-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:29:13-43
+42            android:resource="@array/preloaded_fonts" />
+42-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:30:13-54
+43
+44        <activity
+44-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+45            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+45-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+46            android:exported="false"
+46-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+47            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+47-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+48
+49        <provider
+49-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+50            android:name="com.google.firebase.provider.FirebaseInitProvider"
+50-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+51            android:authorities="com.example.finalproject.firebaseinitprovider"
+51-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+52            android:exported="false"
+52-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+53            android:initOrder="100" />
+53-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+54
+55        <meta-data
+55-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+56            android:name="com.google.android.gms.version"
+56-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+57            android:value="@integer/google_play_services_version" />
+57-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+58    </application>
+59
+60</manifest>
