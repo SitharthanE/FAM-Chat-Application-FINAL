@@ -1451,6 +1451,7 @@ id JoinButton
 id JoinGroupButton
 id LoginButton
 id META
+id MemberView
 id NameEntry
 id Password
 id PasswordEntry
@@ -1458,8 +1459,10 @@ id PasswordText
 id RegisterButton
 id SHIFT
 id SYM
+id SendRequestsButton
 id TOP_END
 id TOP_START
+id ViewRequestsButton
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1729,6 +1732,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView10
 id textView11
 id textView12
 id textView13
@@ -1736,7 +1740,9 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
+id textView20
 id textView3
 id textView4
 id textView5
@@ -1840,6 +1846,7 @@ layout activity_home
 layout activity_join
 layout activity_main
 layout activity_register
+layout activity_send_update_requests
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

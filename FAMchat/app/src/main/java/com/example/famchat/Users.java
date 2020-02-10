@@ -68,5 +68,9 @@ public class Users {
     public void setStatus(String status) {
         Status = status;
     }
+
+    public String toString(){
+        return this.Email + "\n" +  this.Name;
+    }
 }
 
