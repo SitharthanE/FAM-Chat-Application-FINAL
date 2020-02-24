@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             finish();
                         }else{
+                            GlobalVariable.CurrentEmail = Email;
+                            GlobalVariable.CurrentGroupID = user.getGroupID();
                             Intent intent = new Intent(MainActivity.this,HomeActivity.class);
                             startActivity(intent);
                             finish();

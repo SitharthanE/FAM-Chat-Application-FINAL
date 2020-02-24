@@ -16,18 +16,18 @@
 12-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:6:18-37
 13
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/43720d577be18a5997601411d57b2a93/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
-14-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/43720d577be18a5997601411d57b2a93/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
+14-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/0fc420957acb75b9a79ef1154df802cb/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
+14-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/0fc420957acb75b9a79ef1154df802cb/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/43720d577be18a5997601411d57b2a93/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
-15-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/43720d577be18a5997601411d57b2a93/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:22-64
+15-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/0fc420957acb75b9a79ef1154df802cb/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
+15-->[com.google.firebase:firebase-database:16.0.4] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/0fc420957acb75b9a79ef1154df802cb/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:22-64
 16
 17    <application
 17-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:8:5-32:19
 18        android:allowBackup="true"
 18-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:9:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.1.0] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/b6b5951a20836cbe843a8e306a5032d5/core-1.1.0/AndroidManifest.xml:24:18-86
+19-->[androidx.core:core:1.1.0] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/13c5e5eb30313edb16cd523337f0b5af/core-1.1.0/AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
 21-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:10:9-43
@@ -81,31 +81,31 @@
 43-->/Users/sitharthanelango/Desktop/CMPT496-FinalProject/FAMchat/app/src/main/AndroidManifest.xml:31:13-54
 44
 45        <activity
-45-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+45-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/25fba0e81950f0e033335445ac547627/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 46            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-46-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+46-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/25fba0e81950f0e033335445ac547627/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
 47            android:exported="false"
-47-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+47-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/25fba0e81950f0e033335445ac547627/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
 48            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-48-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/700983b18672f1d074b46be1fca5107f/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+48-->[com.google.android.gms:play-services-base:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/25fba0e81950f0e033335445ac547627/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 49
 50        <provider
-50-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+50-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/df9d8226b5c8b6533b49f27d39d8739a/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
 51            android:name="com.google.firebase.provider.FirebaseInitProvider"
-51-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+51-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/df9d8226b5c8b6533b49f27d39d8739a/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
 52            android:authorities="com.example.finalproject.firebaseinitprovider"
-52-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+52-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/df9d8226b5c8b6533b49f27d39d8739a/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
 53            android:exported="false"
-53-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+53-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/df9d8226b5c8b6533b49f27d39d8739a/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
 54            android:initOrder="100" />
-54-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/9f51152f13af60d829683a37a5228512/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+54-->[com.google.firebase:firebase-common:16.0.3] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/df9d8226b5c8b6533b49f27d39d8739a/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
 55
 56        <meta-data
-56-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+56-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/babcbd1f5e7a756eaeb2c10d5a2731e9/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
 57            android:name="com.google.android.gms.version"
-57-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+57-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/babcbd1f5e7a756eaeb2c10d5a2731e9/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
 58            android:value="@integer/google_play_services_version" />
-58-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/f5718c3463681bfb7cb2d5dd189b6a17/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+58-->[com.google.android.gms:play-services-basement:16.0.1] /Users/sitharthanelango/.gradle/caches/transforms-2/files-2.1/babcbd1f5e7a756eaeb2c10d5a2731e9/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
 59    </application>
 60
 61</manifest>
